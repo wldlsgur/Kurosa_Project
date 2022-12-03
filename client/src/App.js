@@ -1,6 +1,8 @@
 import "./App.css";
 
-import "./components/common/NotFound";
+import Main from "./pages/main";
+
+import NotFound from "./components/common/NotFound";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
