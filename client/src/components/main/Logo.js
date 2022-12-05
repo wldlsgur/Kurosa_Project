@@ -1,4 +1,4 @@
-import logoImage from "../../assets/Images/logoImage.png";
+import logoImage from "../../assets/Images/KUROSA.gif";
 import "../../styles/Main/logo/logo.css";
 const Logo = () => {
   return (
