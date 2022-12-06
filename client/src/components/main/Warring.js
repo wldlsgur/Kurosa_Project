@@ -1,4 +1,4 @@
-import "../../styles/Main/warring/warring.css";
+import style from "../../styles/Main/warring/warring.module.css";
 
 const Warring = (props) => {
   const changeLogo = props.updateMain;
@@ -8,13 +8,13 @@ const Warring = (props) => {
   const warringBtn = "OK";
 
   return (
-    <div className="warring">
-      <p className="warring__title">{warringTitle}</p>
-      <p className="warring__content">{warringContent}</p>
+    <div className={style.warring}>
+      <p className={style.warring__title}>{warringTitle}</p>
+      <p className={style.warring__content}>{warringContent}</p>
       <input
         type="button"
         value={warringBtn}
-        className="warring__btn"
+        className={style.warring__btn}
         onClick={changeLogo}
       ></input>
     </div>

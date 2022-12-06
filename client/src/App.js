@@ -3,8 +3,6 @@ import { Provider } from "react-redux";
 import { legacy_createStore as createStore } from "redux";
 import rootReducer from "./store/RootReducer";
 
-import "./App.css";
-
 import Main from "./pages/main";
 
 import NotFound from "./components/common/NotFound";
@@ -17,7 +15,7 @@ function App() {
       <BrowserRouter>
         <Provider store={store}>
           <Routes>
-            <Route path="/" element={<Main />}></Route>
+            <Route path="/" element={<Main />} exact={true}></Route>
             <Route path="*" element={<NotFound />}></Route>
           </Routes>
         </Provider>
