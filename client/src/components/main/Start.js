@@ -6,16 +6,20 @@ const Start = () => {
   return (
     <div className="start">
       <div className="top">
-        <div className="top__header">
-          <img src={logoHeader} alt="logoHeader"></img>
+        <div className="header">
+          <img src={logoHeader} alt="logoHeader" className="header__img"></img>
         </div>
-        <div>
-          <img src={logoCircle} alt="logoCircle" className="top__circle"></img>
+        <div className="circle">
+          <img src={logoCircle} alt="logoCircle" className="circle__img"></img>
         </div>
       </div>
       <div className="bottom">
-        <img src={logoStart} alt="logoStart" className="bottom__start"></img>
-        <div className="bottom__footer"></div>
+        <div className="startBtn">
+          <img src={logoStart} alt="logoStart" className="startBtn__img"></img>
+        </div>
+        <div className="footer">
+          <img src={logoHeader} alt="logoFooter" className="footer__img"></img>
+        </div>
       </div>
     </div>
   );

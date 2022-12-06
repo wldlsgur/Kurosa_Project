@@ -3,36 +3,33 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
-.start .top__header,
-.start .bottom__footer {
-  width: 100%;
+.start .header,
+.start .footer {
+  width: auto;
   height: 150px;
+}
+.start img {
+  width: 100px;
+  height: 100px;
 }
 .start > .top {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 50%;
 }
-.start > .top > .top__circle {
-  width: 200px;
-  height: 200px;
+.start > .top > .circle {
+  width: 100%;
+  text-align: center;
 }
 .start > .bottom {
-  position: relative;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 50%;
   background-image: url("../../../assets/Images/logoBackground.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-.start > .bottom > .bottom__start {
-  width: 300px;
-  height: 300px;
-}
-.start > .bottom > .bottom__footer {
-  position: absolute;
-  bottom: 0px;
+.start > .bottom > .startBtn {
+  width: 100%;
+  text-align: center;
 }/*# sourceMappingURL=start.css.map */

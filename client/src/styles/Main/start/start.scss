@@ -3,40 +3,37 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  .top__header,
-  .bottom__footer {
-    width: 100%;
+  .header,
+  .footer {
+    width: auto;
     height: 150px;
   }
-
+  img {
+    width: 100px;
+    height: 100px;
+  }
   > .top {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    > .top__circle {
-      width: 200px;
-      height: 200px;
-    }
-    > .top__header {
+    height: 50%;
+    > .circle {
+      width: 100%;
+      text-align: center;
+      > .circle__img {
+      }
     }
   }
-
   > .bottom {
-    position: relative;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: 50%;
     background-image: url("../../../assets/Images/logoBackground.gif");
-    > .bottom__start {
-      width: 300px;
-      height: 300px;
-    }
-    > .bottom__footer {
-      position: absolute;
-      bottom: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    > .startBtn {
+      width: 100%;
+      text-align: center;
+      > .startBtn__img {
+      }
     }
   }
 }
