@@ -1,43 +1,30 @@
-import logoCircle from "../../assets/Images/logoCircle.png";
-import logoStart from "../../assets/Images/logoStart.png";
-import logoHeader from "../../assets/Images/logoHeader.gif";
 import style from "../../styles/Main/start/start.module.css";
+import Footer from "../common/footer";
+import Header from "../common/header";
 import { Link } from "react-router-dom";
 
 const Start = () => {
   return (
     <div className={style.start}>
-      <div className={style.header}>
-        <img
-          src={logoHeader}
-          alt="logoHeader"
-          className={style.header__img}
-        ></img>
-      </div>
+      <Header></Header>
       <div className={style.circle}>
         <img
-          src={logoCircle}
+          src="/assets/Images/logoCircle.png"
           alt="logoCircle"
           className={style.circle__img}
         ></img>
       </div>
       <div className={style.bottom}>
         <div className={style.startBtn}>
-          <Link to="/ask">
+          <Link to="/talk">
             <img
-              src={logoStart}
+              src="/assets/Images/logoStart.png"
               alt="logoStart"
               className={style.startBtn__img}
             ></img>
           </Link>
         </div>
-        <div className={style.footer}>
-          <img
-            src={logoHeader}
-            alt="logoFooter"
-            className={style.footer__img}
-          ></img>
-        </div>
+        <Footer></Footer>
       </div>
     </div>
   );

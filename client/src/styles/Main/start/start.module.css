@@ -4,12 +4,6 @@
   display: flex;
   flex-direction: column;
 }
-.start > .header > .header__img {
-  width: 100%;
-  height: 80px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
 .start > .circle {
   width: 100%;
   text-align: center;
@@ -22,7 +16,7 @@
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url("../../../assets/Images/logoBackground.gif");
+  background-image: url("/public/assets/Images/logoBackground.gif");
   background-position: center;
   background-size: cover;
   margin-top: -50px;
@@ -32,22 +26,5 @@
 }
 .start > .bottom > .startBtn .startBtn__img {
   width: 342px;
-  height: 257px;
-}
-.start > .bottom > .footer {
-  width: 100%;
-}
-.start > .bottom > .footer > .footer__img {
-  width: 100%;
-  height: 80px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: absolute;
-  bottom: 0px;
-}
-
-@media (max-width: 500px) {
-  .start > .header > .header__img {
-    height: 100px;
-  }
-}/*# sourceMappingURL=start.css.map */
+  height: 100%;
+} /*# sourceMappingURL=start.css.map */

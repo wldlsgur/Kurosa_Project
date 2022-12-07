@@ -1,0 +1,15 @@
+.footer {
+  width: 100%;
+}
+.footer > .footer__img {
+  width: 100%;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 500px) {
+  .footer > .footer__img {
+    height: 100px;
+  }
+}/*# sourceMappingURL=footer.css.map */

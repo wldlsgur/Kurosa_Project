@@ -4,13 +4,6 @@
   display: flex;
   flex-direction: column;
 
-  > .header {
-    > .header__img {
-      width: 100%;
-      height: 80px;
-      object-fit: cover;
-    }
-  }
   > .circle {
     width: 100%;
     text-align: center;
@@ -24,7 +17,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-    background-image: url("../../../assets/Images/logoBackground.gif");
+    background-image: url("/public/assets/Images/logoBackground.gif");
     background-position: center;
     background-size: cover;
     margin-top: -50px;
@@ -32,27 +25,7 @@
       text-align: center;
       .startBtn__img {
         width: 342px;
-        height: 257px;
-      }
-    }
-    > .footer {
-      width: 100%;
-      > .footer__img {
-        width: 100%;
-        height: 80px;
-        object-fit: cover;
-        position: absolute;
-        bottom: 0px;
-      }
-    }
-  }
-}
-
-@media (max-width: 500px) {
-  .start {
-    > .header {
-      > .header__img {
-        height: 100px;
+        height: 100%;
       }
     }
   }
