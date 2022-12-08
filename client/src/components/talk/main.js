@@ -1,20 +1,22 @@
-const Main = (props) => {
-  const { logoImg, talkBackground, title, content } = props;
+import styled from "styled-components";
+import Logo from "./logo";
+import Content from "./content";
 
+const MainDiv = styled.div`
+  witdh: 100%;
+  heigth: 100%;
+  padding: 0px 40px 0px 40px;
+`;
+const Main = ({ logoImg, contentImg, title, content }) => {
   return (
-    <div className="main">
-      <div className="logo">
-        <img className="logo__img" src={logoImg} alt="logoImg"></img>
-      </div>
-      <background></background>
-      <div
-        className="content"
-        style={{ background: "url({" + talkBackground + "})" }}
-      >
-        <p>{title}</p>
-        <p>{content}</p>
-      </div>
-    </div>
+    <MainDiv>
+      <Logo url={logoImg}></Logo>
+      <Content
+        contentImg={contentImg}
+        title={title}
+        content={content}
+      ></Content>
+    </MainDiv>
   );
 };
 

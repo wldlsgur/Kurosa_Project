@@ -1,6 +1,10 @@
-// 받을때 children 객체를 받는다.
-function Wrapper({ children }) {
-  return <div className="wrap">{children}</div>;
-}
+import styled from "styled-components";
 
-export default Wrapper;
+const WrapDiv = styled.div`
+  width: 100%;
+  height: 100%;
+  background-image: url("${(props) => props.url || "none"}");
+  background-size: cover;
+`;
+
+export default WrapDiv;
