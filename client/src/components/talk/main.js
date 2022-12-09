@@ -4,14 +4,16 @@ import Content from "./content";
 
 const MainDiv = styled.div`
   witdh: 100%;
-  heigth: 100%;
-  padding: 0px 40px 0px 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 `;
-const Main = ({ logoImg, contentImg, title, content }) => {
+const Main = ({ addTalkIndex, logoImg, contentImg, title, content }) => {
   return (
     <MainDiv>
       <Logo url={logoImg}></Logo>
       <Content
+        addTalkIndex={addTalkIndex}
         contentImg={contentImg}
         title={title}
         content={content}

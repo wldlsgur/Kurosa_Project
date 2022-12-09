@@ -13,13 +13,13 @@ const talkData = [
   },
   {
     logoImg: "/assets/Images/talkLogo2.gif",
-    contentImg: "/assets/Images/talk2.gif",
+    contentImg: "/assets/Images/talk.png",
     title: "KUROSA",
     content: ["호오..?", "오랜만에 만나는 손님이군..", "근데 잠깐...!"],
   },
   {
     logoImg: "/assets/Images/talkLogo2.gif",
-    contentImg: "/assets/Images/talk2.gif",
+    contentImg: "/assets/Images/talk.png",
     title: "KUROSA",
     content: [
       "수천년간 점을 봐온 나 쿠로사! 딱 보면 알지..!",
@@ -28,7 +28,7 @@ const talkData = [
   },
   {
     logoImg: "/assets/Images/talkLogo2.gif",
-    contentImg: "/assets/Images/talk2.gif",
+    contentImg: "/assets/Images/talk.png",
     title: "YOU",
     content: [
       "(시간 낭비하기 전에 나가자...)",
@@ -37,13 +37,13 @@ const talkData = [
   },
   {
     logoImg: "/assets/Images/talkLogo2.gif",
-    contentImg: "/assets/Images/talk2.gif",
+    contentImg: "/assets/Images/talk.png",
     title: "KUROSA",
     content: [],
   },
   {
     logoImg: "/assets/Images/talkLogo2.gif",
-    contentImg: "/assets/Images/talk2.gif",
+    contentImg: "/assets/Images/talk.png",
     title: "YOU",
     content: [
       "어허 젊은이가 뭐가 그렇게 급한가! 그런 말도 있지 않은가?",
@@ -52,13 +52,13 @@ const talkData = [
   },
   {
     logoImg: "/assets/Images/talkLogo2.gif",
-    contentImg: "/assets/Images/talk2.gif",
+    contentImg: "/assets/Images/talk.png",
     title: "KUROSA",
     content: ["토끼가 나무에 왜 올라가...?"],
   },
   {
     logoImg: "/assets/Images/talkLogo2.gif",
-    contentImg: "/assets/Images/talk2.gif",
+    contentImg: "/assets/Images/talk.png",
     title: "YOU",
     content: [
       "흠흠.. 그게 중요한 게 아니고!",
@@ -68,7 +68,7 @@ const talkData = [
   },
   {
     logoImg: "/assets/Images/talkLogo2.gif",
-    contentImg: "/assets/Images/talk2.gif",
+    contentImg: "/assets/Images/talk.png",
     title: "KUROSA",
     content: [
       "행운 아이템?",

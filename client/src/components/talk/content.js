@@ -2,18 +2,19 @@ import styled from "styled-components";
 
 const ContentDiv = styled.div`
   witdh: 100%;
-  height: 100%;
+  flex: 1 1 60%;
   background-image: url(${(props) => props.url || "none"});
-  background-size: cover;
+  background-size: 100% 100%;
+  padding: 0px 40px 0px 40px;
 `;
 const TitleP = styled.p``;
 const ContentP = styled.p``;
 
-const Content = ({ contentImg, title, content }) => {
+const Content = ({ addTalkIndex, contentImg, title, content }) => {
   return (
-    <ContentDiv url={contentImg}>
-      <TitleP></TitleP>
-      <ContentP></ContentP>
+    <ContentDiv url={contentImg} onClick={addTalkIndex}>
+      <TitleP>{title}</TitleP>
+      <ContentP>{content}</ContentP>
     </ContentDiv>
   );
 };

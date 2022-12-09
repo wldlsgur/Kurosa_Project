@@ -1,15 +1,8 @@
-import style from "../../styles/common/footer.module.css";
-
-const Footer = () => {
-  return (
-    <div className={style.footer}>
-      <img
-        src="/assets/Images/logoHeader.gif"
-        alt="logoFooter"
-        className={style.footer__img}
-      ></img>
-    </div>
-  );
-};
+import styled from "styled-components";
+const Footer = styled.div`
+  width: 100%;
+  height: 100px;
+  background-image: url("/assets/Images/logoHeader.gif");
+`;
 
 export default Footer;

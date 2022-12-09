@@ -2,9 +2,11 @@ import Warring from "../components/main/Warring";
 import Logo from "../components/main/Logo";
 import Start from "../components/main/Start";
 import NotFound from "../components/common/NotFound";
-import style from "../styles/Main/main/main.module.css";
 import updateMainLogo from "../store/actions/main/mainLogo_Update";
 import { useSelector, useDispatch } from "react-redux";
+import WrapDiv from "../components/common/Wrapper";
+import Header from "../components/common/header";
+
 const Main = () => {
   const mainLogoRedux = useSelector((state) => state.mainLogoRedux);
   const dispatch = useDispatch();
@@ -12,29 +14,28 @@ const Main = () => {
   const changeLogo = (data) => {
     dispatch(updateMainLogo("logo"));
   };
-  const wrap = <div className={style.wrap}></div>;
 
   switch (mainLogoRedux.show) {
     case "warring":
       return (
-        <div className={style.wrap}>
+        <WrapDiv color="black">
           <Warring updateMain={changeLogo}></Warring>;
-        </div>
+        </WrapDiv>
       );
     case "logo":
       setTimeout(() => {
         dispatch(updateMainLogo("start"));
       }, 5000);
       return (
-        <div className={style.wrap}>
+        <WrapDiv color="black">
           <Logo></Logo>;
-        </div>
+        </WrapDiv>
       );
     case "start":
       return (
-        <div className={style.wrap}>
-          <Start></Start>;
-        </div>
+        <WrapDiv color="black">
+          <Header></Header>
+        </WrapDiv>
       );
     default:
       return <NotFound></NotFound>;

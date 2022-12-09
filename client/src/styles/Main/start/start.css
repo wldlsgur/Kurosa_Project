@@ -1,0 +1,30 @@
+.start {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.start > .circle {
+  width: 100%;
+  text-align: center;
+}
+.start > .circle > .circle__img {
+  width: 361px;
+  height: 362px;
+}
+.start > .bottom {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("/public/assets/Images/logoBackground.gif");
+  background-position: center;
+  background-size: cover;
+  margin-top: -50px;
+}
+.start > .bottom > .startBtn {
+  text-align: center;
+}
+.start > .bottom > .startBtn .startBtn__img {
+  width: 342px;
+  height: 100%;
+}/*# sourceMappingURL=start.css.map */

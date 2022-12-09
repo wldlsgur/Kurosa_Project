@@ -1,15 +1,16 @@
-import style from "../../styles/common/header.module.css";
-
+import styled from "styled-components";
+import headerImg from "/public/assets/Images/logoHeader.gif";
+const HeaderDiv = styled.div`
+  width: 100%;
+`;
+const HeaderImg = styled.img`
+  witdh: 100%;
+  object-fit: cover;
+`;
 const Header = () => {
-  return (
-    <div className={style.header}>
-      <img
-        src="/assets/Images/logoHeader.gif"
-        alt="logoHeader"
-        className={style.header__img}
-      ></img>
-    </div>
-  );
+  <HeaderDiv>
+    <HeaderImg src={headerImg}></HeaderImg>
+  </HeaderDiv>;
 };
 
 export default Header;
