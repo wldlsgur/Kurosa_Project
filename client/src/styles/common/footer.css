@@ -1,9 +1,0 @@
-.footer > .footer__img {
-  width: 100%;
-}
-
-@media (max-width: 500px) {
-  .footer > .footer__img {
-    height: 100px;
-  }
-}/*# sourceMappingURL=footer.css.map */

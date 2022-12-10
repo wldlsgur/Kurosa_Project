@@ -1,8 +1,20 @@
 import styled from "styled-components";
-const Footer = styled.div`
+
+const FooterDiv = styled.div`
   width: 100%;
   height: 100px;
-  background-image: url("/assets/Images/logoHeader.gif");
 `;
+const FooterImg = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+`;
+const Footer = () => {
+  return (
+    <FooterDiv>
+      <FooterImg src="/assets/Images/logoHeader.gif"></FooterImg>
+    </FooterDiv>
+  );
+};
 
 export default Footer;

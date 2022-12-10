@@ -35,6 +35,7 @@ const Main = () => {
       return (
         <WrapDiv color="black">
           <Header></Header>
+          <Start></Start>
         </WrapDiv>
       );
     default:
