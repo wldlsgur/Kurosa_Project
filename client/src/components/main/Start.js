@@ -4,30 +4,30 @@ import { Link } from "react-router-dom";
 //src="/assets/Images/logoCircle.png"
 //  src="/assets/Images/logoStart.png"
 //<Link to="/talk">
-const MainDiv = styled.div`
-  width: 100%;
-  height: 100%-100px;
-  display: flex;
-  flex-direction: column;
+const StartDiv = styled.div`
+  witdh: 100%;
+  height: 50%;
+  background-image: url("/assets/Images/logoBackground.gif");
+  background-size: 100% 100%;
+  text-align: center;
 `;
 
-const LogoDiv = styled.div``;
-const LogoImg = styled.img``;
-
-const StartDiv = styled.div``;
-const StartImg = styled.img``;
+const StartImgDiv = styled.div`
+  witdh: 100%;
+`;
+const StartImg = styled.img`
+  witdh: 200px;
+  height: 200px;
+`;
 
 const Start = () => {
   return (
-    <MainDiv>
-      <LogoDiv>
-        <LogoImg></LogoImg>
-      </LogoDiv>
-      <StartDiv>
-        <StartImg></StartImg>
-        <Footer></Footer>
-      </StartDiv>
-    </MainDiv>
+    <StartDiv>
+      <StartImgDiv>
+        <StartImg src={"/assets/Images/logoStart.png"}></StartImg>
+      </StartImgDiv>
+      <Footer></Footer>
+    </StartDiv>
   );
 };
 

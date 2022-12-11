@@ -6,6 +6,7 @@ import updateMainLogo from "../store/actions/main/mainLogo_Update";
 import { useSelector, useDispatch } from "react-redux";
 import WrapDiv from "../components/common/Wrapper";
 import Header from "../components/common/header";
+import StartLogo from "../components/main/StartLogo";
 
 const Main = () => {
   const mainLogoRedux = useSelector((state) => state.mainLogoRedux);
@@ -35,6 +36,7 @@ const Main = () => {
       return (
         <WrapDiv color="black">
           <Header></Header>
+          <StartLogo></StartLogo>
           <Start></Start>
         </WrapDiv>
       );
