@@ -1,12 +1,14 @@
 import styled from "styled-components";
 const LogoDiv = styled.div`
   witdh: 100%;
-  height: 40%;
-  text-align: center;
+  flex 1 1 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 const LogoImg = styled.img`
-  witdh: 200px;
-  height: 200px;
+  width: 261px;
+  height: 262px;
 `;
 
 const StartLogo = () => {

@@ -1,12 +1,21 @@
+import styled from "styled-components";
+import { useSelector, useDispatch } from "react-redux";
+// Component
 import Warring from "../components/main/Warring";
-import Logo from "../components/main/Logo";
 import Start from "../components/main/Start";
 import NotFound from "../components/common/NotFound";
-import updateMainLogo from "../store/actions/main/mainLogo_Update";
-import { useSelector, useDispatch } from "react-redux";
+import Logo from "../components/main/Logo";
+import StartLogo from "../components/main/StartLogo";
+
 import WrapDiv from "../components/common/Wrapper";
 import Header from "../components/common/header";
-import StartLogo from "../components/main/StartLogo";
+// redux
+import updateMainLogo from "../store/actions/main/mainLogo_Update";
+
+const StartWrap = styled(WrapDiv)`
+  display: flex;
+  flex-direction: column;
+`;
 
 const Main = () => {
   const mainLogoRedux = useSelector((state) => state.mainLogoRedux);
@@ -34,11 +43,11 @@ const Main = () => {
       );
     case "start":
       return (
-        <WrapDiv color="black">
+        <StartWrap color="black">
           <Header></Header>
           <StartLogo></StartLogo>
           <Start></Start>
-        </WrapDiv>
+        </StartWrap>
       );
     default:
       return <NotFound></NotFound>;
