@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const HeaderDiv = styled.div`
   width: 100%;
-  height: 100px;
+  height: 80px;
 `;
 const HeaderImg = styled.img`
   width: 100%;

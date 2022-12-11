@@ -6,6 +6,7 @@ const WrapDiv = styled.div`
   background-color: ${(props) => props.color || "none"};
   background-image: url("${(props) => props.url || "none"}");
   background-size: cover;
+  overflow: hidden;
 `;
 
 export default WrapDiv;

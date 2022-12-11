@@ -2,15 +2,31 @@ import styled from "styled-components";
 
 const ContentDiv = styled.div`
   witdh: 100%;
-  flex: 1 1 60%;
+  flex: 1 1 45%;
   background-image: url(${(props) => props.url || "none"});
   background-size: 100% 100%;
-  padding: 0px 40px 0px 40px;
 `;
-const TitleP = styled.p``;
-const ContentP = styled.p``;
+const TitleP = styled.p`
+  color: white;
+`;
+const ContentP = styled.p`
+  color: white;
+`;
 
-const Content = ({ addTalkIndex, contentImg, title, content }) => {
+const Content = ({ index, addTalkIndex, contentImg, title, content }) => {
+  if (index > 1) {
+    const ContentDiv2 = styled(ContentDiv)`
+      flex: 1 1 32.9%;
+      margin: 0px 9% 0px 9%;
+    `;
+    return (
+      <ContentDiv2 url={contentImg} onClick={addTalkIndex}>
+        <TitleP>{title}</TitleP>
+        <ContentP>{content}</ContentP>
+      </ContentDiv2>
+    );
+  }
+
   return (
     <ContentDiv url={contentImg} onClick={addTalkIndex}>
       <TitleP>{title}</TitleP>

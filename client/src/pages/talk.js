@@ -1,9 +1,19 @@
-import Footer from "../components/common/footer.js";
-import WrapDiv from "../components/common/Wrapper.js";
-import Main from "../components/talk/main.js";
-import talkData from "../utils/TalkData.js";
-import talkIndexAdd from "../store/actions/talk/talkIndex_Add";
 import { useSelector, useDispatch } from "react-redux";
+import styled from "styled-components";
+// Component
+import WrapDiv from "../components/common/Wrapper.js";
+import Content from "../components/talk/content.js";
+import Logo from "../components/talk/logo.js";
+import FooterDiv from "../components/common/TalkFooter.js";
+// redux
+import talkIndexAdd from "../store/actions/talk/talkIndex_Add";
+// data
+import talkData from "../utils/TalkData.js";
+
+const TalkWrap = styled(WrapDiv)`
+  display: flex;
+  flex-direction: column;
+`;
 
 const Talk = () => {
   const talkStateReducer = useSelector((state) => state.talkStateReducer);
@@ -15,28 +25,31 @@ const Talk = () => {
   };
   if (index > 1) {
     return (
-      <WrapDiv url={"/assets/Images/talkBackground.gif"}>
-        <Main
+      <TalkWrap url={"/assets/Images/talkBackground.gif"}>
+        <Logo url={talkData[index].logoImg} index={index}></Logo>
+        <Content
+          index={index}
           addTalkIndex={addTalkIndex}
-          logoImg={talkData[index].logoImg}
           contentImg={talkData[index].contentImg}
           title={talkData[index].title}
           content={talkData[index].content}
-        ></Main>
-        <Footer></Footer>
-      </WrapDiv>
+        ></Content>
+        <FooterDiv></FooterDiv>
+      </TalkWrap>
     );
   }
+
   return (
-    <WrapDiv url={"/assets/Images/talkBackground.gif"}>
-      <Main
+    <TalkWrap url={"/assets/Images/talkBackground.gif"}>
+      <Logo url={talkData[index].logoImg}></Logo>
+      <Content
+        index={index}
         addTalkIndex={addTalkIndex}
-        logoImg={talkData[index].logoImg}
         contentImg={talkData[index].contentImg}
         title={talkData[index].title}
         content={talkData[index].content}
-      ></Main>
-    </WrapDiv>
+      ></Content>
+    </TalkWrap>
   );
 };
 
