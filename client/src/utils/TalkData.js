@@ -39,12 +39,6 @@ const talkData = [
     logoImg: "/assets/Images/talkLogo2.gif",
     contentImg: "/assets/Images/talk.png",
     title: "KUROSA",
-    content: [],
-  },
-  {
-    logoImg: "/assets/Images/talkLogo2.gif",
-    contentImg: "/assets/Images/talk.png",
-    title: "YOU",
     content: [
       "어허 젊은이가 뭐가 그렇게 급한가! 그런 말도 있지 않은가?",
       "원숭이... 아니 토끼도 나무에서 떨어질 때가 있는 법!",
@@ -53,13 +47,13 @@ const talkData = [
   {
     logoImg: "/assets/Images/talkLogo2.gif",
     contentImg: "/assets/Images/talk.png",
-    title: "KUROSA",
+    title: "YOU",
     content: ["토끼가 나무에 왜 올라가...?"],
   },
   {
     logoImg: "/assets/Images/talkLogo2.gif",
     contentImg: "/assets/Images/talk.png",
-    title: "YOU",
+    title: "KUROSA",
     content: [
       "흠흠.. 그게 중요한 게 아니고!",
       "나의 PERPECT..한 능력으로 행운 아이템을 하나 알려 줄 수 있는데.....",
@@ -69,7 +63,7 @@ const talkData = [
   {
     logoImg: "/assets/Images/talkLogo2.gif",
     contentImg: "/assets/Images/talk.png",
-    title: "KUROSA",
+    title: "YOU",
     content: [
       "행운 아이템?",
       "(음............. 재미삼아 한번 볼까?)",

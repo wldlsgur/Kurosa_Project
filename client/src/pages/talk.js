@@ -4,7 +4,7 @@ import styled from "styled-components";
 import WrapDiv from "../components/common/Wrapper.js";
 import Content from "../components/talk/content.js";
 import Logo from "../components/talk/logo.js";
-import FooterDiv from "../components/common/TalkFooter.js";
+import Footer from "../components/common/footer.js";
 // redux
 import talkIndexAdd from "../store/actions/talk/talkIndex_Add";
 // data
@@ -34,7 +34,7 @@ const Talk = () => {
           title={talkData[index].title}
           content={talkData[index].content}
         ></Content>
-        <FooterDiv></FooterDiv>
+        <Footer></Footer>
       </TalkWrap>
     );
   }
