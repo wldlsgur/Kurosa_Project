@@ -15,7 +15,9 @@ const Warring = (props) => {
         type="button"
         value={warringBtn}
         className={style.warring__btn}
-        onClick={changeLogo}
+        onClick={() => {
+          changeLogo("logo");
+        }}
       ></input>
     </div>
   );

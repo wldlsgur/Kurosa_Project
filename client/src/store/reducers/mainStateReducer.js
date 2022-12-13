@@ -1,4 +1,4 @@
-const initState = { show: "warring" };
+const initState = { show: "language" };
 
 export default function mainLogoRedux(state = initState, action) {
   let copy = { ...state };

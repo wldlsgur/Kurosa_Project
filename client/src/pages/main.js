@@ -6,7 +6,7 @@ import Start from "../components/main/Start";
 import NotFound from "../components/common/NotFound";
 import Logo from "../components/main/Logo";
 import StartLogo from "../components/main/StartLogo";
-
+import Language from "../components/main/Language";
 import WrapDiv from "../components/common/Wrapper";
 import Header from "../components/common/header";
 // redux
@@ -21,11 +21,17 @@ const Main = () => {
   const mainLogoRedux = useSelector((state) => state.mainLogoRedux);
   const dispatch = useDispatch();
 
-  const changeLogo = (data) => {
-    dispatch(updateMainLogo("logo"));
+  const changeLogo = (show) => {
+    dispatch(updateMainLogo(show));
   };
 
   switch (mainLogoRedux.show) {
+    case "language":
+      return (
+        <WrapDiv color="black">
+          <Language updateMain={changeLogo}></Language>
+        </WrapDiv>
+      );
     case "warring":
       return (
         <WrapDiv color="black">
@@ -34,7 +40,7 @@ const Main = () => {
       );
     case "logo":
       setTimeout(() => {
-        dispatch(updateMainLogo("start"));
+        changeLogo("start");
       }, 5000);
       return (
         <WrapDiv color="black">
