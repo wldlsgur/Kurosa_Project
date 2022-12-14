@@ -10,6 +10,5 @@ export default function talkStateReducer(state = initState, action) {
     default:
       break;
   }
-  console.log(copy);
   return copy;
 }

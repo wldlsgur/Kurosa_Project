@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Footer from "../common/footer";
-import { Link } from "react-router-dom";
-//
+import { useNavigate } from "react-router-dom";
+
 const StartDiv = styled.div`
   witdh: 100%;
   background-image: url("/assets/Images/logoBackground.gif");
@@ -21,13 +21,21 @@ const StartImg = styled.img`
   height: 200px;
 `;
 
-const Start = () => {
+const Start = ({ toggleDot }) => {
+  const navigate = useNavigate();
+
   return (
     <StartDiv>
       <StartImgDiv>
-        <Link to="/talk">
-          <StartImg src={"/assets/Images/logoStart.png"}></StartImg>
-        </Link>
+        <StartImg
+          src={"/assets/Images/logoStart.png"}
+          onClick={() => {
+            toggleDot("block");
+            setTimeout(() => {
+              navigate("/talk", { replace: true });
+            }, 2000);
+          }}
+        ></StartImg>
       </StartImgDiv>
       <Footer></Footer>
     </StartDiv>
