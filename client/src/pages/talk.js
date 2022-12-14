@@ -13,6 +13,19 @@ import talkData from "../utils/TalkData.js";
 const TalkWrap = styled(WrapDiv)`
   display: flex;
   flex-direction: column;
+  animation-name: fadeOut;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  @keyframes fadeOut {
+    from {
+      background-color: white;
+    }
+    75% {
+      background-color: white;
+    }
+    to {
+      background-color: none;
+    }
 `;
 
 const Talk = () => {
