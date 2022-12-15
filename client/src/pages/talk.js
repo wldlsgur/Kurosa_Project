@@ -6,7 +6,11 @@ import Content from "../components/talk/content.js";
 import Logo from "../components/talk/logo.js";
 import Footer from "../components/common/footer.js";
 // redux
-import talkIndexAdd from "../store/actions/talk/talkIndex_Add";
+import {
+  talkIndexAdd,
+  ContentPush,
+  ContenInit,
+} from "../store/actions/talk/talkIndex_Add";
 // data
 import talkData from "../utils/TalkData.js";
 
@@ -14,18 +18,15 @@ const TalkWrap = styled(WrapDiv)`
   display: flex;
   flex-direction: column;
   animation-name: fadeOut;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
+  animation-duration: 4s;
   @keyframes fadeOut {
     from {
-      background-color: white;
-    }
-    75% {
-      background-color: white;
+      opacity: 0;
     }
     to {
-      background-color: none;
+      opacity: 1;
     }
+  }
 `;
 
 const Talk = () => {
