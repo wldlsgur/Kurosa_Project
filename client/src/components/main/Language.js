@@ -4,11 +4,15 @@ const LaguageDiv = styled.div`
   witdh: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 `;
 const KoreaP = styled.button`
-  font-family: "JF Dot Kappa 20 0213";
+  @font-face {
+    font-family: "Ycomputer";
+    src: url("/public/assets/Font/Ycomputer.ttf") format("truetype");
+  }
+  font-family: "Ycomputer";
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -16,9 +20,14 @@ const KoreaP = styled.button`
   color: #00ff00;
   background: none;
   border: none;
+  margin: 10%;
 `;
 const JapanP = styled.button`
-  font-family: "Ycomputer";
+  @font-face {
+    font-family: "JFDotKappa200213";
+    src: url("/public/assets/Font/JFDotKappa200213.ttf") format("truetype");
+  }
+  font-family: "JJFDotKappa200213";
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -26,6 +35,7 @@ const JapanP = styled.button`
   color: #00ff00;
   background: none;
   border: none;
+  margin: 10%;
 `;
 
 const Laguage = ({ updateMain }) => {

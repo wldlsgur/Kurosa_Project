@@ -1,5 +1,7 @@
+import { useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import styled from "styled-components";
+
 // Component
 import WrapDiv from "../components/common/Wrapper.js";
 import Content from "../components/talk/content.js";
@@ -32,12 +34,22 @@ const TalkWrap = styled(WrapDiv)`
 const Talk = () => {
   const talkStateReducer = useSelector((state) => state.talkStateReducer);
   const dispatch = useDispatch();
-  let index = talkStateReducer.index;
+  const contentIndex = useRef(0);
+  let { index, content } = talkStateReducer;
 
-  const addTalkIndex = (data) => {
-    dispatch(talkIndexAdd());
+  const addTalkIndex = (e) => {
+    let contentData = talkData[index].content[contentIndex.current];
+    if (!contentData) {
+      contentIndex.current = 0;
+      dispatch(talkIndexAdd());
+      dispatch(ContenInit());
+      return;
+    }
+    dispatch(ContentPush(contentData));
+    contentIndex.current++;
   };
-  if (index > 1) {
+
+  if (talkData[index].content && talkData[index].title) {
     return (
       <TalkWrap url={"/assets/Images/talkBackground.gif"}>
         <Logo url={talkData[index].logoImg} index={index}></Logo>
@@ -46,7 +58,7 @@ const Talk = () => {
           addTalkIndex={addTalkIndex}
           contentImg={talkData[index].contentImg}
           title={talkData[index].title}
-          content={talkData[index].content}
+          content={content}
         ></Content>
         <Footer></Footer>
       </TalkWrap>
