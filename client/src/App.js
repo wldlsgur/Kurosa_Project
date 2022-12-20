@@ -6,6 +6,7 @@ import rootReducer from "./store/RootReducer";
 import Main from "./pages/main";
 import Talk from "./pages/talk";
 import NotFound from "./components/common/NotFound";
+import Qna from "./pages/qna";
 
 const store = createStore(rootReducer);
 
@@ -18,6 +19,7 @@ function App() {
             <Route path="/" element={<Main />} exact={true}></Route>
             <Route path="/talk" element={<Talk />} exact={true}></Route>
             <Route path="*" element={<NotFound />}></Route>
+            <Route path="/qna" element={<Qna />}></Route>
           </Routes>
         </Provider>
       </BrowserRouter>
