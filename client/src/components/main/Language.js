@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import i18n from "../../utils/i18n";
 
 const LaguageDiv = styled.div`
   witdh: 100%;
@@ -43,6 +44,7 @@ const Laguage = ({ updateMain }) => {
     <LaguageDiv>
       <KoreaP
         onClick={() => {
+          i18n.changeLanguage("kr");
           updateMain("warring");
         }}
       >
@@ -50,6 +52,7 @@ const Laguage = ({ updateMain }) => {
       </KoreaP>
       <JapanP
         onClick={() => {
+          i18n.changeLanguage("jp");
           updateMain("warring");
         }}
       >

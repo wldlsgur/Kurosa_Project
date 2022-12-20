@@ -14,7 +14,7 @@ import {
   ContenInit,
 } from "../store/actions/talk/talkIndex_Add";
 // data
-import talkData from "../utils/TalkData.js";
+import talkData from "../utils/TalkDataKor.js";
 
 const TalkWrap = styled(WrapDiv)`
   display: flex;
@@ -39,6 +39,7 @@ const Talk = () => {
 
   const addTalkIndex = (e) => {
     let contentData = talkData[index].content[contentIndex.current];
+
     if (!contentData) {
       contentIndex.current = 0;
       dispatch(talkIndexAdd());
@@ -54,6 +55,8 @@ const Talk = () => {
       <TalkWrap url={"/assets/Images/talkBackground.gif"}>
         <Logo url={talkData[index].logoImg} index={index}></Logo>
         <Content
+          lastIndex={contentIndex}
+          talkData={talkData}
           index={index}
           addTalkIndex={addTalkIndex}
           contentImg={talkData[index].contentImg}

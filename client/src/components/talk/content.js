@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
 
 const ContentDiv = styled.div`
   witdh: 100%;
@@ -32,22 +33,43 @@ const ContentP = styled.p`
   line-height: 26px;
   padding: 0 14% 0 0;
 `;
-
 const ContentListDiv = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 `;
+const ContentDiv2 = styled(ContentDiv)`
+  flex: 1 1 32.9%;
+  margin: 0px 9% 0px 9%;
+`;
 
-const Content = ({ index, addTalkIndex, contentImg, title, content }) => {
+const Content = ({
+  lastIndex,
+  talkData,
+  index,
+  addTalkIndex,
+  contentImg,
+  title,
+  content,
+}) => {
+  const navigate = useNavigate();
+
   if (index > 1) {
-    const ContentDiv2 = styled(ContentDiv)`
-      flex: 1 1 32.9%;
-      margin: 0px 9% 0px 9%;
-    `;
     return (
-      <ContentDiv2 url={contentImg} onClick={addTalkIndex}>
+      <ContentDiv2
+        url={contentImg}
+        onClick={() => {
+          let length = talkData.length - 1;
+          if (
+            length === index &&
+            talkData[length].content.length === lastIndex.current
+          ) {
+            return navigate("/qna", { replace: true });
+          }
+          addTalkIndex();
+        }}
+      >
         <TitleP>{title}</TitleP>
         <ContentListDiv>
           {content.map((value, index) => {
