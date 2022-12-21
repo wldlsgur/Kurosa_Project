@@ -30,13 +30,14 @@ function Qna() {
 
     return (
         <QnaWrap url={"/assets/Images/talkBackground.gif"}>      
-            {viewcontrol? <>
-                    <QnaImg url={qnaData[index].imgsrc}></QnaImg>
-                    <Question key={index} item={qnaData[index]} pathSet={pathSet}></Question>
+            {viewcontrol? 
+                <>
+                  <QnaImg url={qnaData[index].imgsrc}></QnaImg>
+                  <Question key={index} item={qnaData[index]} pathSet={pathSet}></Question>
                 </>
                 :
                 <>
-                    <Answer item={qnaData[index].talk} path={path} indexAdd={indexAdd} controlView={controlView} ></Answer>
+                  <Answer index={index} item={qnaData[index].talk} path={path} indexAdd={indexAdd} controlView={controlView} ></Answer>
                 </>
             }
         </QnaWrap>
@@ -46,8 +47,7 @@ function Qna() {
 const QnaWrap = styled(Wrapper)`
     display: flex;
     flex-direction: column;
-    height: 100%;
-`
+`;
 
 
 export default Qna;

@@ -1,6 +1,14 @@
 import styled from "styled-components";
 
 function QnaImg({ url }) {
+    if(url === "/assets/Images/talkLogo2.gif"){
+        return (
+            <ImgDiv>
+                <Img src={url}></Img>
+            </ImgDiv>
+        )
+    }
+
     return (
         <ImgDiv>
             <FrameDiv url="/assets/Qnaimges/qna-frame.png">
@@ -21,17 +29,19 @@ const ImgDiv = styled.div`
 `;
 
 const Img = styled.img`
-  width: 320px;
-  height: 225px;
+  width: 310px;
+  height: 215px;
   object-fit: cover;
 `;
 
 const FrameDiv = styled.div`
   width: 320px;
   height: 225px;
-  object-fit: cover;
   background-image: url("${(props) => props.url || "none"}");
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export default QnaImg;
