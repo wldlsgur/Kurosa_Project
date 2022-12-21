@@ -1,14 +1,13 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import WarringDataKor from "./WarringDataKor";
-import WarringDataJp from "./WarringDataJp";
+import { kor, jp } from "./Language";
 
 const resource = {
   kr: {
-    translation: WarringDataKor,
+    translation: kor,
   },
   jp: {
-    translation: WarringDataJp,
+    translation: jp,
   },
 };
 i18n.use(initReactI18next).init({

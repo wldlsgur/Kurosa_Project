@@ -1,49 +1,6 @@
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 
-const ContentDiv = styled.div`
-  witdh: 100%;
-  flex: 1 1 45%;
-  background-image: url(${(props) => props.url || "none"});
-  background-size: 100% 100%;
-  display: flex;
-  flex-direction: column;
-  overflow: auto;
-  padding-left: 5%;
-`;
-const TitleP = styled.p`
-  @font-face {
-    font-family: "Ycomputer";
-    src: url("/public/assets/Font/Ycomputer.ttf") format("truetype");
-  }
-  font-family: "Ycomputer";
-  color: #00ff00;
-  font-size: 32px;
-  line-height: 46px;
-  flex-basis: 18%;
-`;
-const ContentP = styled.p`
-  @font-face {
-    font-family: "Ycomputer";
-    src: url("/public/assets/Font/Ycomputer.ttf") format("truetype");
-  }
-  font-family: "Ycomputer";
-  color: #00ff00;
-  font-size: 23px;
-  line-height: 26px;
-  padding: 0 14% 0 0;
-`;
-const ContentListDiv = styled.div`
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-`;
-const ContentDiv2 = styled(ContentDiv)`
-  flex: 1 1 32.9%;
-  margin: 0px 9% 0px 9%;
-`;
-
 const Content = ({
   lastIndex,
   talkData,
@@ -87,5 +44,46 @@ const Content = ({
     </ContentDiv>
   );
 };
-
+const ContentDiv = styled.div`
+  witdh: 100%;
+  flex: 1 1 45%;
+  background-image: url(${(props) => props.url || "none"});
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  padding-left: 5%;
+`;
+const TitleP = styled.p`
+  @font-face {
+    font-family: "Ycomputer";
+    src: url("/public/assets/Font/Ycomputer.ttf") format("truetype");
+  }
+  font-family: "Ycomputer";
+  color: #00ff00;
+  font-size: 32px;
+  line-height: 46px;
+  flex-basis: 18%;
+`;
+const ContentP = styled.p`
+  @font-face {
+    font-family: "Ycomputer";
+    src: url("/public/assets/Font/Ycomputer.ttf") format("truetype");
+  }
+  font-family: "Ycomputer";
+  color: #00ff00;
+  font-size: 23px;
+  line-height: 26px;
+  padding: 0 14% 0 0;
+`;
+const ContentListDiv = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+`;
+const ContentDiv2 = styled(ContentDiv)`
+  flex: 1 1 32.9%;
+  margin: 0px 9% 0px 9%;
+`;
 export default Content;

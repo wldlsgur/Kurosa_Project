@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 
 // Component
 import WrapDiv from "../components/common/Wrapper.js";
@@ -16,30 +17,17 @@ import {
 // data
 import talkData from "../utils/TalkDataKor.js";
 
-const TalkWrap = styled(WrapDiv)`
-  display: flex;
-  flex-direction: column;
-  animation-name: fadeOut;
-  animation-duration: 4s;
-  @keyframes fadeOut {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-`;
-
 const Talk = () => {
+  const { t, i18n } = useTranslation();
   const talkStateReducer = useSelector((state) => state.talkStateReducer);
   const dispatch = useDispatch();
+
   const contentIndex = useRef(0);
-  let { index, content } = talkStateReducer;
+  const { index, content } = talkStateReducer;
+  const talk = t("talk", { returnObjects: true });
 
   const addTalkIndex = (e) => {
-    let contentData = talkData[index].content[contentIndex.current];
-
+    let contentData = t(talk[index].content[contentIndex.current]);
     if (!contentData) {
       contentIndex.current = 0;
       dispatch(talkIndexAdd());
@@ -48,12 +36,12 @@ const Talk = () => {
     }
     dispatch(ContentPush(contentData));
     contentIndex.current++;
-  };
+  }; //클릭 이벤트
 
-  if (talkData[index].content && talkData[index].title) {
+  if (t(talk[index].content[0]) && t(talk[index].title)) {
     return (
       <TalkWrap url={"/assets/Images/talkBackground.gif"}>
-        <Logo url={talkData[index].logoImg} index={index}></Logo>
+        <Logo url={t(talk[index].logoImg)} index={index}></Logo>
         <Content
           lastIndex={contentIndex}
           talkData={talkData}
@@ -70,16 +58,30 @@ const Talk = () => {
 
   return (
     <TalkWrap url={"/assets/Images/talkBackground.gif"}>
-      <Logo url={talkData[index].logoImg}></Logo>
+      <Logo url={t(talk[index].logoImg)}></Logo>
       <Content
         index={index}
         addTalkIndex={addTalkIndex}
-        contentImg={talkData[index].contentImg}
-        title={talkData[index].title}
-        content={talkData[index].content}
+        contentImg={t(talk[index].contentImg)}
+        title={t(talk[index].title)}
+        content={content}
       ></Content>
     </TalkWrap>
   );
 };
 
+const TalkWrap = styled(WrapDiv)`
+  display: flex;
+  flex-direction: column;
+  animation-name: fadeOut;
+  animation-duration: 4s;
+  @keyframes fadeOut {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+`;
 export default Talk;

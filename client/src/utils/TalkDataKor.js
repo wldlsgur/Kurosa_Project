@@ -1,4 +1,4 @@
-const talkData = [
+const talkDataKr = [
   {
     logoImg: "/assets/Images/talkLogo1.gif",
     contentImg: "/assets/Images/talk1.gif",
@@ -72,4 +72,4 @@ const talkData = [
   },
 ];
 
-export default talkData;
+export default talkDataKr;
