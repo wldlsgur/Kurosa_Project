@@ -33,7 +33,7 @@ function Qna() {
             {viewcontrol? 
                 <>
                   <QnaImg url={qnaData[index].imgsrc}></QnaImg>
-                  <Question key={index} item={qnaData[index]} pathSet={pathSet}></Question>
+                  <Question item={qnaData[index]} pathSet={pathSet}></Question>
                 </>
                 :
                 <>

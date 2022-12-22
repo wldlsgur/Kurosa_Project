@@ -10,15 +10,18 @@ function Answer( {index, item, path, indexAdd, controlView} ) {
     const content =  item[path].content[tidx];
     const imgsrc =  item[path].talkimg[tidx];
     
+    
+
     const contentClick = () =>{
         if( item[path].who.length === tidx+1){
             indexAdd();
             controlView();
         }
         else{
-            setTidx(tidx+1)
+            setTidx(tidx+1);
         }
     }
+
     if(index === 3 && tidx === 0){
         return(
             <GlitchD onAnimationEnd={contentClick}></GlitchD>
@@ -109,7 +112,7 @@ const ADiv = styled.div`
 const AWho = styled.p`
   @font-face {
     font-family: "Ycomputer";
-    src: url("/public/assets/Font/Ycomputer.ttf") format("truetype");
+    src: url("/assets/Font/Ycomputer.ttf") format("truetype");
   }
   font-family: "Ycomputer";
   color: #00ff00;
@@ -128,7 +131,7 @@ const AContentDiv = styled.div`
 const AContentP = styled.p`
   @font-face {
     font-family: "Ycomputer";
-    src: url("/public/assets/Font/Ycomputer.ttf") format("truetype");
+    src: url("/assets/Font/Ycomputer.ttf") format("truetype");
   }
   font-family: "Ycomputer";
   color: #00ff00;

@@ -101,19 +101,19 @@ const qna = [
     imgsrc: "/assets/Qnaimges/qna4.gif",
     talk: [
       {
-        who: ["You"],
-        content: ["아야!\n\n잠시 추억을 회상하며 걷고 있는데,\n어디선가 날아온 돌에 맞았다..!"],
-        talkimg: ["/assets/Qnaimges/qna4-1.gif"],
+        who: ["","You"],
+        content: ["","아야!\n\n잠시 추억을 회상하며 걷고 있는데,\n어디선가 날아온 돌에 맞았다..!"],
+        talkimg: ["","/assets/Qnaimges/qna4-1.gif"],
       },
       {
-        who: ["You"],
-        content: ["아야!\n\n잠시 추억을 회상하며 걷고 있는데,\n어디선가 날아온 돌에 맞았다..!"],
-        talkimg: ["/assets/Qnaimges/qna4-1.gif"],
+        who: ["","You"],
+        content: ["","아야!\n\n잠시 추억을 회상하며 걷고 있는데,\n어디선가 날아온 돌에 맞았다..!"],
+        talkimg: ["","/assets/Qnaimges/qna4-1.gif"],
       },
       {
-        who: ["You"],
-        content: ["아야!\n\n잠시 추억을 회상하며 걷고 있는데,\n어디선가 날아온 돌에 맞았다..!"],
-        talkimg: ["/assets/Qnaimges/qna4-1.gif"],
+        who: ["","You"],
+        content: ["","아야!\n\n잠시 추억을 회상하며 걷고 있는데,\n어디선가 날아온 돌에 맞았다..!"],
+        talkimg: ["","/assets/Qnaimges/qna4-1.gif"],
       }
     ],
   },
@@ -124,7 +124,7 @@ const qna = [
       "맞은 부위를 연신 문지르며 있는 힘껏 앙앙 운다.",
       "내 추억을 깨다니! 주변에 있는 돌멩이를 마구잡이로 던진다."
     ],
-    imgsrc: "/assets/Qnaimges/qna4.gif",
+    imgsrc: "/assets/Qnaimges/qna4-1.gif",
     talk: [
       {
         who: ["You", "You"],
@@ -179,7 +179,7 @@ const qna = [
     imgsrc: "/assets/Qnaimges/qna7.gif",
     talk: [
       {
-        who: ["햄찌", "You", "You", "햄찌", "You", "햄찌", "햄찌", "You","햄찌","햄찌","햄찌","햄찌"],
+        who: ["햄찌", "You", "You", "햄찌", "You", "햄찌", "햄찌", "You","햄찌","햄찌","햄찌","햄찌", "You"],
         content: [
           "히히~ 고마워!\n\n얼른 같이 가찌!", 
           "작은 영혼이 나를 바다로 안내했다...\n\n탁 트인 바닷가 풍경에 마음이 괜히 뭉클해진다.",
@@ -192,7 +192,8 @@ const qna = [
           "아앗.....\n\n그건 정말 미안해...!\n\n아무리 불러도 내 목소리가 안 들리는 거 같아서 어쩔 수 없었찌 모야..!",
           "내가 대신 좋은 정보를 알려줄게!",
           "여기서 다섯 발자국만 더 가면 소원을 들어주는 바다로 갈 수 있찌!\n\n한번 바다에 기도해봐~\n\n이뤄질 찌 모르잖아?",
-          "히히! 난 다시 일하러 가야해서 이만 가볼게..!\n\n안녕~ 돌 던진 건 미안해찌!"
+          "히히! 난 다시 일하러 가야해서 이만 가볼게..!\n\n안녕~ 돌 던진 건 미안해찌!",
+          "햄찌가 안내한 방향으로 당신은 걸어간다."
         ],
         talkimg: [
           "/assets/Qnaimges/qna6-a.gif",
@@ -206,11 +207,12 @@ const qna = [
           "/assets/Qnaimges/qna8-2.gif",
           "/assets/Qnaimges/qna8-2.gif",
           "/assets/Qnaimges/qna8-1.gif",
-          "/assets/Qnaimges/qna8-2.gif"
+          "/assets/Qnaimges/qna8-2.gif",
+          ""
         ],
       },
       {
-        who: ["You", "You", "You", "햄찌", "You", "햄찌", "햄찌", "You","햄찌","햄찌","햄찌","햄찌"],
+        who: ["You", "You", "You", "햄찌", "You", "햄찌", "햄찌", "You","햄찌","햄찌","햄찌","햄찌", "You"],
         content: [
             "히히~ 고마워!\n\n얼른 같이 가찌!", 
             "작은 영혼이 나를 바다로 안내했다...\n\n탁 트인 바닷가 풍경에 마음이 괜히 뭉클해진다.",
@@ -223,7 +225,8 @@ const qna = [
             "아앗.....\n\n그건 정말 미안해...!\n\n아무리 불러도 내 목소리가 안 들리는 거 같아서 어쩔 수 없었찌 모야..!",
             "내가 대신 좋은 정보를 알려줄게!",
             "여기서 다섯 발자국만 더 가면 소원을 들어주는 바다로 갈 수 있찌!\n\n한번 바다에 기도해봐~\n\n이뤄질 찌 모르잖아?",
-            "히히! 난 다시 일하러 가야해서 이만 가볼게..!\n\n안녕~ 돌 던진 건 미안해찌!"
+            "히히! 난 다시 일하러 가야해서 이만 가볼게..!\n\n안녕~ 돌 던진 건 미안해찌!",
+            "햄찌가 안내한 방향으로 당신은 걸어간다."
           ],
           talkimg: [
             "/assets/Qnaimges/qna6-c.gif",
@@ -237,11 +240,12 @@ const qna = [
             "/assets/Qnaimges/qna8-2.gif",
             "/assets/Qnaimges/qna8-2.gif",
             "/assets/Qnaimges/qna8-1.gif",
-            "/assets/Qnaimges/qna8-2.gif"
+            "/assets/Qnaimges/qna8-2.gif",
+            ""
           ],
       },
       {
-        who: ["You", "You", "You", "햄찌", "You", "햄찌", "햄찌", "You","햄찌","햄찌","햄찌","햄찌"],
+        who: ["You", "You", "You", "햄찌", "You", "햄찌", "햄찌", "You","햄찌","햄찌","햄찌","햄찌", "You"],
         content: [
             "히히~ 고마워!\n\n얼른 같이 가찌!", 
             "작은 영혼이 나를 바다로 안내했다...\n\n탁 트인 바닷가 풍경에 마음이 괜히 뭉클해진다.",
@@ -254,7 +258,8 @@ const qna = [
             "아앗.....\n\n그건 정말 미안해...!\n\n아무리 불러도 내 목소리가 안 들리는 거 같아서 어쩔 수 없었찌 모야..!",
             "내가 대신 좋은 정보를 알려줄게!",
             "여기서 다섯 발자국만 더 가면 소원을 들어주는 바다로 갈 수 있찌!\n\n한번 바다에 기도해봐~\n\n이뤄질 찌 모르잖아?",
-            "히히! 난 다시 일하러 가야해서 이만 가볼게..!\n\n안녕~ 돌 던진 건 미안해찌!"
+            "히히! 난 다시 일하러 가야해서 이만 가볼게..!\n\n안녕~ 돌 던진 건 미안해찌!",
+            "햄찌가 안내한 방향으로 당신은 걸어간다."
           ],
           talkimg: [
             "/assets/Qnaimges/qna6-b.gif",
@@ -268,7 +273,8 @@ const qna = [
             "/assets/Qnaimges/qna8-2.gif",
             "/assets/Qnaimges/qna8-2.gif",
             "/assets/Qnaimges/qna8-1.gif",
-            "/assets/Qnaimges/qna8-2.gif"
+            "/assets/Qnaimges/qna8-2.gif",
+            ""
           ],
       }
     ],

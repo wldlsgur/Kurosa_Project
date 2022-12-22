@@ -18,7 +18,7 @@ function Qusetion( {item, pathSet} ) {
             </div>
             {
                 answer.map((item, idx) => 
-                    <div><QContentP onClick={() => questionClick(idx)} key={idx} >{item}</QContentP></div>
+                    <div key={idx}><QContentP onClick={() => questionClick(idx)}>{item}</QContentP></div>
                 )
             }
         </QDiv>
@@ -32,7 +32,7 @@ const QDiv = styled.div`
   background-image: url("/assets/Qnaimges/question.png");
   background-size: 100% 100%;
   overflow: hidden;
-  padding : 4% 6% 0 5%;
+  padding : 4% 6% 0 6%;
   
   display: grid;
   grid-template-columns: 7% 90%;

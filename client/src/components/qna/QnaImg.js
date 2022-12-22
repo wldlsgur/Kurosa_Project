@@ -8,7 +8,12 @@ function QnaImg({ url }) {
             </ImgDiv>
         )
     }
-
+    if(url === ""){
+        return (
+            <ImgDiv>
+            </ImgDiv>
+        )
+    }
     return (
         <ImgDiv>
             <FrameDiv url="/assets/Qnaimges/qna-frame.png">
