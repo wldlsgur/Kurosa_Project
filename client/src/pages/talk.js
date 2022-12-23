@@ -41,14 +41,14 @@ const Talk = () => {
   if (t(talk[index].content[0]) && t(talk[index].title)) {
     return (
       <TalkWrap url={"/assets/Images/talkBackground.gif"}>
-        <Logo url={t(talk[index].logoImg)} index={index}></Logo>
+        <Logo url={t(talk[index].logoImg)} title={t(talk[index].title)}></Logo>
         <Content
           lastIndex={contentIndex}
           talkData={talkData}
           index={index}
           addTalkIndex={addTalkIndex}
-          contentImg={talkData[index].contentImg}
-          title={talkData[index].title}
+          contentImg={t(talk[index].contentImg)}
+          title={t(talk[index].title)}
           content={content}
         ></Content>
         <Footer></Footer>

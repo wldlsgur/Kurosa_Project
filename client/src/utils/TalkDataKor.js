@@ -70,6 +70,12 @@ const talkDataKr = [
       "네, 좋아요!",
     ],
   },
+  {
+    logoImg: "/assets/Images/talkLogo2.gif",
+    contentImg: "/assets/Images/talk.png",
+    title: "KUROSA",
+    content: ["좋아~ 좋아~", "그럼 가보자고!"],
+  },
 ];
 
 export default talkDataKr;

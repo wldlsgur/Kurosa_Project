@@ -40,7 +40,7 @@ const Main = () => {
     case "warring":
       return (
         <WrapDiv color="black">
-          <Warring updateMain={changeLogo}></Warring>;
+          <Warring updateMain={changeLogo}></Warring>
         </WrapDiv>
       );
     case "logo":
@@ -49,7 +49,7 @@ const Main = () => {
       }, 5000);
       return (
         <WrapDiv color="black">
-          <Logo></Logo>;
+          <Logo></Logo>
         </WrapDiv>
       );
     case "start":

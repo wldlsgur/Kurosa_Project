@@ -5,8 +5,12 @@ const WrapDiv = styled.div`
   height: 100%;
   background-color: ${(props) => props.color || "none"};
   background-image: url("${(props) => props.url || "none"}");
-  background-size: cover;
-  overflow: hidden;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  overflow: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 export default WrapDiv;

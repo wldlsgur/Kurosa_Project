@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 const LogoDiv = styled.div`
   width: 100%;
   flex: 1 1 55%;
@@ -11,11 +12,18 @@ const LogoImg = styled.img`
   height: 232px;
   object-fit: cover;
 `;
+const YouLogoImg = styled(LogoImg)`
+  opacity: 0.5;
+`;
 
-const Logo = ({ index, url }) => {
+const Logo = ({ url, title }) => {
   return (
     <LogoDiv>
-      <LogoImg src={url}></LogoImg>
+      {title === "YOU" || title === "占い師うさ" ? (
+        <YouLogoImg src={url}></YouLogoImg>
+      ) : (
+        <LogoImg src={url}></LogoImg>
+      )}
     </LogoDiv>
   );
 };

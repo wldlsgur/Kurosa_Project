@@ -61,7 +61,7 @@ const TitleP = styled.p`
   }
   font-family: "Ycomputer";
   color: #00ff00;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 46px;
   flex-basis: 18%;
 `;
