@@ -2,13 +2,13 @@
 import WrapDiv from "../components/common/Wrapper";
 import Header from "../components/common/header";
 import Footer from "../components/common/footer";
-import ItemImg from "../components/result/itemImg";
+import Item from "../components/result/item";
 
 const ResultPage = () => {
   return (
     <WrapDiv url={"/assets/Images/talkBackground.gif"}>
       <Header></Header>
-      <ItemImg url={"/assets/Images/logoCircle.png"}></ItemImg>
+      <Item></Item>
     </WrapDiv>
   );
 };
