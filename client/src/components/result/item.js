@@ -1,12 +1,17 @@
 import styled from "styled-components";
 import ItemImg from "./itemImg";
 import ItemInfo from "./itemInfo";
+import { useTranslation } from "react-i18next";
 
 const Item = () => {
+  const { t, i18n } = useTranslation();
+  const index = Math.floor(Math.random() * (10 - 0));
+  const result = t("result", { returnObjects: true });
+
   return (
     <ItemDiv>
-      <ItemImg></ItemImg>
-      <ItemInfo></ItemInfo>
+      <ItemImg url={t(result[index].img)}></ItemImg>
+      <ItemInfo info={result[index].info}></ItemInfo>
     </ItemDiv>
   );
 };

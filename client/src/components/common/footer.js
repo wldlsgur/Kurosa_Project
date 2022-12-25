@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const FooterDiv = styled.div`
   width: 100%;
-  height: 80px;
+  height: 90px;
 `;
 const FooterImg = styled.img`
   width: 100%;
