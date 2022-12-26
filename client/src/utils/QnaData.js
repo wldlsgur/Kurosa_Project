@@ -179,7 +179,7 @@ const qna = [
     imgsrc: "/assets/Qnaimges/qna7.gif",
     talk: [
       {
-        who: ["햄찌", "You", "You", "햄찌", "You", "햄찌", "햄찌", "You","햄찌","햄찌","햄찌","햄찌", "You"],
+        who: ["햄찌", "You", "You", "햄찌", "You", "햄찌", "햄찌", "You","햄찌","햄찌","햄찌","햄찌", "You", "", "", "", "", "", ""],
         content: [
           "히히~ 고마워!\n\n얼른 같이 가찌!", 
           "작은 영혼이 나를 바다로 안내했다...\n\n탁 트인 바닷가 풍경에 마음이 괜히 뭉클해진다.",
@@ -193,7 +193,7 @@ const qna = [
           "내가 대신 좋은 정보를 알려줄게!",
           "여기서 다섯 발자국만 더 가면 소원을 들어주는 바다로 갈 수 있찌!\n\n한번 바다에 기도해봐~\n\n이뤄질 찌 모르잖아?",
           "히히! 난 다시 일하러 가야해서 이만 가볼게..!\n\n안녕~ 돌 던진 건 미안해찌!",
-          "햄찌가 안내한 방향으로 당신은 걸어간다."
+          "햄찌가 안내한 방향으로 당신은 걸어간다.",
         ],
         talkimg: [
           "/assets/Qnaimges/qna6-a.gif",
@@ -208,11 +208,17 @@ const qna = [
           "/assets/Qnaimges/qna8-2.gif",
           "/assets/Qnaimges/qna8-1.gif",
           "/assets/Qnaimges/qna8-2.gif",
-          ""
+          "",
+          "/assets/Qnaimges/footprint-0.gif",
+          "/assets/Qnaimges/footprint-1.gif",
+          "/assets/Qnaimges/footprint-2.gif",
+          "/assets/Qnaimges/footprint-3.gif",
+          "/assets/Qnaimges/footprint-4.gif",
+          "/assets/Qnaimges/footprint-5.gif"
         ],
       },
       {
-        who: ["You", "You", "You", "햄찌", "You", "햄찌", "햄찌", "You","햄찌","햄찌","햄찌","햄찌", "You"],
+        who: ["You", "You", "You", "햄찌", "You", "햄찌", "햄찌", "You","햄찌","햄찌","햄찌","햄찌", "You", "", "", "", "", "", ""],
         content: [
             "히히~ 고마워!\n\n얼른 같이 가찌!", 
             "작은 영혼이 나를 바다로 안내했다...\n\n탁 트인 바닷가 풍경에 마음이 괜히 뭉클해진다.",
@@ -226,7 +232,7 @@ const qna = [
             "내가 대신 좋은 정보를 알려줄게!",
             "여기서 다섯 발자국만 더 가면 소원을 들어주는 바다로 갈 수 있찌!\n\n한번 바다에 기도해봐~\n\n이뤄질 찌 모르잖아?",
             "히히! 난 다시 일하러 가야해서 이만 가볼게..!\n\n안녕~ 돌 던진 건 미안해찌!",
-            "햄찌가 안내한 방향으로 당신은 걸어간다."
+            "햄찌가 안내한 방향으로 당신은 걸어간다.",
           ],
           talkimg: [
             "/assets/Qnaimges/qna6-c.gif",
@@ -241,11 +247,17 @@ const qna = [
             "/assets/Qnaimges/qna8-2.gif",
             "/assets/Qnaimges/qna8-1.gif",
             "/assets/Qnaimges/qna8-2.gif",
-            ""
+            "",
+            "/assets/Qnaimges/footprint-0.gif",
+            "/assets/Qnaimges/footprint-1.gif",
+            "/assets/Qnaimges/footprint-2.gif",
+            "/assets/Qnaimges/footprint-3.gif",
+            "/assets/Qnaimges/footprint-4.gif",
+            "/assets/Qnaimges/footprint-5.gif"
           ],
       },
       {
-        who: ["You", "You", "You", "햄찌", "You", "햄찌", "햄찌", "You","햄찌","햄찌","햄찌","햄찌", "You"],
+        who: ["You", "You", "You", "햄찌", "You", "햄찌", "햄찌", "You","햄찌","햄찌","햄찌","햄찌", "You", "", "", "", "", "", ""],
         content: [
             "히히~ 고마워!\n\n얼른 같이 가찌!", 
             "작은 영혼이 나를 바다로 안내했다...\n\n탁 트인 바닷가 풍경에 마음이 괜히 뭉클해진다.",
@@ -259,7 +271,7 @@ const qna = [
             "내가 대신 좋은 정보를 알려줄게!",
             "여기서 다섯 발자국만 더 가면 소원을 들어주는 바다로 갈 수 있찌!\n\n한번 바다에 기도해봐~\n\n이뤄질 찌 모르잖아?",
             "히히! 난 다시 일하러 가야해서 이만 가볼게..!\n\n안녕~ 돌 던진 건 미안해찌!",
-            "햄찌가 안내한 방향으로 당신은 걸어간다."
+            "햄찌가 안내한 방향으로 당신은 걸어간다.",
           ],
           talkimg: [
             "/assets/Qnaimges/qna6-b.gif",
@@ -274,7 +286,13 @@ const qna = [
             "/assets/Qnaimges/qna8-2.gif",
             "/assets/Qnaimges/qna8-1.gif",
             "/assets/Qnaimges/qna8-2.gif",
-            ""
+            "",
+            "/assets/Qnaimges/footprint-0.gif",
+            "/assets/Qnaimges/footprint-1.gif",
+            "/assets/Qnaimges/footprint-2.gif",
+            "/assets/Qnaimges/footprint-3.gif",
+            "/assets/Qnaimges/footprint-4.gif",
+            "/assets/Qnaimges/footprint-5.gif"
           ],
       }
     ],

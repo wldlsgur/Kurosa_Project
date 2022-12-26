@@ -1,6 +1,14 @@
 import styled from "styled-components";
 
 function QnaImg({ url }) {
+    if(url === "/assets/Qnaimges/footprint-0.gif"){
+        return (
+            <ImgDiv>
+                <Img src={url}></Img>
+            </ImgDiv>
+        )
+    }
+    
     if(url === "/assets/Images/talkLogo2.gif"){
         return (
             <ImgDiv>
