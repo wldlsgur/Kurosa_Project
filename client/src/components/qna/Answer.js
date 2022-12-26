@@ -9,8 +9,6 @@ function Answer( {index, item, path, indexAdd, controlView} ) {
     const who = item[path].who[tidx];
     const content =  item[path].content[tidx];
     const imgsrc =  item[path].talkimg[tidx];
-    
-    
 
     const contentClick = () =>{
         if( item[path].who.length === tidx+1){
@@ -22,10 +20,20 @@ function Answer( {index, item, path, indexAdd, controlView} ) {
         }
     }
 
+    
+
     if(index === 3 && tidx === 0){
         return(
             <GlitchD onAnimationEnd={contentClick}></GlitchD>
         );
+    }
+
+    if(who === ""){
+      return(
+        <FootprintDiv>
+          <FootImg src={imgsrc} onClick={contentClick}></FootImg>
+        </FootprintDiv>
+    );
     }
 
     if(index === 1 && tidx === 1){
@@ -98,7 +106,7 @@ const AnimationD = styled.div`
 const ADiv = styled.div`
   witdh: 100%;
   flex: 1;
-  margin: 0px 7% 7% 7%;
+  margin: 0px 7% 0px 7%;
   background-image: url("/assets/Qnaimges/answer.png");
   background-size: 100% 100%;
   overflow: hidden;
@@ -106,7 +114,7 @@ const ADiv = styled.div`
   display: flex;
   flex-direction: column;
   overflow: auto;
-  padding-left: 5%;
+  padding-left: 7%;
 `;
 
 const AWho = styled.p`
@@ -116,9 +124,8 @@ const AWho = styled.p`
   }
   font-family: "Ycomputer";
   color: #00ff00;
-  font-size: 32px;
+  font-size: 25px;
   line-height: 46px;
-  flex-basis: 18%;
 `;
 
 const AContentDiv = styled.div`
@@ -135,10 +142,24 @@ const AContentP = styled.p`
   }
   font-family: "Ycomputer";
   color: #00ff00;
-  font-size: 23px;
-  line-height: 26px;
+  font-size: 20px;
+  line-height: 22px;
   white-space: pre-wrap;
-  padding: 0 14% 0 0;
+  padding: 0 11% 0 0;
+`;
+
+const FootprintDiv = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+`;
+
+const FootImg = styled.img`
+  width: 300px;
+  height: 590px;
 `;
 
 export default Answer;

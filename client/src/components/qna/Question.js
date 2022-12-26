@@ -16,9 +16,7 @@ function Qusetion( {item, pathSet} ) {
     const [bcount, setbCount] = useState(0);
     const [ccount, setcCount] = useState(0);
 
-    const unmounted = useRef(false);
     useEffect(() => {
-      Math.max(answerA.length, answerB.length, answerC.length)
       const typingInterval = setInterval(() => {
         setaAnswer((value) => {
           let resulta = value ? value + answerA[acount] : answerA[0];
