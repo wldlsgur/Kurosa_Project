@@ -15,6 +15,11 @@ const ItemInfoDiv = styled.div`
   height: 249px;
   background-image: url("/assets/Images/itemContentBackground.png");
   background-size: 100% 100%;
+
+  padding: 30px 30px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 `;
 
 const ItemInfoP = styled.p`
