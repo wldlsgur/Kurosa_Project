@@ -294,9 +294,43 @@ const qna = [
             "/assets/Qnaimges/footprint-4.gif",
             "/assets/Qnaimges/footprint-5.gif"
           ],
+      },
+    ],
+  },
+  {
+    question: "바다가 당신에게 물어온다... 어떤 기적을 바라는가?",
+    answer: ["제가 바라는 것은...", "", ""],
+    imgsrc: "/assets/Qnaimges/qna8.gif",
+    talk: [
+      {
+        who: ["바다", "You",""],
+        content: ["그렇군.. 당신의 소원은 잘 전달해주도록 하지...", "기적에 감동한 당신은 눈물이 앞을 가린다...",""],
+        talkimg: ["/assets/Qnaimges/qna8.gif","/assets/Qnaimges/qna8.gif",""],
       }
     ],
   },
+  {
+    question: "어때, 지루하진 않았지",
+    answer: ["완전 내 생에 최고의 여행!","날 만족시키다니, 꽤 대단한 걸?","아무 생각이 없다"],
+    imgsrc: "/assets/Images/talkLogo2.gif",
+    talk: [
+      {
+        who: ["KUROSA", "KUROSA", ""],
+        content: ["나쁘지 않았다면, 다행이군~\n우리 직원이 잘 안내한 모양이야", "그럼 이제 행운아이템을 알려줄게..\n\n기대하시라!", ""],
+        talkimg: ["/assets/Images/talkLogo2.gif","/assets/Images/talkLogo2.gif", ""],
+      },
+      {
+        who: ["KUROSA", "KUROSA", ""],
+        content: ["나쁘지 않았다면, 다행이군~\n우리 직원이 잘 안내한 모양이야", "그럼 이제 행운아이템을 알려줄게..\n\n기대하시라!", ""],
+        talkimg: ["/assets/Images/talkLogo2.gif","/assets/Images/talkLogo2.gif", ""],
+      },
+      {
+        who: ["KUROSA", "KUROSA", ""],
+        content: ["나쁘지 않았다면, 다행이군~\n우리 직원이 잘 안내한 모양이야", "그럼 이제 행운아이템을 알려줄게..\n\n기대하시라!", ""],
+        talkimg: ["/assets/Images/talkLogo2.gif","/assets/Images/talkLogo2.gif", ""],
+      }
+    ],
+  }
 ];
 
 export default qna;
