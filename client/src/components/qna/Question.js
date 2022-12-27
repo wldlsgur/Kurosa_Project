@@ -25,7 +25,6 @@ function Qusetion( {item, pathSet} ) {
           if (acount >= answerA.length) {
             setaCount(acount);
             setaAnswer(aAnswer);
-            
           }
   
           return resulta;
@@ -63,6 +62,20 @@ function Qusetion( {item, pathSet} ) {
         pathSet(idx)
     }
 
+    if(answerB === "" || answerC === ""){
+      return (
+        <InputDiv>
+            <div><QTitle>?</QTitle></div>
+            <div>
+                <QTitle>{question}</QTitle>    
+            </div>
+            <div><QContentP></QContentP></div>
+            <QContentP onClick={() => questionClick(0)}>{aAnswer}</QContentP>
+            <div><QContentP></QContentP></div>
+            <InputText></InputText>
+        </InputDiv>
+      );
+    }
     return (
         <QDiv>
             <div><QTitle>?</QTitle></div>
@@ -85,6 +98,46 @@ function Qusetion( {item, pathSet} ) {
 //       <div key={idx}><QContentP onClick={() => questionClick(idx)}>{item}</QContentP></div>
 //   )
 // }
+
+const InputDiv = styled.div`
+  witdh: 100%;
+  flex: 1 1 55%;
+  margin: 0px 7% 7% 7%;
+  background-image: url("/assets/Qnaimges/question.png");
+  background-size: 100% 100%;
+  overflow: hidden;
+  padding : 8% 6% 0 6%;
+  
+  display: grid;
+  grid-template-columns: 7% 90%;
+  grid-template-rows: 30% 9% 30%; 
+  grid-auto-flow : row;
+  grid-column-gap : 2%;
+  grid-row-gap: 5%;
+  
+  @media screen and (min-height: 800px) {
+    @media screen and (min-width: 680px){
+        padding : 5% 5% 0 5%;
+    }
+    padding : 13% 5% 0 5%;
+  }
+  
+  @media screen and (min-width: 950px) {
+    padding : 2% 5% 0 5%;
+  }
+`;
+const InputText = styled.textarea`
+  background: black;
+  @font-face {
+    font-family: "Ycomputer";
+    src: url("/public/assets/Font/Ycomputer.ttf") format("truetype");
+  }
+  font-family: "Ycomputer";
+  color: #00ff00;
+  font-size: 17px;
+  margin-right: 10%;
+`;
+
 const QDiv = styled.div`
   witdh: 100%;
   flex: 1 1 55%;

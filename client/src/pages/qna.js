@@ -27,7 +27,6 @@ function Qna() {
     const controlView = () =>{
         setViewControl(!viewcontrol)
     }
-
     return (
         <QnaWrap url={"/assets/Images/talkBackground.gif"}>      
             {viewcontrol? 
@@ -45,8 +44,9 @@ function Qna() {
 }
 
 const QnaWrap = styled(Wrapper)`
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 `;
 
 
