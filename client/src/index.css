@@ -17,3 +17,21 @@ li {
   text-decoration: none;
   border-collapse: collapse;
 }
+
+@font-face {
+  font-family: "Ycomputer";
+  src: url("/public/assets/Font/Ycomputer.ttf") format("truetype");
+}
+@font-face {
+  font-family: "JFDotKappa200213";
+  src: url("/public/assets/Font/JFDotKappa200213.ttf") format("truetype");
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

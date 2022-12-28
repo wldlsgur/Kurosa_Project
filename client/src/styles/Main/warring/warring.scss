@@ -3,10 +3,11 @@ $warringFontFamily: "Ycomputer";
 $warringFontStyle: normal;
 $warringFontWeight: 400;
 $warringLineHeight: 46px;
-@font-face {
+
+/*@font-face {
   font-family: "Ycomputer";
   src: url("/public/assets/Font/Ycomputer.ttf") format("truetype");
-}
+}*/
 
 .warring {
   width: 100%;
@@ -34,10 +35,11 @@ $warringLineHeight: 46px;
     margin-bottom: 46px;
   }
   > .warring__content {
-    font-size: 23px;
+    font-size: 20px;
     line-height: 26px;
     text-align: center;
     margin-bottom: 96px;
+    margin-top: 30px;
   }
   > .warring__btn {
     border: none;

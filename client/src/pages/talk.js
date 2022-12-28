@@ -73,15 +73,5 @@ const Talk = () => {
 const TalkWrap = styled(WrapDiv)`
   display: flex;
   flex-direction: column;
-  animation-name: fadeOut;
-  animation-duration: 4s;
-  @keyframes fadeOut {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
 `;
 export default Talk;

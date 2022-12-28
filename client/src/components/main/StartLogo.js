@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Dotdiv from "./Dot";
 
 const LogoDiv = styled.div`
   witdh: 100%;
@@ -18,7 +17,6 @@ const StartLogo = ({ dotState }) => {
   return (
     <LogoDiv>
       <LogoImg src={"/assets/Images/logoCircle.png"}></LogoImg>
-      <Dotdiv state={dotState}></Dotdiv>
     </LogoDiv>
   );
 };

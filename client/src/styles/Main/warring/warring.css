@@ -1,7 +1,7 @@
-@font-face {
+/*@font-face {
   font-family: "Ycomputer";
   src: url("/public/assets/Font/Ycomputer.ttf") format("truetype");
-}
+}*/
 .warring {
   width: 100%;
   height: 100%;
@@ -29,10 +29,11 @@
   margin-bottom: 46px;
 }
 .warring > .warring__content {
-  font-size: 23px;
+  font-size: 20px;
   line-height: 26px;
   text-align: center;
   margin-bottom: 96px;
+  margin-top: 30px;
 }
 .warring > .warring__btn {
   border: none;

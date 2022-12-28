@@ -9,13 +9,8 @@ const LaguageDiv = styled.div`
   justify-content: center;
 `;
 const KoreaP = styled.button`
-  @font-face {
-    font-family: "Ycomputer";
-    src: url("/public/assets/Font/Ycomputer.ttf") format("truetype");
-  }
   font-family: "Ycomputer";
-  font-style: normal;
-  font-weight: 700;
+  font-weight: 700px;
   font-size: 40px;
   line-height: 40px;
   color: #00ff00;
@@ -24,15 +19,11 @@ const KoreaP = styled.button`
   margin: 10%;
 `;
 const JapanP = styled.button`
-  @font-face {
-    font-family: "JFDotKappa200213";
-    src: url("/public/assets/Font/JFDotKappa200213.ttf") format("truetype");
-  }
-  font-family: "JJFDotKappa200213";
+  font-family: "JFDotKappa200213";
   font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 46px;
+  font-weight: 700px;
+  font-size: 35px;
+  line-height: 38px;
   color: #00ff00;
   background: none;
   border: none;

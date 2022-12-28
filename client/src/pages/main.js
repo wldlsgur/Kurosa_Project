@@ -26,9 +26,6 @@ const Main = () => {
   const changeLogo = (show) => {
     dispatch(updateMainLogo(show));
   };
-  const toggleDot = (payload) => {
-    dispatch(updateDotState(payload));
-  };
 
   switch (mainLogoRedux.show) {
     case "language":
@@ -57,7 +54,7 @@ const Main = () => {
         <StartWrap color="black">
           <Header></Header>
           <StartLogo dotState={dotStateRedux.state}></StartLogo>
-          <Start toggleDot={toggleDot}></Start>
+          <Start></Start>
         </StartWrap>
       );
     default:

@@ -30,10 +30,7 @@ const Start = ({ toggleDot }) => {
         <StartImg
           src={"/assets/Images/logoStart.png"}
           onClick={() => {
-            toggleDot("block");
-            setTimeout(() => {
-              navigate("/talk", { replace: true });
-            }, 2000);
+            navigate("/talk", { replace: true });
           }}
         ></StartImg>
       </StartImgDiv>

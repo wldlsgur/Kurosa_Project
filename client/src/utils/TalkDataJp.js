@@ -12,7 +12,7 @@ const talkDataJp = [
     content: [],
   },
   {
-    logoImg: "/assets/Images/talkLogo2.gif",
+    logoImg: "/assets/Images/talkNoBackgroun.gif",
     contentImg: "/assets/Images/talk.png",
     title: "占い師うさ",
     content: [
@@ -21,7 +21,7 @@ const talkDataJp = [
     ],
   },
   {
-    logoImg: "/assets/Images/talkLogo2.gif",
+    logoImg: "/assets/Images/talkNoBackgroun.gif",
     contentImg: "/assets/Images/talk.png",
     title: "占い師うさ",
     content: [
@@ -30,7 +30,7 @@ const talkDataJp = [
     ],
   },
   {
-    logoImg: "/assets/Images/talkLogo2.gif",
+    logoImg: "/assets/Images/talkNoBackgroun.gif",
     contentImg: "/assets/Images/talk.png",
     title: "プレイヤー",
     content: [
@@ -39,7 +39,7 @@ const talkDataJp = [
     ],
   },
   {
-    logoImg: "/assets/Images/talkLogo2.gif",
+    logoImg: "/assets/Images/talk2NoBackground.gif",
     contentImg: "/assets/Images/talk.png",
     title: "占い師うさ",
     content: [
@@ -48,13 +48,13 @@ const talkDataJp = [
     ],
   },
   {
-    logoImg: "/assets/Images/talkLogo2.gif",
+    logoImg: "/assets/Images/talkNoBackgroun.gif",
     contentImg: "/assets/Images/talk.png",
     title: "プレイヤー",
     content: ["ウサギが木に 何で 登るの..?"],
   },
   {
-    logoImg: "/assets/Images/talkLogo2.gif",
+    logoImg: "/assets/Images/talkNoBackgroun.gif",
     contentImg: "/assets/Images/talk.png",
     title: "占い師うさ",
     content: [
@@ -64,7 +64,7 @@ const talkDataJp = [
     ],
   },
   {
-    logoImg: "/assets/Images/talkLogo2.gif",
+    logoImg: "/assets/Images/talkNoBackgroun.gif",
     contentImg: "/assets/Images/talk.png",
     title: "プレイヤー",
     content: [
@@ -74,7 +74,7 @@ const talkDataJp = [
     ],
   },
   {
-    logoImg: "/assets/Images/talkLogo2.gif",
+    logoImg: "/assets/Images/talkNoBackgroun.gif",
     contentImg: "/assets/Images/talk.png",
     title: "占い師うさ",
     content: ["よい〜よい〜", "それでは行こうかの〜！"],

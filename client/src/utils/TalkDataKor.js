@@ -12,13 +12,13 @@ const talkDataKr = [
     content: [],
   },
   {
-    logoImg: "/assets/Images/talkLogo2.gif",
+    logoImg: "/assets/Images/talkNoBackgroun.gif",
     contentImg: "/assets/Images/talk.png",
     title: "KUROSA",
     content: ["호오..?", "오랜만에 만나는 손님이군..", "근데 잠깐...!"],
   },
   {
-    logoImg: "/assets/Images/talkLogo2.gif",
+    logoImg: "/assets/Images/talkNoBackgroun.gif",
     contentImg: "/assets/Images/talk.png",
     title: "KUROSA",
     content: [
@@ -27,7 +27,7 @@ const talkDataKr = [
     ],
   },
   {
-    logoImg: "/assets/Images/talkLogo2.gif",
+    logoImg: "/assets/Images/talkNoBackgroun.gif",
     contentImg: "/assets/Images/talk.png",
     title: "YOU",
     content: [
@@ -36,7 +36,7 @@ const talkDataKr = [
     ],
   },
   {
-    logoImg: "/assets/Images/talkLogo2.gif",
+    logoImg: "/assets/Images/talk2NoBackground.gif",
     contentImg: "/assets/Images/talk.png",
     title: "KUROSA",
     content: [
@@ -45,13 +45,13 @@ const talkDataKr = [
     ],
   },
   {
-    logoImg: "/assets/Images/talkLogo2.gif",
+    logoImg: "/assets/Images/talkNoBackgroun.gif",
     contentImg: "/assets/Images/talk.png",
     title: "YOU",
     content: ["토끼가 나무에 왜 올라가...?"],
   },
   {
-    logoImg: "/assets/Images/talkLogo2.gif",
+    logoImg: "/assets/Images/talkNoBackgroun.gif",
     contentImg: "/assets/Images/talk.png",
     title: "KUROSA",
     content: [
@@ -61,7 +61,7 @@ const talkDataKr = [
     ],
   },
   {
-    logoImg: "/assets/Images/talkLogo2.gif",
+    logoImg: "/assets/Images/talkNoBackgroun.gif",
     contentImg: "/assets/Images/talk.png",
     title: "YOU",
     content: [
@@ -71,7 +71,7 @@ const talkDataKr = [
     ],
   },
   {
-    logoImg: "/assets/Images/talkLogo2.gif",
+    logoImg: "/assets/Images/talk2NoBackground.gif",
     contentImg: "/assets/Images/talk.png",
     title: "KUROSA",
     content: ["좋아~ 좋아~", "그럼 가보자고!"],

@@ -6,6 +6,8 @@ const LogoDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  animation-name: fadeOut;
+  animation-duration: 5s;
 `;
 const LogoImg = styled.img`
   width: 250px;

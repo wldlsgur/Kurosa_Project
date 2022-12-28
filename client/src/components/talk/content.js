@@ -27,7 +27,9 @@ const Content = ({
           addTalkIndex();
         }}
       >
-        <TitleP>{title}</TitleP>
+        <TitleDiv>
+          <TitleP>{title}</TitleP>
+        </TitleDiv>
         <ContentListDiv>
           {content.map((value, index) => {
             return <ContentP key={index}>{value}</ContentP>;
@@ -39,48 +41,49 @@ const Content = ({
 
   return (
     <ContentDiv url={contentImg} onClick={addTalkIndex}>
-      <TitleP>{title}</TitleP>
+      <TitleDiv>
+        <TitleP>{title}</TitleP>
+      </TitleDiv>
       <ContentP>{content}</ContentP>
     </ContentDiv>
   );
 };
 const ContentDiv = styled.div`
-  witdh: 100%;
   flex: 1 1 45%;
   background-image: url(${(props) => props.url || "none"});
   background-size: 100% 100%;
   display: flex;
   flex-direction: column;
   overflow: auto;
-  padding-left: 5%;
 `;
-const TitleP = styled.p`
-  @font-face {
-    font-family: "Ycomputer";
-    src: url("/public/assets/Font/Ycomputer.ttf") format("truetype");
-  }
+const TitleDiv = styled.div`
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Ycomputer";
   color: #00ff00;
-  font-size: 28px;
+  font-size: 25px;
   line-height: 46px;
   flex-basis: 18%;
 `;
+const TitleP = styled.p``;
 const ContentP = styled.p`
-  @font-face {
-    font-family: "Ycomputer";
-    src: url("/public/assets/Font/Ycomputer.ttf") format("truetype");
-  }
   font-family: "Ycomputer";
   color: #00ff00;
-  font-size: 23px;
+  font-size: 17px;
   line-height: 26px;
-  padding: 0 14% 0 0;
+  margin-bottom: 20px;
 `;
 const ContentListDiv = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  padding: 30px 12% 0 12%;
+  overflow: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
 const ContentDiv2 = styled(ContentDiv)`
   flex: 1 1 32.9%;
