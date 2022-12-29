@@ -1,16 +1,20 @@
 import { useState } from 'react';
+import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 
-import Footer from '../components/common/footer';
 import Wrapper from "../components/common/Wrapper";
 import QnaImg from "../components/qna/QnaImg";
 import Question from "../components/qna/Question";
 import Answer from "../components/qna/Answer";
 
-import qnaData from "../utils/QnaData.js";
+import qnaData from "../utils/QnaDataKor.js";
 
 
 function Qna() {
+    const { t, i18n } = useTranslation();
+    const talk = t("qna", { returnObjects: true });
+    
+    
     const [index, setIndex] = useState(0);
     const [path, setPath] = useState(0);
     const [viewcontrol, setViewControl] = useState(true);
@@ -31,12 +35,12 @@ function Qna() {
         <QnaWrap url={"/assets/Images/talkBackground.gif"}>      
             {viewcontrol? 
                 <>
-                  <QnaImg url={qnaData[index].imgsrc}></QnaImg>
-                  <Question item={qnaData[index]} pathSet={pathSet}></Question>
+                  <QnaImg url={talk[index].imgsrc}></QnaImg>
+                  <Question item={talk[index]} pathSet={pathSet}></Question>
                 </>
                 :
                 <>
-                  <Answer index={index} item={qnaData[index].talk} path={path} indexAdd={indexAdd} controlView={controlView} ></Answer>
+                  <Answer index={index} item={talk[index].talk} path={path} indexAdd={indexAdd} controlView={controlView} ></Answer>
                 </>
             }
         </QnaWrap>

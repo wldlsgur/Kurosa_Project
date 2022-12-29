@@ -299,13 +299,13 @@ const qna = [
   },
   {
     question: "바다가 당신에게 물어온다... 어떤 기적을 바라는가?",
-    answer: ["제가 바라는 것은...", "", ""],
+    answer: ["제가 바라는 것은...", "",""],
     imgsrc: "/assets/Qnaimges/qna8.gif",
     talk: [
       {
-        who: ["바다", "You",""],
-        content: ["그렇군.. 당신의 소원은 잘 전달해주도록 하지...", "기적에 감동한 당신은 눈물이 앞을 가린다...",""],
-        talkimg: ["/assets/Qnaimges/qna8.gif","/assets/Qnaimges/qna8.gif",""],
+        who: ["바다", "You"],
+        content: ["그렇군.. 당신의 소원은 잘 전달해주도록 하지...", "기적에 감동한 당신은 눈물이 앞을 가린다..."],
+        talkimg: ["/assets/Qnaimges/qna8.gif","/assets/Qnaimges/qna8.gif"],
       }
     ],
   },
