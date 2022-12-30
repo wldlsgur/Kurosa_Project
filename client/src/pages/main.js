@@ -11,7 +11,6 @@ import WrapDiv from "../components/common/Wrapper";
 import Header from "../components/common/header";
 // redux
 import updateMainLogo from "../store/actions/main/mainLogo_Update";
-import updateDotState from "../store/actions/main/dotState_Update";
 
 const StartWrap = styled(WrapDiv)`
   display: flex;
