@@ -1,4 +1,5 @@
 import style from "../../styles/Main/warring/warring.module.css";
+import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 
 const Warring = (props) => {
@@ -18,8 +19,17 @@ const Warring = (props) => {
           changeLogo("logo");
         }}
       ></input>
+      <FooterImg src="assets/Images/warringFooter.gif"></FooterImg>
     </div>
   );
 };
+
+const FooterImg = styled.img`
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 100;
+  height: 100px;
+`;
 
 export default Warring;
