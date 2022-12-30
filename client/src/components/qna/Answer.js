@@ -2,67 +2,53 @@ import styled, { css } from "styled-components";
 import QnaImg from "./QnaImg";
 import Footer from "../common/footer";
 import { useState } from 'react';
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 function Answer( {index, item, path, indexAdd, controlView} ) {
-    const navigate = useNavigate();
-    const [tidx, setTidx] = useState(0);
+  const navigate = useNavigate();
+  const [tidx, setTidx] = useState(0);
 
-    const who = item[path].who[tidx];
-    const content =  item[path].content[tidx];
-    const imgsrc =  item[path].talkimg[tidx];
-    
-    const contentClick = () =>{
-        if(item[path].who.length === tidx+1){
-            indexAdd();
-            controlView();
-        }
-        else{
-            setTidx(tidx+1);
-        }
-    }
-    if(index === 8 && who === ""){
-      return(
-        <LoadingDiv>
-          <LoadingImg src="/assets/Qnaimges/loading.gif" onAnimationEnd={() => {
-            return navigate("/result", { replace: true });}}> 
-          </LoadingImg>
-        </LoadingDiv>
-        
-      );
-    }
-    if(index === 3 && tidx === 0){
-      return(
-          <GlitchD onAnimationEnd={contentClick}></GlitchD>
-      );
-    }
-
-    if(index === 6 && who === ""){
-      return(
-        <FootprintDiv>
-          <FootImg src={imgsrc} onClick={contentClick}></FootImg>
-        </FootprintDiv>
-    );
-    }
-
-    if(index === 1 && tidx === 1){
-      return(
-        <FadeoutD>
-          <QnaImg url={imgsrc}></QnaImg>
-          <ADiv>
-            <AWhoDiv>
-              <AWho>{who}</AWho>
-            </AWhoDiv>
-            <AContentDiv onClick={contentClick}>
-              <AContentP>{content}</AContentP>
-            </AContentDiv>
-          </ADiv>
-          <Footer></Footer>
-        </FadeoutD>
-      );
-    }
+  const who = item[path].who[tidx];
+  const content =  item[path].content[tidx];
+  const imgsrc =  item[path].talkimg[tidx];
+  
+  const contentClick = () =>{
+      if(item[path].who.length === tidx+1){
+          indexAdd();
+          controlView();
+      }
+      else{
+          setTidx(tidx+1);
+      }
+  }
+  if(index === 8 && who === ""){
     return(
-      <>
+      <LoadingDiv>
+        <LoadingImg src="/assets/Qnaimges/loading.gif" onAnimationEnd={() => {
+          return navigate("/result", { replace: true });}}> 
+        </LoadingImg>
+      </LoadingDiv>
+      
+    );
+  }
+  if(index === 3 && tidx === 0){
+    return(
+        <GlitchD onAnimationEnd={contentClick}></GlitchD>
+    );
+  }
+
+  if(index === 6 && who === ""){
+    return(
+      <FootprintDiv>
+        <FootImg src={imgsrc} onClick={contentClick}></FootImg>
+      </FootprintDiv>
+  );
+  }
+
+  if(index === 1 && tidx === 1){
+    return(
+      <FadeoutD>
         <QnaImg url={imgsrc}></QnaImg>
         <ADiv>
           <AWhoDiv>
@@ -73,8 +59,23 @@ function Answer( {index, item, path, indexAdd, controlView} ) {
           </AContentDiv>
         </ADiv>
         <Footer></Footer>
-      </>
+      </FadeoutD>
     );
+  }
+  return(
+    <>
+      <QnaImg url={imgsrc}></QnaImg>
+      <ADiv>
+        <AWhoDiv>
+          <AWho>{who}</AWho>
+        </AWhoDiv>
+        <AContentDiv onClick={contentClick}>
+          <AContentP>{content}</AContentP>
+        </AContentDiv>
+      </ADiv>
+      <Footer></Footer>
+    </>
+  );
 }
 
 const ADiv = styled.div`

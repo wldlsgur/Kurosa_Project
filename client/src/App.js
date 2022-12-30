@@ -8,6 +8,7 @@ import Talk from "./pages/talk";
 import NotFound from "./components/common/NotFound";
 import Qna from "./pages/qna";
 import ResultPage from "./pages/result";
+import Producers from "./pages/producers";
 
 const store = createStore(rootReducer);
 
@@ -21,6 +22,7 @@ function App() {
             <Route path="/talk" element={<Talk />} exact={true}></Route>
             <Route path="/qna" element={<Qna />}></Route>
             <Route path="/result" element={<ResultPage />}></Route>
+            <Route path="/producers" element={<Producers />}></Route>
             <Route path="*" element={<NotFound />}></Route>
           </Routes>
         </Provider>
