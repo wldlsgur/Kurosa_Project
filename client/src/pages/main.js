@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { useSelector, useDispatch } from "react-redux";
+import { useTranslation } from "react-i18next";
+
 // Component
 import Warring from "../components/main/Warring";
 import Start from "../components/main/Start";
@@ -21,7 +23,9 @@ const Main = () => {
   const mainLogoRedux = useSelector((state) => state.mainLogoRedux);
   const dotStateRedux = useSelector((state) => state.dotRedux);
   const dispatch = useDispatch();
+  const { t, i18n } = useTranslation();
 
+  const fontStyle = i18n.language === "kr" ? "Ycomputer" : "JFDotKappa200213";
   const changeLogo = (show) => {
     dispatch(updateMainLogo(show));
   };
@@ -36,13 +40,13 @@ const Main = () => {
     case "warring":
       return (
         <WrapDiv color="black">
-          <Warring updateMain={changeLogo}></Warring>
+          <Warring fontStyle={fontStyle} updateMain={changeLogo}></Warring>
         </WrapDiv>
       );
     case "logo":
       setTimeout(() => {
         changeLogo("start");
-      }, 5000);
+      }, 4000);
       return (
         <WrapDiv color="black">
           <Logo></Logo>

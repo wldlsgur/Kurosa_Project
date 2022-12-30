@@ -29,8 +29,8 @@ const Laguage = ({ updateMain }) => {
           }}
         >
           日本語
-          <ChoiceImg src="/assets/Images/choice.png"></ChoiceImg>
         </LuaguesJpP>
+        <ChoiceImg src="/assets/Images/choice.png"></ChoiceImg>
       </LaguageDiv>
     </LaguagesDiv>
   );

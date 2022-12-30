@@ -25,6 +25,7 @@ const Talk = () => {
   const contentIndex = useRef(0);
   const { index, content } = talkStateReducer;
   const talk = t("talk", { returnObjects: true });
+  const fontStyle = i18n.language === "kr" ? "Ycomputer" : "JFDotKappa200213";
 
   const addTalkIndex = (e) => {
     let contentData = t(talk[index].content[contentIndex.current]);
@@ -43,6 +44,7 @@ const Talk = () => {
       <TalkWrap url={"/assets/Images/talkBackground.gif"}>
         <Logo url={t(talk[index].logoImg)} title={t(talk[index].title)}></Logo>
         <Content
+          fontStyle={fontStyle}
           lastIndex={contentIndex}
           talkData={talkData}
           index={index}
@@ -60,6 +62,9 @@ const Talk = () => {
     <TalkWrap url={"/assets/Images/talkBackground.gif"}>
       <Logo url={t(talk[index].logoImg)}></Logo>
       <Content
+        fontStyle={fontStyle}
+        lastIndex={contentIndex}
+        talkData={talkData}
         index={index}
         addTalkIndex={addTalkIndex}
         contentImg={t(talk[index].contentImg)}
