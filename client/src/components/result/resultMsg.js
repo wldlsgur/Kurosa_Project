@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 const ResultMsg = ({ msgUrl }) => {
-  console.log("하위 : ", msgUrl);
-
   return <MsgDiv msgUrl={msgUrl}></MsgDiv>;
 };
 

@@ -9,14 +9,14 @@ const LogoDiv = styled.div`
   position: relative;
 `;
 const LogoImg = styled.img`
-  width: 261px;
-  height: 262px;
+  width: 361px;
+  height: auto;
 `;
 
-const StartLogo = ({ dotState }) => {
+const StartLogo = () => {
   return (
     <LogoDiv>
-      <LogoImg src={"/assets/Images/logoCircle.png"}></LogoImg>
+      <LogoImg src={"/assets/Images/logoCircle.gif"}></LogoImg>
     </LogoDiv>
   );
 };

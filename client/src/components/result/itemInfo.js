@@ -1,10 +1,16 @@
 import styled from "styled-components";
-
+import useFontStyle from "../../utils/useFontStyle";
 const ItemInfo = ({ info }) => {
+  const fontStyle = useFontStyle();
+
   return (
     <ItemInfoDiv>
       {info.map((value, index) => {
-        return <ItemInfoP key={index}>{value}</ItemInfoP>;
+        return (
+          <ItemInfoP key={index} fontStyle={fontStyle}>
+            {value}
+          </ItemInfoP>
+        );
       })}
     </ItemInfoDiv>
   );
@@ -23,12 +29,7 @@ const ItemInfoDiv = styled.div`
 `;
 
 const ItemInfoP = styled.p`
-  @font-face {
-    font-family: "Ycomputer";
-    src: url("/public/assets/Font/Ycomputer.ttf") format("truetype");
-  }
-
-  font-family: "Ycomputer";
+  font-family: ${(props) => props.fontStyle};
   font-style: normal;
   font-weight: 400;
   font-size: 18px;

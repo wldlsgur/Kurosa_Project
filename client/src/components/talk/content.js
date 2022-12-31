@@ -32,6 +32,7 @@ const Content = ({
           <TitleP>{title}</TitleP>
         </TitleDiv>
         <ContentListDiv>
+          <ContentP>{talkData[index].content[0]}</ContentP>
           {content.map((value, index) => {
             return <ContentP key={index}>{value}</ContentP>;
           })}
