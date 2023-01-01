@@ -1,17 +1,18 @@
 import styled from "styled-components";
+import { TypeAnimation } from "react-type-animation";
 import { useNavigate } from "react-router-dom";
-
 const Content = ({
   fontStyle,
   lastIndex,
   talkData,
   index,
-  addTalkIndex,
+  addTalkIndex, //이벤트
   contentImg,
   title,
   content,
 }) => {
   const navigate = useNavigate();
+
   if (index > 1) {
     return (
       <ContentDiv2
@@ -32,9 +33,19 @@ const Content = ({
           <TitleP>{title}</TitleP>
         </TitleDiv>
         <ContentListDiv>
-          <ContentP>{talkData[index].content[0]}</ContentP>
+          <ContentP key={0}>
+            <TypeAnimation
+              sequence={[talkData[index].content[0], 1000]}
+              cursor={false}
+              className="firstTalk"
+            />
+          </ContentP>
           {content.map((value, index) => {
-            return <ContentP key={index}>{value}</ContentP>;
+            return (
+              <ContentP key={index + 1}>
+                <TypeAnimation sequence={[value, 1000]} cursor={false} />
+              </ContentP>
+            );
           })}
         </ContentListDiv>
       </ContentDiv2>

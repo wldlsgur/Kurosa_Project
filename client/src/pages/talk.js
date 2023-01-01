@@ -1,5 +1,4 @@
 import { useRef } from "react";
-import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
@@ -38,9 +37,6 @@ const Talk = () => {
     contentIndex.current++;
   }; //클릭 이벤트
 
-  useEffect(() => {
-    const typingInterval = setInterval(() => {});
-  }, 300);
   if (t(talk[index].content[0]) && t(talk[index].title)) {
     return (
       <TalkWrap url={"/assets/Images/talkBackground.gif"}>
