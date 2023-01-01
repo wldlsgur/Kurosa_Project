@@ -33,17 +33,15 @@ const Content = ({
           <TitleP>{title}</TitleP>
         </TitleDiv>
         <ContentListDiv>
-          <ContentP key={0}>
-            <TypeAnimation
-              sequence={[talkData[index].content[0], 1000]}
-              cursor={false}
-              className="firstTalk"
-            />
-          </ContentP>
+          {/* <ContentP>{talkData[index].content[0]}</ContentP> */}
           {content.map((value, index) => {
             return (
-              <ContentP key={index + 1}>
-                <TypeAnimation sequence={[value, 1000]} cursor={false} />
+              <ContentP key={index}>
+                <TypeAnimation
+                  sequence={[value, 1000]}
+                  cursor={false}
+                  wrapper="span"
+                />
               </ContentP>
             );
           })}

@@ -2,7 +2,6 @@ import { useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
-
 // Component
 import WrapDiv from "../components/common/Wrapper.js";
 import Content from "../components/talk/content.js";
@@ -20,7 +19,7 @@ const Talk = () => {
   const talkStateReducer = useSelector((state) => state.talkStateReducer);
   const dispatch = useDispatch();
 
-  const contentIndex = useRef(1); //대화 현재 인덱스
+  const contentIndex = useRef(0); //대화 현재 인덱스
   const { index, content } = talkStateReducer; //전체 현재 인덱스와 대화배열
   const talk = t("talk", { returnObjects: true }); //대화 객체
   const fontStyle = i18n.language === "kr" ? "Ycomputer" : "JFDotKappa200213";
@@ -28,7 +27,7 @@ const Talk = () => {
   const addTalkIndex = (e) => {
     let contentData = t(talk[index].content[contentIndex.current]);
     if (!contentData) {
-      contentIndex.current = 1;
+      contentIndex.current = 0;
       dispatch(talkIndexAdd());
       dispatch(ContenInit());
       return;
