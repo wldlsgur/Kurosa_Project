@@ -2,10 +2,9 @@ import WrapDiv from "../components/common/Wrapper";
 import Header from "../components/common/header";
 import Footer from "../components/common/footer";
 import LogoImg from "../components/result/logoImg";
-
+import { useTranslation } from "react-i18next";
 import { FaTwitter, FaInstagram } from "react-icons/fa";
 import styled from "styled-components";
-import pData from "../utils/ProducersData";
 import React from "react";
 import useHref from "../hooks/useHref";
 
@@ -14,7 +13,10 @@ function Producers() {
     const instagramOpen = useHref(
         "https://www.instagram.com/invites/contact/?i=1gq2pxjxahja9&utm_content=pw8ma4h"
     );
-
+    
+    const { t, i18n } = useTranslation();
+    const pData = t("producers", { returnObjects: true });
+    
     return (
         <WrapDiv url={"/assets/Images/talkBackground.gif"}>
             <Header></Header>

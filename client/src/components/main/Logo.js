@@ -1,6 +1,10 @@
 import styled from "styled-components";
+import effectSound from "../../hooks/effectSound";
 
 const Logo = () => {
+  const es = effectSound("/assets/Sound/spinlogo.mp3", 0.2);
+  es.play();
+
   return (
     <LogoDiv>
       <LogoImg src="/assets/Images/KUROSA.gif" alt="logoImage"></LogoImg>
