@@ -70,9 +70,11 @@ function Qusetion( {item, pathSet} ) {
                 <QTitle>{question}</QTitle>    
             </div>
             <div><QContentP></QContentP></div>
-            <QContentP onClick={() => questionClick(0)}>{aAnswer}</QContentP>
+            <QContentP >{aAnswer}</QContentP>
             <div><QContentP></QContentP></div>
             <InputText></InputText>
+            <div></div>
+            <ImgDiv><InputBtn onClick={() => questionClick(0)} src="/assets/Qnaimges/inputbtn.png"></InputBtn></ImgDiv>
         </InputDiv>
       );
     }
@@ -99,6 +101,17 @@ function Qusetion( {item, pathSet} ) {
 //   )
 // }
 
+const ImgDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 10%; 
+`;
+
+const InputBtn = styled.img`
+  width: 25px;
+  height: 17px;
+`;
 const InputDiv = styled.div`
   witdh: 100%;
   flex: 1 1 55%;
