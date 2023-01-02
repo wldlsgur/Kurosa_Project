@@ -2,11 +2,13 @@ import styled from "styled-components";
 import ItemImg from "./itemImg";
 import ItemInfo from "./itemInfo";
 import { useTranslation } from "react-i18next";
+import { useEffect, useState } from "react";
 
 const Item = () => {
   const { t, i18n } = useTranslation();
-  const index = Math.floor(Math.random() * (10 - 0));
   const result = t("result", { returnObjects: true });
+  let index = Math.floor(Math.random() * (10 - 0));
+  useEffect(() => {}, []);
 
   return (
     <ItemDiv>

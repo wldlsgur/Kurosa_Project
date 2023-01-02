@@ -10,7 +10,7 @@ const MsgDiv = styled.div`
   margin: 0 auto;
   background-image: url("${(props) => props.msgUrl}");
   background-size: 100% 100%;
-  margin-top: 240px;
+  margin-top: 89px;
 `;
 
 export default ResultMsg;
