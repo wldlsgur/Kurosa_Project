@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import i18n from "../../utils/i18n";
+import effectSound from "../../hooks/effectSound";
 
 const Laguage = ({ updateMain }) => {
+  const es = effectSound("/assets/Sound/select.mp3", 0.2);  
   return (
     <LaguagesDiv>
       <LaguageDiv>
@@ -12,6 +14,7 @@ const Laguage = ({ updateMain }) => {
             setTimeout(() => {
               updateMain("warring");
             }, 1000);
+            es.play();
           }}
         >
           한국어
@@ -26,6 +29,7 @@ const Laguage = ({ updateMain }) => {
             setTimeout(() => {
               updateMain("warring");
             }, 1000);
+            es.play();
           }}
         >
           日本語

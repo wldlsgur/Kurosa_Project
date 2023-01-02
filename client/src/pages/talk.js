@@ -13,11 +13,15 @@ import {
   ContentPush,
   ContenInit,
 } from "../store/actions/talk/talkIndex_Add";
+import useSound from "../hooks/useSound.js";
+import effectSound from "../hooks/effectSound";
 
 const Talk = () => {
   const { t, i18n } = useTranslation();
   const talkStateReducer = useSelector((state) => state.talkStateReducer);
   const dispatch = useDispatch();
+  
+  useSound("/assets/Sound/mainbackgroundsound.mp3", 1);
 
   const contentIndex = useRef(0); //대화 현재 인덱스
   const { index, content } = talkStateReducer; //전체 현재 인덱스와 대화배열

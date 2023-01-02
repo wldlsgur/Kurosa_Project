@@ -17,42 +17,43 @@ function Qusetion( {item, pathSet} ) {
     const [ccount, setcCount] = useState(0);
 
     useEffect(() => {
+      if (acount >= answerA.length) return;
       const typingInterval = setInterval(() => {
         setaAnswer((value) => {
           let resulta = value ? value + answerA[acount] : answerA[0];
           setaCount(acount + 1);
-  
-          if (acount >= answerA.length) {
-            setaCount(acount);
-            setaAnswer(aAnswer);
-          }
-  
+
           return resulta;
         });
+      }, 100);
+      return () => {
+        clearInterval(typingInterval);
+      };
+    });
+    useEffect(() => {
+      if (bcount >= answerB.length) return;
+      const typingInterval = setInterval(() => {
         setbAnswer((value) => {
           let resultb = value ? value + answerB[bcount] : answerB[0];
           setbCount(bcount + 1);
-  
-          if (bcount >= answerB.length) {
-            setbCount(bcount);
-            setbAnswer(bAnswer);
-          }
-  
+
           return resultb;
         });
+      }, 100);
+      return () => {
+        clearInterval(typingInterval);
+      };
+    });
+    useEffect(() => {
+      if (ccount >= answerC.length) return;
+      const typingInterval = setInterval(() => {
         setcAnswer((value) => {
           let resultc = value ? value + answerC[ccount] : answerC[0];
           setcCount(ccount + 1);
   
-          if (ccount >= answerC.length) {
-            setcCount(ccount);
-            setcAnswer(cAnswer);
-          }
-  
           return resultc;
         });
-      }, 120);
-
+      }, 100);
       return () => {
         clearInterval(typingInterval);
       };

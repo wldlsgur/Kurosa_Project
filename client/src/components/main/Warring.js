@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
+import effectSound from "../../hooks/effectSound";
 
 const Warring = ({ fontStyle, updateMain }) => {
   const { t, i18n } = useTranslation();
   const warring = t("warring", { returnObjects: true });
-
+  const es = effectSound("/assets/Sound/select.mp3", 0.2);  
   return (
     <WarringDiv fontStyle={fontStyle}>
       <WarringTitle>{t(warring.Title)}</WarringTitle>
@@ -15,6 +16,7 @@ const Warring = ({ fontStyle, updateMain }) => {
         value="OK"
         onClick={() => {
           updateMain("logo");
+          es.play();
         }}
       ></WarringBtn>
       <FooterImg src="assets/Images/warringFooter.gif"></FooterImg>

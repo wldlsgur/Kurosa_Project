@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Footer from "../common/footer";
 import { useNavigate } from "react-router-dom";
+import effectSound from "../../hooks/effectSound";
 
 const StartDiv = styled.div`
   witdh: 100%;
@@ -23,6 +24,9 @@ const StartImg = styled.img`
 
 const Start = ({ toggleDot }) => {
   const navigate = useNavigate();
+  
+  const es = effectSound("/assets/Sound/start.mp3", 0.2);
+  es.play();
 
   return (
     <StartDiv>

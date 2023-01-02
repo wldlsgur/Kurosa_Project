@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { TypeAnimation } from "react-type-animation";
 import { useNavigate } from "react-router-dom";
+
 const Content = ({
   fontStyle,
   lastIndex,
