@@ -14,7 +14,7 @@ import { useSelector, useDispatch } from "react-redux";
 import shareToggle from "../store/actions/result/share";
 import React from "react";
 import { useTranslation } from "react-i18next";
-
+import useFontStyle from "../utils/useFontStyle";
 const ResultPage = () => {
   const shareController = useSelector((state) => state.shareController);
   const dispatch = useDispatch();
