@@ -12,6 +12,7 @@ function useSound(src, volume = 1) {
     }
     
     useEffect(() => {
+        
         soundPlay(src);
     }, []);
 }

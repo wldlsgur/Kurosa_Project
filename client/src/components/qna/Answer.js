@@ -1,12 +1,15 @@
 import styled, { css } from "styled-components";
 import QnaImg from "./QnaImg";
 import Footer from "../common/footer";
-import { useState } from 'react';
-import { useEffect } from "react";
+import { useEffect, useState } from 'react';
 import { useNavigate } from "react-router-dom";
+import { TypeAnimation } from "react-type-animation";
+import useFontStyle from "../../utils/useFontStyle";
 
 function Answer( {index, item, path, indexAdd, controlView} ) {
   const navigate = useNavigate();
+  const fontStyle = useFontStyle();
+
   const [tidx, setTidx] = useState(0);
 
   const who = item[path].who[tidx];
@@ -20,7 +23,6 @@ function Answer( {index, item, path, indexAdd, controlView} ) {
       }
       else{
           setTidx(tidx+1);
-          
       }
   }
   if(index === 8 && who === ""){
@@ -53,10 +55,10 @@ function Answer( {index, item, path, indexAdd, controlView} ) {
         <QnaImg url={imgsrc}></QnaImg>
         <ADiv>
           <AWhoDiv>
-            <AWho>{who}</AWho>
+            <AWho font={fontStyle}>{who}</AWho>
           </AWhoDiv>
           <AContentDiv onClick={contentClick}>
-            <AContentP>{content}</AContentP>
+            <AContentP font={fontStyle}>{content}</AContentP>
           </AContentDiv>
         </ADiv>
         <Footer></Footer>
@@ -68,10 +70,11 @@ function Answer( {index, item, path, indexAdd, controlView} ) {
       <QnaImg url={imgsrc}></QnaImg>
       <ADiv>
         <AWhoDiv>
-          <AWho>{who}</AWho>
+          <AWho font={fontStyle}>{who}</AWho>
         </AWhoDiv>
         <AContentDiv onClick={contentClick}>
-          <AContentP>{content}</AContentP>
+        <AContentP font={fontStyle}>{content}
+        </AContentP>
         </AContentDiv>
       </ADiv>
       <Footer></Footer>
@@ -102,7 +105,7 @@ const AWhoDiv = styled.div`
 `;
 
 const AWho = styled.p`
-  font-family: "Ycomputer";
+font-family: ${(props) => props.font || "Ycomputer"};
   color: #00ff00;
   font-size: 25px;
 `;
@@ -116,7 +119,7 @@ const AContentDiv = styled.div`
 `
 
 const AContentP = styled.p`
-  font-family: "Ycomputer";
+font-family: ${(props) => props.font || "Ycomputer"};
   color: #00ff00;
   font-size: 17px;
   white-space: pre-wrap;

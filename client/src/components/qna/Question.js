@@ -1,12 +1,15 @@
 import { useEffect, useRef } from "react";
 import { useState } from "react";
 import styled from "styled-components";
+import useFontStyle from "../../utils/useFontStyle";
 
 function Qusetion( {item, pathSet} ) {
     const question = item.question;
     const answerA = item.answer[0];
     const answerB = item.answer[1];
     const answerC = item.answer[2];
+
+    const fontStyle = useFontStyle();
 
     const [aAnswer, setaAnswer] = useState('');
     const [bAnswer, setbAnswer] = useState('');
@@ -66,14 +69,14 @@ function Qusetion( {item, pathSet} ) {
     if(answerB === "" || answerC === ""){
       return (
         <InputDiv>
-            <div><QTitle>?</QTitle></div>
+            <div><QTitle font={fontStyle}>?</QTitle></div>
             <div>
-                <QTitle>{question}</QTitle>    
+                <QTitle font={fontStyle}>{question}</QTitle>    
             </div>
             <div><QContentP></QContentP></div>
-            <QContentP >{aAnswer}</QContentP>
+            <QContentP font={fontStyle}>{aAnswer}</QContentP>
             <div><QContentP></QContentP></div>
-            <InputText></InputText>
+            <InputText font={fontStyle}></InputText>
             <div></div>
             <ImgDiv><InputBtn onClick={() => questionClick(0)} src="/assets/Qnaimges/inputbtn.png"></InputBtn></ImgDiv>
         </InputDiv>
@@ -81,26 +84,19 @@ function Qusetion( {item, pathSet} ) {
     }
     return (
         <QDiv>
-            <div><QTitle>?</QTitle></div>
-            <div><QContentP>a.</QContentP></div>
-            <div><QContentP>b.</QContentP></div>
-            <div><QContentP>C.</QContentP></div>
+            <div><QTitle font={fontStyle}>?</QTitle></div>
+            <div><QContentP font={fontStyle}>a.</QContentP></div>
+            <div><QContentP font={fontStyle}>b.</QContentP></div>
+            <div><QContentP font={fontStyle}>C.</QContentP></div>
             <div>
-                <QTitle>{question}</QTitle>    
+                <QTitle font={fontStyle}>{question}</QTitle>    
             </div>
-            <QContentP onClick={() => questionClick(0)}>{aAnswer}</QContentP>
-            <QContentP onClick={() => questionClick(1)}>{bAnswer}</QContentP>
-            <QContentP onClick={() => questionClick(2)}>{cAnswer}</QContentP>
+            <QContentP onClick={() => questionClick(0)} font={fontStyle}>{aAnswer}</QContentP>
+            <QContentP onClick={() => questionClick(1)} font={fontStyle}>{bAnswer}</QContentP>
+            <QContentP onClick={() => questionClick(2)} font={fontStyle}>{cAnswer}</QContentP>
         </QDiv>
     );
 }
-
-
-// {
-//   answer.map((item, idx) => 
-//       <div key={idx}><QContentP onClick={() => questionClick(idx)}>{item}</QContentP></div>
-//   )
-// }
 
 const ImgDiv = styled.div`
   display: flex;
@@ -142,7 +138,7 @@ const InputDiv = styled.div`
 `;
 const InputText = styled.textarea`
   background: black;
-  font-family: "Ycomputer";
+  font-family: ${(props) => props.font || "Ycomputer"};
   color: #00ff00;
   font-size: 17px;
   margin-right: 10%;
@@ -175,16 +171,16 @@ const QDiv = styled.div`
     padding : 2% 5% 0 5%;
   }
 `;
-
+// font-family: "Ycomputer";
 const QTitle = styled.p`
-  font-family: "Ycomputer";
+  font-family: ${(props) => props.font || "Ycomputer"};
   color: #00ff00;
   font-size: 21px;
   line-height: 24px;
 `;
 
 const QContentP = styled.p`
-  font-family: "Ycomputer";
+  font-family: ${(props) => props.font || "Ycomputer"};
   color: #00ff00;
   font-size: 17px;
   line-height: 22px;
