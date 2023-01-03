@@ -20,10 +20,10 @@ const Talk = () => {
   const { t, i18n } = useTranslation();
   const talkStateReducer = useSelector((state) => state.talkStateReducer);
   const dispatch = useDispatch();
-  
+
   useSound("/assets/Sound/mainbackgroundsound.mp3", 1);
 
-  const contentIndex = useRef(0); //대화 현재 인덱스
+  const contentIndex = useRef(1); //대화 현재 인덱스
   const { index, content } = talkStateReducer; //전체 현재 인덱스와 대화배열
   const talk = t("talk", { returnObjects: true }); //대화 객체
   const fontStyle = i18n.language === "kr" ? "Ycomputer" : "JFDotKappa200213";
@@ -31,7 +31,7 @@ const Talk = () => {
   const addTalkIndex = (e) => {
     let contentData = t(talk[index].content[contentIndex.current]);
     if (!contentData) {
-      contentIndex.current = 0;
+      contentIndex.current = 1;
       dispatch(talkIndexAdd());
       dispatch(ContenInit());
       return;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { TypeAnimation } from "react-type-animation";
+// import { TypeAnimation } from "react-type-animation";
 import { useNavigate } from "react-router-dom";
 
 const Content = ({
@@ -34,17 +34,9 @@ const Content = ({
           <TitleP>{title}</TitleP>
         </TitleDiv>
         <ContentListDiv>
-          {/* <ContentP>{talkData[index].content[0]}</ContentP> */}
+          <ContentP>{talkData[index].content[0]}</ContentP>
           {content.map((value, index) => {
-            return (
-              <ContentP key={index}>
-                <TypeAnimation
-                  sequence={[value, 1000]}
-                  cursor={false}
-                  wrapper="span"
-                />
-              </ContentP>
-            );
+            return <ContentP key={index}>{value}</ContentP>;
           })}
         </ContentListDiv>
       </ContentDiv2>
