@@ -9,7 +9,7 @@ const qna = [
     imgsrc: "/assets/Qnaimges/qna1.gif",
     talk: [
       {
-        who: ["YOU", "KUROSA"],
+        who: ["YOU", "ハムッチ"],
         content: [
           "準備ができました！\n\n早く黒山に送って!",
           "そうか 決定が速いのう~ \n\n続けて一つ重要な儀式だけをすればいいんじゃ!",
@@ -17,7 +17,7 @@ const qna = [
         talkimg: ["/assets/Qnaimges/qna1.gif", "/assets/Images/talkLogo2.gif"],
       },
       {
-        who: ["YOU", "KUROSA"],
+        who: ["YOU", "ハムッチ"],
         content: [
           "準備ができました！\n\n早く黒山に送って!",
           "そうか 決定が速いのう~ \n\n続けて一つ重要な儀式だけをすればいいんじゃ!",
@@ -25,7 +25,7 @@ const qna = [
         talkimg: ["/assets/Qnaimges/qna1.gif", "/assets/Images/talkLogo2.gif"],
       },
       {
-        who: ["YOU", "KUROSA"],
+        who: ["YOU", "ハムッチ"],
         content: [
           "準備ができました！\n\n早く黒山に送って!",
           "そうか 決定が速いのう~ \n\n続けて一つ重要な儀式だけをすればいいんじゃ!",
@@ -315,17 +315,17 @@ const qna = [
     imgsrc: "/assets/Images/talkLogo2.gif",
     talk: [
       {
-        who: ["KUROSA", "KUROSA", ""],
+        who: ["ハムッチ", "ハムッチ", ""],
         content: ["面白かったら、幸いじゃ〜\n私のスタッフがよく案内したようじゃな。", "それじゃあ、あなたのラッキーアイテムを教えよう。\n\n期待しておれ!", ""],
         talkimg: ["/assets/Images/talkLogo2.gif","/assets/Images/talkLogo2.gif", ""],
       },
       {
-        who: ["KUROSA", "KUROSA", ""],
+        who: ["ハムッチ", "ハムッチ", ""],
         content: ["面白かったら、幸いじゃ〜\n私のスタッフがよく案内したようじゃな。", "それじゃあ、あなたのラッキーアイテムを教えよう。\n\n期待しておれ!", ""],
         talkimg: ["/assets/Images/talkLogo2.gif","/assets/Images/talkLogo2.gif", ""],
       },
       {
-        who: ["KUROSA", "KUROSA", ""],
+        who: ["ハムッチ", "ハムッチ", ""],
         content: ["面白かったら、幸いじゃ〜\n私のスタッフがよく案内したようじゃな。", "それじゃあ、あなたのラッキーアイテムを教えよう。\n\n期待しておれ!", ""],
         talkimg: ["/assets/Images/talkLogo2.gif","/assets/Images/talkLogo2.gif", ""],
       }

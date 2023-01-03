@@ -29,7 +29,7 @@ function Qusetion( {item, pathSet} ) {
       return () => {
         clearInterval(typingInterval);
       };
-    });
+    }, [acount, aAnswer]);
     useEffect(() => {
       if (bcount >= answerB.length) return;
       const typingInterval = setInterval(() => {
@@ -43,7 +43,7 @@ function Qusetion( {item, pathSet} ) {
       return () => {
         clearInterval(typingInterval);
       };
-    });
+    }, [bcount, bAnswer]);
     useEffect(() => {
       if (ccount >= answerC.length) return;
       const typingInterval = setInterval(() => {
@@ -57,7 +57,7 @@ function Qusetion( {item, pathSet} ) {
       return () => {
         clearInterval(typingInterval);
       };
-    });
+    }, [ccount, cAnswer]);
 
     const questionClick = (idx)=>{
         pathSet(idx)

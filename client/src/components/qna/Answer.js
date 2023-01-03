@@ -12,7 +12,7 @@ function Answer( {index, item, path, indexAdd, controlView} ) {
   const who = item[path].who[tidx];
   const content =  item[path].content[tidx];
   const imgsrc =  item[path].talkimg[tidx];
-  
+
   const contentClick = () =>{
       if(item[path].who.length === tidx+1){
           indexAdd();
@@ -20,6 +20,7 @@ function Answer( {index, item, path, indexAdd, controlView} ) {
       }
       else{
           setTidx(tidx+1);
+          
       }
   }
   if(index === 8 && who === ""){
