@@ -8,14 +8,12 @@ import SnsNav from "../components/result/snsLav";
 import LogoImg from "../components/result/logoImg";
 import ShareImg from "../components/result/shareImg";
 import ShareModal from "../components/common/shareModal";
-import { Helmet } from "react-helmet-async";
 
 import resultMsgImageLanguageCheck from "../utils/resultMsgImageLanguageCheck";
 import { useSelector, useDispatch } from "react-redux";
 import shareToggle from "../store/actions/result/share";
 import React from "react";
 import { useTranslation } from "react-i18next";
-import useFontStyle from "../utils/useFontStyle";
 const ResultPage = () => {
   const shareController = useSelector((state) => state.shareController);
   const dispatch = useDispatch();
@@ -34,16 +32,6 @@ const ResultPage = () => {
 
   return (
     <WrapDiv url={"/assets/Images/talkBackground.gif"}>
-      <Helmet>
-        <meta name="twitter:title" content="사이버 점집 KUROSA_2023" />
-        <meta name="twitter:description" content="cyber fortune teller" />
-        <meta name="twitter:card" content="https://ifh.cc/g/cvd79x.jpg" />
-        <meta
-          name="twitter:url"
-          content={process.env.REACT_APP_SERVER_IP_ADRESS}
-        />
-        <meta name="twitter:image" content="https://ifh.cc/g/cvd79x.jpg" />
-      </Helmet>
       <Header></Header>
       <Item></Item>
       <ShareImg openShareModal={openShareModal} shareImg={shareImg}></ShareImg>

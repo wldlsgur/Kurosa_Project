@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { useSelector, useDispatch } from "react-redux";
 import { useTranslation } from "react-i18next";
-import { Helmet } from "react-helmet-async";
 
 // Component
 import Warring from "../components/main/Warring";
@@ -35,16 +34,6 @@ const Main = () => {
     case "language":
       return (
         <WrapDiv color="black">
-          <Helmet>
-            <meta name="twitter:title" content="사이버 점집 KUROSA_2023" />
-            <meta name="twitter:description" content="cyber fortune teller" />
-            <meta name="twitter:card" content="https://ifh.cc/g/cvd79x.jpg" />
-            <meta
-              name="twitter:url"
-              content={process.env.REACT_APP_SERVER_IP_ADRESS}
-            />
-            <meta name="twitter:image" content="https://ifh.cc/g/cvd79x.jpg" />
-          </Helmet>
           <Language updateMain={changeLogo}></Language>
         </WrapDiv>
       );

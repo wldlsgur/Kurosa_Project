@@ -4,6 +4,12 @@ import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import shareToKatalk from "../../Api/shareKakao";
 import shareToTwitter from "../../Api/shareTwitter";
+import {
+  TwitterShareButton,
+  TwitterIcon,
+  LineShareButton,
+  LineIcon,
+} from "react-share";
 const ShareModal = ({ closeShareModal }) => {
   useEffect(() => {
     const script = document.createElement("script");
@@ -15,16 +21,20 @@ const ShareModal = ({ closeShareModal }) => {
 
   return (
     <ShareModalDiv>
-      <MetaTag></MetaTag>
       <CloseModalBtn onClick={closeShareModal}>X</CloseModalBtn>
       <ModalSignImg src="assets/Images/sign.gif"></ModalSignImg>
       <ShareSnsDiv>
         <SnsImg src="assets/Images/kakao.png" onClick={shareToKatalk}></SnsImg>
-        <SnsImg
+        <TwitterShareButton url={process.env.REACT_APP_SERVER_IP_ADRESS}>
+          <SnsImg src="assets/Images/twitter.png"></SnsImg>
+        </TwitterShareButton>
+        {/* <SnsImg
           src="assets/Images/twitter.png"
           onClick={shareToTwitter}
-        ></SnsImg>
-        <SnsImg src="assets/Images/line.png"></SnsImg>
+        ></SnsImg> */}
+        <LineShareButton url={process.env.REACT_APP_SERVER_IP_ADRESS}>
+          <SnsImg src="assets/Images/line.png"></SnsImg>
+        </LineShareButton>
       </ShareSnsDiv>
       <CopyToClipboard
         className="Toram"
@@ -36,20 +46,20 @@ const ShareModal = ({ closeShareModal }) => {
     </ShareModalDiv>
   );
 };
-const MetaTag = () => {
-  return (
-    <Helmet>
-      <meta name="twitter:title" content="사이버 점집 KUROSA_2023" />
-      <meta name="twitter:description" content="cyber fortune teller" />
-      <meta name="twitter:card" content="https://ifh.cc/g/cvd79x.jpg" />
-      <meta
-        name="twitter:url"
-        content={process.env.REACT_APP_SERVER_IP_ADRESS}
-      />
-      <meta name="twitter:image" content="https://ifh.cc/g/cvd79x.jpg" />
-    </Helmet>
-  );
-};
+// const MetaTag = () => {
+//   return (
+//     <Helmet>
+//       <meta name="twitter:title" content="사이버 점집 KUROSA_2023" />
+//       <meta name="twitter:description" content="cyber fortune teller" />
+//       <meta name="twitter:card" content="https://ifh.cc/g/cvd79x.jpg" />
+//       <meta
+//         name="twitter:url"
+//         content={process.env.REACT_APP_SERVER_IP_ADRESS}
+//       />
+//       <meta name="twitter:image" content="https://ifh.cc/g/cvd79x.jpg" />
+//     </Helmet>
+//   );
+// };
 const ShareModalDiv = styled.div`
   width: 366px;
   height: 530px;
@@ -88,6 +98,9 @@ const ShareSnsDiv = styled.div`
 const SnsImg = styled.img`
   width: 70px;
   height: 50px;
+  &:hover {
+    cursor: Pointer;
+  }
 `;
 
 const CopyImg = styled.img`
