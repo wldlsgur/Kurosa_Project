@@ -9,7 +9,6 @@ import NotFound from "./components/common/NotFound";
 import Qna from "./pages/qna";
 import ResultPage from "./pages/result";
 import Producers from "./pages/producers";
-
 const store = createStore(rootReducer);
 
 function App() {
