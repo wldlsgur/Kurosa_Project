@@ -4,12 +4,7 @@ import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import shareToKatalk from "../../Api/shareKakao";
 import shareToTwitter from "../../Api/shareTwitter";
-import {
-  TwitterShareButton,
-  TwitterIcon,
-  LineShareButton,
-  LineIcon,
-} from "react-share";
+import { TwitterShareButton, LineShareButton } from "react-share";
 const ShareModal = ({ closeShareModal }) => {
   useEffect(() => {
     const script = document.createElement("script");
@@ -25,13 +20,13 @@ const ShareModal = ({ closeShareModal }) => {
       <ModalSignImg src="assets/Images/sign.gif"></ModalSignImg>
       <ShareSnsDiv>
         <SnsImg src="assets/Images/kakao.png" onClick={shareToKatalk}></SnsImg>
-        <TwitterShareButton url={process.env.REACT_APP_SERVER_IP_ADRESS}>
+        {/* <TwitterShareButton url={process.env.REACT_APP_SERVER_IP_ADRESS}>
           <SnsImg src="assets/Images/twitter.png"></SnsImg>
-        </TwitterShareButton>
-        {/* <SnsImg
+        </TwitterShareButton> */}
+        <SnsImg
           src="assets/Images/twitter.png"
           onClick={shareToTwitter}
-        ></SnsImg> */}
+        ></SnsImg>
         <LineShareButton url={process.env.REACT_APP_SERVER_IP_ADRESS}>
           <SnsImg src="assets/Images/line.png"></SnsImg>
         </LineShareButton>
