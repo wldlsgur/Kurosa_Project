@@ -74,7 +74,7 @@ const talkDataJp = [
     ],
   },
   {
-    logoImg: "/assets/Images/talkNoBackgroun.gif",
+    logoImg: "/assets/Images/talk2NoBackground.gif",
     contentImg: "/assets/Images/talk.png",
     title: "KUROSA",
     content: ["よい〜よい〜", "それでは行こうかの〜！"],
