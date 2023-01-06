@@ -10,6 +10,8 @@ function Qusetion( {item, pathSet} ) {
     const answerC = item.answer[2];
 
     const fontStyle = useFontStyle();
+    const jppadding = (fontStyle === "Ycomputer" ? 7 : 5);
+
 
     const [aAnswer, setaAnswer] = useState('');
     const [bAnswer, setbAnswer] = useState('');
@@ -69,9 +71,9 @@ function Qusetion( {item, pathSet} ) {
     if(answerB === "" || answerC === ""){
       return (
         <InputDiv>
-            <div><QTitle font={fontStyle}>?</QTitle></div>
+            <div><QTitle jppadding={jppadding} font={fontStyle}>?</QTitle></div>
             <div>
-                <QTitle font={fontStyle}>{question}</QTitle>    
+                <QTitle jppadding={jppadding} font={fontStyle}>{question}</QTitle>    
             </div>
             <div><QContentP></QContentP></div>
             <QContentP font={fontStyle}>{aAnswer}</QContentP>
@@ -83,7 +85,7 @@ function Qusetion( {item, pathSet} ) {
       );
     }
     return (
-        <QDiv>
+        <QDiv jppadding={jppadding}>
             <div><QTitle font={fontStyle}>?</QTitle></div>
             <div><QContentP font={fontStyle}>a.</QContentP></div>
             <div><QContentP font={fontStyle}>b.</QContentP></div>
@@ -116,7 +118,7 @@ const InputDiv = styled.div`
   background-image: url("/assets/Qnaimges/question.png");
   background-size: 100% 100%;
   overflow: hidden;
-  padding : 8% 6% 0 6%;
+  padding : 7% 6% 0 6%;
   
   display: grid;
   grid-template-columns: 7% 90%;
@@ -151,11 +153,11 @@ const QDiv = styled.div`
   background-image: url("/assets/Qnaimges/question.png");
   background-size: 100% 100%;
   overflow: hidden;
-  padding : 8% 6% 0 6%;
-  
+  padding : 7% 6% 0 6%;
+  padding-top: ${(props) => props.jppadding}%;
   display: grid;
   grid-template-columns: 7% 90%;
-  grid-template-rows: 30% 18% 18% 18%; 
+  grid-template-rows: 29% 18% 18% 18%; 
   grid-auto-flow : column;
   grid-column-gap : 2%;
   grid-row-gap: 5%;
@@ -184,6 +186,5 @@ const QContentP = styled.p`
   color: #00ff00;
   font-size: 17px;
   line-height: 22px;
-  padding: 0 7% 0 0;
 `;
 export default Qusetion;

@@ -14,7 +14,6 @@ function Qna() {
     const { t, i18n } = useTranslation();
     const talk = t("qna", { returnObjects: true });
     
-    
     const [index, setIndex] = useState(0);
     const [path, setPath] = useState(0);
     const [viewcontrol, setViewControl] = useState(true);

@@ -73,8 +73,8 @@ function Answer( {index, item, path, indexAdd, controlView} ) {
           <AWho font={fontStyle}>{who}</AWho>
         </AWhoDiv>
         <AContentDiv onClick={contentClick}>
-        <AContentP font={fontStyle}>{content}
-        </AContentP>
+          <AContentP font={fontStyle}>{content}
+          </AContentP>
         </AContentDiv>
       </ADiv>
       <Footer></Footer>
@@ -91,23 +91,26 @@ const ADiv = styled.div`
   
   display: flex;
   flex-direction: column;
+  
 `;
 
 const AWhoDiv = styled.div`
   width: 45%;
+  height: 17%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Ycomputer";
   color: #00ff00;
   line-height: 46px;
-  flex-basis: 18%;
+  
 `;
 
 const AWho = styled.p`
-font-family: ${(props) => props.font || "Ycomputer"};
+  font-family: ${(props) => props.font || "Ycomputer"};
   color: #00ff00;
   font-size: 25px;
+  
 `;
 
 const AContentDiv = styled.div`
