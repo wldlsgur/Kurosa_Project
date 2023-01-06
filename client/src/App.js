@@ -35,24 +35,52 @@ function App() {
 const MetaTag = () => {
   return (
     <Helmet>
-      <meta name="twitter:title" content="사이버 점집 KUROSA_2023" />
-      <meta name="twitter:description" content="cyber fortune teller" />
-      <meta name="twitter:card" content="summary" />
-      <meta name="twitter:url" content="http://3.36.50.113:3000/" />
-      <meta name="twitter:image" content="https://ifh.cc/g/cvd79x.jpg" />
+      <meta
+        name="twitter:title"
+        content="사이버 점집 KUROSA_2023"
+        data-react-helmet="true"
+      />
+      <meta
+        name="twitter:description"
+        content="cyber fortune teller"
+        data-react-helmet="true"
+      />
+      <meta name="twitter:card" content="summary" data-react-helmet="true" />
+      <meta
+        name="twitter:url"
+        content="http://3.36.50.113:3000/"
+        data-react-helmet="true"
+      />
+      <meta
+        name="twitter:image"
+        content="https://ifh.cc/g/cvd79x.jpg"
+        data-react-helmet="true"
+      />
       <meta
         name="title"
         property="og:title"
         content="사이버 점집 KUROSA_2023"
+        data-react-helmet="true"
       />
       <meta
         name="description"
         property="og:description"
         content="cyber fortune teller"
+        data-react-helmet="true"
       />
-      <meta name="image" property="og:image" content="/favicon.ico" />
-      <meta name="url" property="og:url" content="http://3.36.50.113:3000/" />
-      <meta property="og:locale" content="ko_KR" />
+      <meta
+        name="image"
+        property="og:image"
+        content="/favicon.ico"
+        data-react-helmet="true"
+      />
+      <meta
+        name="url"
+        property="og:url"
+        content="http://3.36.50.113:3000/"
+        data-react-helmet="true"
+      />
+      <meta property="og:locale" content="ko_KR" data-react-helmet="true" />
     </Helmet>
   );
 };
