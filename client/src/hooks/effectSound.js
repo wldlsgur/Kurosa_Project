@@ -1,13 +1,12 @@
-import { Howl } from 'howler';
+import { Howl, Howler } from 'howler';
 
-function effectSound(src, volume = 0.2, loop) {
-    let sound;
-    const soundInject = (src) => {
-        sound = new Howl({ src });
-        sound.volume(volume);
-        sound.loop(loop);
-    }
-    soundInject(src);
+function effectSound(src, volume, loopb) {
+    var sound = new Howl({
+        src: src,
+        volume: volume,
+        loop: loopb,
+    });
+
     return sound;
 }
 

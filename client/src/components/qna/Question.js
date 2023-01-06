@@ -2,6 +2,8 @@ import { useEffect, useRef } from "react";
 import { useState } from "react";
 import styled from "styled-components";
 import useFontStyle from "../../utils/useFontStyle";
+import effectSound from "../../hooks/effectSound";
+import { Howler } from 'howler';
 
 function Qusetion( {item, pathSet} ) {
     const question = item.question;
@@ -11,7 +13,6 @@ function Qusetion( {item, pathSet} ) {
 
     const fontStyle = useFontStyle();
     const jppadding = (fontStyle === "Ycomputer" ? 7 : 5);
-
 
     const [aAnswer, setaAnswer] = useState('');
     const [bAnswer, setbAnswer] = useState('');
@@ -69,6 +70,9 @@ function Qusetion( {item, pathSet} ) {
     }
 
     if(answerB === "" || answerC === ""){
+      Howler.stop();
+      const us = effectSound("/assets/Sound/producer.mp3", 1, true);
+      us.play();
       return (
         <InputDiv>
             <div><QTitle jppadding={jppadding} font={fontStyle}>?</QTitle></div>

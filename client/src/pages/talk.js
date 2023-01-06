@@ -14,6 +14,7 @@ import {
   ContenInit,
 } from "../store/actions/talk/talkIndex_Add";
 import effectSound from "../hooks/effectSound"
+import { Howler } from 'howler';
 
 const Talk = () => {
   const { t, i18n } = useTranslation();
@@ -21,7 +22,8 @@ const Talk = () => {
   const dispatch = useDispatch();
 
   useEffect(() =>{
-    const us = effectSound("/assets/Sound/mainbackgroundsound.mp3", 1);
+    Howler.stop();
+    const us = effectSound("/assets/Sound/mainbackgroundsound.mp3", 1, true);
     us.play();
   }, [])
 

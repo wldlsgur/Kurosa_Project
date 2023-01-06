@@ -7,9 +7,6 @@ import QnaImg from "../components/qna/QnaImg";
 import Question from "../components/qna/Question";
 import Answer from "../components/qna/Answer";
 
-import qnaData from "../utils/QnaDataKor.js";
-
-
 function Qna() {
     const { t, i18n } = useTranslation();
     const talk = t("qna", { returnObjects: true });
