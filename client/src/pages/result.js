@@ -14,10 +14,20 @@ import { useSelector, useDispatch } from "react-redux";
 import shareToggle from "../store/actions/result/share";
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { Howler } from 'howler';
+import effectSound from "../hooks/effectSound";
+import { useEffect } from "react";
+
 const ResultPage = () => {
   const shareController = useSelector((state) => state.shareController);
   const dispatch = useDispatch();
   const { t, i18n } = useTranslation();
+  
+  useEffect(() =>{
+    Howler.stop();
+    const us = effectSound("/assets/Sound/luckyitem.mp3", 1, true);
+    us.play();
+  }, []);
 
   const openShareModal = () => {
     dispatch(shareToggle(true));
@@ -29,7 +39,7 @@ const ResultPage = () => {
     i18n.language === "kr"
       ? "/assets/Images/share.png"
       : "/assets/Images/shareJp.png";
-
+  
   return (
     <WrapDiv url={"/assets/Images/talkBackground.gif"}>
       <Header></Header>

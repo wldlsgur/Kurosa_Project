@@ -5,6 +5,8 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
 import useFontStyle from "../../utils/useFontStyle";
+import effectSound from "../../hooks/effectSound";
+import { Howler } from 'howler';
 
 function Answer( {index, item, path, indexAdd, controlView} ) {
   const navigate = useNavigate();
@@ -15,7 +17,7 @@ function Answer( {index, item, path, indexAdd, controlView} ) {
   const who = item[path].who[tidx];
   const content =  item[path].content[tidx];
   const imgsrc =  item[path].talkimg[tidx];
-
+  
   const contentClick = () =>{
       if(item[path].who.length === tidx+1){
           indexAdd();
@@ -25,17 +27,32 @@ function Answer( {index, item, path, indexAdd, controlView} ) {
           setTidx(tidx+1);
       }
   }
+  if(index === 6 && tidx === 4){
+    const us = effectSound("/assets/Sound/transform.mp3", 1);
+    us.play();
+  }
+  if(index === 6 && tidx === 13){
+    const us = effectSound("/assets/Sound/seasound.mp3", 1, true);
+    us.play();
+  }
+  if(index === 6 && tidx === 11){
+    Howler.stop();
+  }
   if(index === 8 && who === ""){
+    Howler.stop();
+    const us = effectSound("/assets/Sound/transform.mp3", 1, true);
+    us.play();
     return(
       <LoadingDiv>
         <LoadingImg src="/assets/Qnaimges/loading.gif" onAnimationEnd={() => {
           return navigate("/result", { replace: true });}}> 
         </LoadingImg>
       </LoadingDiv>
-      
     );
   }
   if(index === 3 && tidx === 0){
+    const us = effectSound("/assets/Sound/glitch.mp3", 1);
+    us.play();
     return(
         <GlitchD onAnimationEnd={contentClick}></GlitchD>
     );
@@ -73,8 +90,8 @@ function Answer( {index, item, path, indexAdd, controlView} ) {
           <AWho font={fontStyle}>{who}</AWho>
         </AWhoDiv>
         <AContentDiv onClick={contentClick}>
-        <AContentP font={fontStyle}>{content}
-        </AContentP>
+          <AContentP font={fontStyle}>{content}
+          </AContentP>
         </AContentDiv>
       </ADiv>
       <Footer></Footer>
@@ -91,23 +108,26 @@ const ADiv = styled.div`
   
   display: flex;
   flex-direction: column;
+  
 `;
 
 const AWhoDiv = styled.div`
   width: 45%;
+  height: 17%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Ycomputer";
   color: #00ff00;
   line-height: 46px;
-  flex-basis: 18%;
+  
 `;
 
 const AWho = styled.p`
-font-family: ${(props) => props.font || "Ycomputer"};
+  font-family: ${(props) => props.font || "Ycomputer"};
   color: #00ff00;
   font-size: 25px;
+  
 `;
 
 const AContentDiv = styled.div`

@@ -7,8 +7,14 @@ import { FaTwitter, FaInstagram } from "react-icons/fa";
 import styled from "styled-components";
 import React from "react";
 import useHref from "../hooks/useHref";
+import { Howler } from 'howler';
+import effectSound from "../hooks/effectSound";
 
 function Producers() {
+    Howler.stop();
+    const us = effectSound("/assets/Sound/producer.mp3", 1, true);
+    us.play();
+
     const twitterOpen = useHref("https://twitter.com/Kurosa_2023");
     const instagramOpen = useHref(
         "https://www.instagram.com/invites/contact/?i=1gq2pxjxahja9&utm_content=pw8ma4h"

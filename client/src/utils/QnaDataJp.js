@@ -9,7 +9,7 @@ const qna = [
     imgsrc: "/assets/Qnaimges/qna1.gif",
     talk: [
       {
-        who: ["YOU", "ハムッチ"],
+        who: ["YOU", "KUROSA"],
         content: [
           "準備ができました！\n\n早く黒山に送って!",
           "そうか 決定が速いのう~ \n\n続けて一つ重要な儀式だけをすればいいんじゃ!",
@@ -17,7 +17,7 @@ const qna = [
         talkimg: ["/assets/Qnaimges/qna1.gif", "/assets/Images/talkLogo2.gif"],
       },
       {
-        who: ["YOU", "ハムッチ"],
+        who: ["YOU", "KUROSA"],
         content: [
           "準備ができました！\n\n早く黒山に送って!",
           "そうか 決定が速いのう~ \n\n続けて一つ重要な儀式だけをすればいいんじゃ!",
@@ -25,7 +25,7 @@ const qna = [
         talkimg: ["/assets/Qnaimges/qna1.gif", "/assets/Images/talkLogo2.gif"],
       },
       {
-        who: ["YOU", "ハムッチ"],
+        who: ["YOU", "KUROSA"],
         content: [
           "準備ができました！\n\n早く黒山に送って!",
           "そうか 決定が速いのう~ \n\n続けて一つ重要な儀式だけをすればいいんじゃ!",
@@ -179,7 +179,7 @@ const qna = [
     imgsrc: "/assets/Qnaimges/qna7.gif",
     talk: [
       {
-        who: ["ハムッチ. ", "You", "You", "ハムッチ. ", "You", "ハムッチ. ", "ハムッチ. ", "You","ハムッチ. ","ハムッチ. ","ハムッチ. ","ハムッチ. ", "You", "", "", "", "", "", ""],
+        who: ["KUROSA ", "You", "You", "KUROSA ", "You", "KUROSA ", "KUROSA ", "You","KUROSA ","KUROSA ","KUROSA ","KUROSA ", "You", "", "", "", "", "", ""],
         content: [
           "ふふっ ありがとッチ！\n\n早く行くッチ、行くッチ!", 
           "小さな魂が私を海に案内した...\n\n広々とした海辺の風景に心が熱くなる。",
@@ -218,7 +218,7 @@ const qna = [
         ],
       },
       {
-        who: ["ハムッチ. ", "You", "You", "ハムッチ. ", "You", "ハムッチ. ", "ハムッチ. ", "You","ハムッチ. ","ハムッチ. ","ハムッチ. ","ハムッチ. ", "You", "", "", "", "", "", ""],
+        who: ["KUROSA ", "You", "You", "KUROSA ", "You", "KUROSA ", "KUROSA", "You", "KUROSA", "KUROSA","KUROSA","KUROSA", "You", "", "", "", "", "", ""],
         content: [
             "しまった.. 泣きそうな表情に結局 武装解除されてしまった。", 
             "小さな魂が私を海に案内した...\n\n広々とした海辺の風景に心が熱くなる。",
@@ -257,7 +257,7 @@ const qna = [
           ],
       },
       {
-        who: ["ハムッチ. ", "You", "You", "ハムッチ. ", "You", "ハムッチ. ", "ハムッチ. ", "You","ハムッチ. ","ハムッチ. ","ハムッチ. ","ハムッチ. ", "You", "", "", "", "", "", ""],
+        who: ["KUROSA", "You", "You", "KUROSA", "You", "KUROSA", "KUROSA", "You","KUROSA","KUROSA","KUROSA","KUROSA", "You", "", "", "", "", "", ""],
         content: [
             "可愛くて思わずうなずいてしまった！", 
             "小さな魂が私を海に案内した...\n\n広々とした海辺の風景に心が熱くなる。",
@@ -315,17 +315,17 @@ const qna = [
     imgsrc: "/assets/Images/talkLogo2.gif",
     talk: [
       {
-        who: ["ハムッチ", "ハムッチ", ""],
+        who: ["KUROSA", "KUROSA", ""],
         content: ["面白かったら、幸いじゃ〜\n私のスタッフがよく案内したようじゃな。", "それじゃあ、あなたのラッキーアイテムを教えよう。\n\n期待しておれ!", ""],
         talkimg: ["/assets/Images/talkLogo2.gif","/assets/Images/talkLogo2.gif", ""],
       },
       {
-        who: ["ハムッチ", "ハムッチ", ""],
+        who: ["KUROSA", "KUROSA", ""],
         content: ["面白かったら、幸いじゃ〜\n私のスタッフがよく案内したようじゃな。", "それじゃあ、あなたのラッキーアイテムを教えよう。\n\n期待しておれ!", ""],
         talkimg: ["/assets/Images/talkLogo2.gif","/assets/Images/talkLogo2.gif", ""],
       },
       {
-        who: ["ハムッチ", "ハムッチ", ""],
+        who: ["KUROSA", "KUROSA", ""],
         content: ["面白かったら、幸いじゃ〜\n私のスタッフがよく案内したようじゃな。", "それじゃあ、あなたのラッキーアイテムを教えよう。\n\n期待しておれ!", ""],
         talkimg: ["/assets/Images/talkLogo2.gif","/assets/Images/talkLogo2.gif", ""],
       }

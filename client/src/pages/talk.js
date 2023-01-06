@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
@@ -13,17 +13,19 @@ import {
   ContentPush,
   ContenInit,
 } from "../store/actions/talk/talkIndex_Add";
-import useSound from "../hooks/useSound.js";
-import effectSound from "../hooks/effectSound.js";
+import effectSound from "../hooks/effectSound"
+import { Howler } from 'howler';
 
 const Talk = () => {
   const { t, i18n } = useTranslation();
   const talkStateReducer = useSelector((state) => state.talkStateReducer);
   const dispatch = useDispatch();
 
-  useSound("/assets/Sound/mainbackgroundsound.webm", 1);
-  // const es = effectSound("/assets/Sound/mainbackgroundsound.mp3", 0.2);
-  // es.play();
+  useEffect(() =>{
+    Howler.stop();
+    const us = effectSound("/assets/Sound/mainbackgroundsound.mp3", 1, true);
+    us.play();
+  }, [])
 
   const contentIndex = useRef(1); //대화 현재 인덱스
   const { index, content } = talkStateReducer; //전체 현재 인덱스와 대화배열
