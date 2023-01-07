@@ -5,15 +5,15 @@ import useFontStyle from "../../utils/useFontStyle";
 import effectSound from "../../hooks/effectSound";
 import { Howler } from 'howler';
 
-function Qusetion( {item, pathSet} ) {
+function Qusetion( {item, pathSet, index} ) {
     const question = item.question;
     const answerA = item.answer[0];
     const answerB = item.answer[1];
     const answerC = item.answer[2];
 
     const fontStyle = useFontStyle();
-    const jppadding = (fontStyle === "Ycomputer" ? 7 : 5);
-
+    const jppadding = (index === 5 ? 10 : 7);
+    
     const [aAnswer, setaAnswer] = useState('');
     const [bAnswer, setbAnswer] = useState('');
     const [cAnswer, setcAnswer] = useState('');
@@ -75,7 +75,7 @@ function Qusetion( {item, pathSet} ) {
       us.play();
       return (
         <InputDiv>
-            <div><QTitle jppadding={jppadding} font={fontStyle}>?</QTitle></div>
+            <div><QMark jppadding={jppadding} font={fontStyle}>랝</QMark></div>
             <div>
                 <QTitle jppadding={jppadding} font={fontStyle}>{question}</QTitle>    
             </div>
@@ -90,7 +90,7 @@ function Qusetion( {item, pathSet} ) {
     }
     return (
         <QDiv jppadding={jppadding}>
-            <div><QTitle font={fontStyle}>?</QTitle></div>
+            <div><QMark font={fontStyle}>랝</QMark></div>
             <div><QContentP font={fontStyle}>a.</QContentP></div>
             <div><QContentP font={fontStyle}>b.</QContentP></div>
             <div><QContentP font={fontStyle}>C.</QContentP></div>
@@ -180,6 +180,13 @@ const QDiv = styled.div`
 // font-family: "Ycomputer";
 const QTitle = styled.p`
   font-family: ${(props) => props.font || "Ycomputer"};
+  color: #00ff00;
+  font-size: 21px;
+  line-height: 24px;
+`;
+
+const QMark = styled.p`
+  font-family: "Ycomputer";
   color: #00ff00;
   font-size: 21px;
   line-height: 24px;

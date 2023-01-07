@@ -9,7 +9,7 @@ function QnaImg({ url }) {
         )
     }
     
-    if(url === "/assets/Images/talkLogo2.gif"){
+    if(url === "/assets/Qnaimges/NoBackgroundS.gif"){
         return (
             <ImgDiv>
                 <Img src={url}></Img>

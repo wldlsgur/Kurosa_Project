@@ -14,7 +14,7 @@ const qna = [
           "자 이제 준비 됐어요",
           "그래 그래.. 결정이 빠른걸? \n\n이어서 한가지 중요한 의식만 치르면 된다구!",
         ],
-        talkimg: ["/assets/Qnaimges/qna1.gif", "/assets/Images/talkLogo2.gif"],
+        talkimg: ["/assets/Qnaimges/qna1.gif", "/assets/Qnaimges/NoBackgroundS.gif",],
       },
       {
         who: ["YOU", "KUROSA"],
@@ -22,7 +22,7 @@ const qna = [
           "자 이제 준비 됐어요",
           "그래 그래.. 결정이 빠른걸? \n\n이어서 한가지 중요한 의식만 치르면 된다구!",
         ],
-        talkimg: ["/assets/Qnaimges/qna1.gif", "/assets/Images/talkLogo2.gif"],
+        talkimg: ["/assets/Qnaimges/qna1.gif", "/assets/Qnaimges/NoBackgroundS.gif",],
       },
       {
         who: ["YOU", "KUROSA"],
@@ -30,7 +30,7 @@ const qna = [
           "자 이제 준비 됐어요",
           "그래 그래.. 결정이 빠른걸? \n\n이어서 한가지 중요한 의식만 치르면 된다구!",
         ],
-        talkimg: ["/assets/Qnaimges/qna1.gif", "/assets/Images/talkLogo2.gif"],
+        talkimg: ["/assets/Qnaimges/qna1.gif", "/assets/Qnaimges/NoBackgroundS.gif",],
       },
     ],
   },
@@ -154,17 +154,17 @@ const qna = [
     talk: [
       {
         who: ["You", "You"],
-        content: ["엇...","귀엽다..\n역시귀여운게 최고다...\n\n음..? 그런데 햄찌가 뭐라고 말을 하는 것 같다."],
+        content: ["엇...","귀엽다..\n역시 귀여운게 최고다...\n\n음..? 그런데 햄찌가 뭐라고 말을 하는 것 같다."],
         talkimg: ["/assets/Qnaimges/qna6-a.gif","/assets/Qnaimges/qna6-a.gif"],
       },
       {
         who: ["You", "You"],
-        content: ["엇...","귀엽다..\n역시귀여운게 최고다...\n\n음..? 그런데 햄찌가 뭐라고 말을 하는 것 같다."],
+        content: ["엇...","귀엽다..\n역시 귀여운게 최고다...\n\n음..? 그런데 햄찌가 뭐라고 말을 하는 것 같다."],
         talkimg: ["/assets/Qnaimges/qna6-b.gif","/assets/Qnaimges/qna6-b.gif"],
       },
       {
         who: ["You", "You"],
-        content: ["엇...","귀엽다..\n역시귀여운게 최고다...\n\n음..? 그런데 햄찌가 뭐라고 말을 하는 것 같다."],
+        content: ["엇...","귀엽다..\n역시 귀여운게 최고다...\n\n음..? 그런데 햄찌가 뭐라고 말을 하는 것 같다."],
         talkimg: ["/assets/Qnaimges/qna6-c.gif","/assets/Qnaimges/qna6-c.gif"],
       }
     ],
@@ -310,24 +310,24 @@ const qna = [
     ],
   },
   {
-    question: "어때, 지루하진 않았지",
+    question: "어때, 지루하진 않았지?",
     answer: ["완전 내 생에 최고의 여행!","날 만족시키다니, 꽤 대단한 걸?","아무 생각이 없다"],
-    imgsrc: "/assets/Images/talkLogo2.gif",
+    imgsrc: "/assets/Qnaimges/NoBackgroundS.gif",
     talk: [
       {
         who: ["KUROSA", "KUROSA", ""],
         content: ["나쁘지 않았다면, 다행이군~\n우리 직원이 잘 안내한 모양이야", "그럼 이제 행운아이템을 알려줄게..\n\n기대하시라!", ""],
-        talkimg: ["/assets/Images/talkLogo2.gif","/assets/Images/talkLogo2.gif", ""],
+        talkimg: ["/assets/Qnaimges/NoBackground.gif", "/assets/Qnaimges/NoBackgroundS.gif", ""],
       },
       {
         who: ["KUROSA", "KUROSA", ""],
         content: ["나쁘지 않았다면, 다행이군~\n우리 직원이 잘 안내한 모양이야", "그럼 이제 행운아이템을 알려줄게..\n\n기대하시라!", ""],
-        talkimg: ["/assets/Images/talkLogo2.gif","/assets/Images/talkLogo2.gif", ""],
+        talkimg: ["/assets/Qnaimges/NoBackground.gif", "/assets/Qnaimges/NoBackgroundS.gif", ""],
       },
       {
         who: ["KUROSA", "KUROSA", ""],
         content: ["나쁘지 않았다면, 다행이군~\n우리 직원이 잘 안내한 모양이야", "그럼 이제 행운아이템을 알려줄게..\n\n기대하시라!", ""],
-        talkimg: ["/assets/Images/talkLogo2.gif","/assets/Images/talkLogo2.gif", ""],
+        talkimg: ["/assets/Qnaimges/NoBackground.gif", "/assets/Qnaimges/NoBackgroundS.gif", ""],
       }
     ],
   }
