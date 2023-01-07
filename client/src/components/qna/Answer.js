@@ -3,7 +3,6 @@ import QnaImg from "./QnaImg";
 import Footer from "../common/footer";
 import { useEffect, useState } from 'react';
 import { useNavigate } from "react-router-dom";
-import { TypeAnimation } from "react-type-animation";
 import useFontStyle from "../../utils/useFontStyle";
 import effectSound from "../../hooks/effectSound";
 import { Howler } from 'howler';

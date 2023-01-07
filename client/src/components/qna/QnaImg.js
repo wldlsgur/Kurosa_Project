@@ -9,7 +9,7 @@ function QnaImg({ url }) {
         )
     }
     
-    if(url === "/assets/Qnaimges/NoBackgroundS.gif"){
+    if(url === "/assets/Qnaimges/NoBackgroundS.gif" || url === "/assets/Qnaimges/NoBackground.gif" || url === "/assets/Qnaimges/qna8-1.gif" || url === "/assets/Qnaimges/qna8-2.gif"){
         return (
             <ImgDiv>
                 <Img src={url}></Img>

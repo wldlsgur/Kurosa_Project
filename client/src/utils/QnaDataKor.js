@@ -40,7 +40,7 @@ const qna = [
     imgsrc: "/assets/Qnaimges/qna2.gif",
     talk: [
       {
-        who: ["You", "You"],
+        who: ["YOU", "YOU"],
         content: [
           "향에 불을 붙히니 과일같은 달콤한 향이 난다.",
           "향에 취해 눈을 감았다 뜨니, 산 속이다.. 이 곳이 흑산인가? \n\n그런데 어디선가 목소리가 들려오는 것 같은데...?",
@@ -48,7 +48,7 @@ const qna = [
         talkimg: ["/assets/Qnaimges/qna2-a.gif", "/assets/Qnaimges/qna2-2.gif"],
       },
       {
-        who: ["You", "You"],
+        who: ["YOU", "YOU"],
         content: [
           "향에 불을 붙히니 어디선가 맡은 듯한 그리운 향이 난다.",
           "향에 취해 눈을 감았다 뜨니, 산 속이다.. 이 곳이 흑산인가? \n\n그런데 어디선가 목소리가 들려오는 것 같은데...?",
@@ -56,7 +56,7 @@ const qna = [
         talkimg: ["/assets/Qnaimges/qna2-b.gif", "/assets/Qnaimges/qna2-2.gif"],
       },
       {
-        who: ["You", "You"],
+        who: ["YOU", "YOU"],
         content: [
           "향에 불을 붙히니 따뜻한 당근 수프 향이 난다. \n군침이 싹.. 도는 걸?",
           "향에 취해 눈을 감았다 뜨니, 산 속이다.. 이 곳이 흑산인가? \n\n그런데 어디선가 목소리가 들려오는 것 같은데...?",
@@ -75,17 +75,17 @@ const qna = [
     imgsrc: "/assets/Qnaimges/qna2-2.gif",
     talk: [
       {
-        who: ["You"],
+        who: ["YOU"],
         content: ["젠틀한데 섬세한 면이 있군...\n\n특별히 당신의 귀여웠던 과거를 여행할 기회를 주지"],
         talkimg: ["/assets/Qnaimges/qna2-2.gif"],
       },
       {
-        who: ["You"],
+        who: ["YOU"],
         content: ["속으로 자주 외로움을 타는 군..\n\n특별히 당신의 귀여웠던 과거를 여행할 기회를 주지"],
         talkimg: ["/assets/Qnaimges/qna2-2.gif"],
       },
       {
-        who: ["You"],
+        who: ["YOU"],
         content: ["평온한듯 보이나, 지기 싫어하는 타입인가..?\n\n특별히 당신의 귀여웠던 과거를 여행할 기회를 주지"],
         talkimg: ["/assets/Qnaimges/qna2-2.gif"],
       }
@@ -101,17 +101,17 @@ const qna = [
     imgsrc: "/assets/Qnaimges/qna4.gif",
     talk: [
       {
-        who: ["","You"],
+        who: ["","YOU"],
         content: ["","아야!\n\n잠시 추억을 회상하며 걷고 있는데,\n어디선가 날아온 돌에 맞았다..!"],
         talkimg: ["","/assets/Qnaimges/qna4-1.gif"],
       },
       {
-        who: ["","You"],
+        who: ["","YOU"],
         content: ["","아야!\n\n잠시 추억을 회상하며 걷고 있는데,\n어디선가 날아온 돌에 맞았다..!"],
         talkimg: ["","/assets/Qnaimges/qna4-1.gif"],
       },
       {
-        who: ["","You"],
+        who: ["","YOU"],
         content: ["","아야!\n\n잠시 추억을 회상하며 걷고 있는데,\n어디선가 날아온 돌에 맞았다..!"],
         talkimg: ["","/assets/Qnaimges/qna4-1.gif"],
       }
@@ -127,17 +127,17 @@ const qna = [
     imgsrc: "/assets/Qnaimges/qna4-1.gif",
     talk: [
       {
-        who: ["You", "You"],
+        who: ["YOU", "YOU"],
         content: ["수풀에 숨어있던 건방진 햄찌를 잡아냈다.","어라..\n\n근데..."],
         talkimg: ["/assets/Qnaimges/qna5-1.gif","/assets/Qnaimges/qna5-1.gif"],
       },
       {
-        who: ["You", "You"],
+        who: ["YOU", "YOU"],
         content: ["어디선가 나타난 수상한 햄찌가 내 다리를 톡톡 치며 사과한다.","어라..\n\n근데..."],
         talkimg: ["/assets/Qnaimges/qna5-1.gif","/assets/Qnaimges/qna5-1.gif"],
       },
       {
-        who: ["You", "You"],
+        who: ["YOU", "YOU"],
         content: ["돌멩이가 떨어진 곳에 햄찌가 바들바들 떨고 있다....","어라..\n\n근데..."],
         talkimg: ["/assets/Qnaimges/qna5-1.gif","/assets/Qnaimges/qna5-1.gif"],
       }
@@ -153,17 +153,17 @@ const qna = [
     imgsrc: "/assets/Qnaimges/qna5-1.gif",
     talk: [
       {
-        who: ["You", "You"],
+        who: ["YOU", "YOU"],
         content: ["엇...","귀엽다..\n역시 귀여운게 최고다...\n\n음..? 그런데 햄찌가 뭐라고 말을 하는 것 같다."],
         talkimg: ["/assets/Qnaimges/qna6-a.gif","/assets/Qnaimges/qna6-a.gif"],
       },
       {
-        who: ["You", "You"],
+        who: ["YOU", "YOU"],
         content: ["엇...","귀엽다..\n역시 귀여운게 최고다...\n\n음..? 그런데 햄찌가 뭐라고 말을 하는 것 같다."],
         talkimg: ["/assets/Qnaimges/qna6-b.gif","/assets/Qnaimges/qna6-b.gif"],
       },
       {
-        who: ["You", "You"],
+        who: ["YOU", "YOU"],
         content: ["엇...","귀엽다..\n역시 귀여운게 최고다...\n\n음..? 그런데 햄찌가 뭐라고 말을 하는 것 같다."],
         talkimg: ["/assets/Qnaimges/qna6-c.gif","/assets/Qnaimges/qna6-c.gif"],
       }
@@ -179,7 +179,7 @@ const qna = [
     imgsrc: "/assets/Qnaimges/qna7.gif",
     talk: [
       {
-        who: ["햄찌", "You", "You", "햄찌", "You", "햄찌", "햄찌", "You","햄찌","햄찌","햄찌","햄찌", "You", "", "", "", "", "", ""],
+        who: ["햄찌", "YOU", "YOU", "햄찌", "YOU", "햄찌", "햄찌", "YOU","햄찌","햄찌","햄찌","햄찌", "YOU", "", "", "", "", "", ""],
         content: [
           "히히~ 고마워!\n\n얼른 같이 가찌!", 
           "작은 영혼이 나를 바다로 안내했다...\n\n탁 트인 바닷가 풍경에 마음이 괜히 뭉클해진다.",
@@ -218,7 +218,7 @@ const qna = [
         ],
       },
       {
-        who: ["You", "You", "You", "햄찌", "You", "햄찌", "햄찌", "You","햄찌","햄찌","햄찌","햄찌", "You", "", "", "", "", "", ""],
+        who: ["YOU", "YOU", "YOU", "햄찌", "YOU", "햄찌", "햄찌", "YOU","햄찌","햄찌","햄찌","햄찌", "YOU", "", "", "", "", "", ""],
         content: [
             "이런.. 울먹이는 표정에 결국 무장해제 되어버렸다.", 
             "작은 영혼이 나를 바다로 안내했다...\n\n탁 트인 바닷가 풍경에 마음이 괜히 뭉클해진다.",
@@ -257,7 +257,7 @@ const qna = [
           ],
       },
       {
-        who: ["You", "You", "You", "햄찌", "You", "햄찌", "햄찌", "You","햄찌","햄찌","햄찌","햄찌", "You", "", "", "", "", "", ""],
+        who: ["YOU", "YOU", "YOU", "햄찌", "YOU", "햄찌", "햄찌", "YOU","햄찌","햄찌","햄찌","햄찌", "YOU", "", "", "", "", "", ""],
         content: [
             "귀여워서 나도 모르게 고개를 끄덕이고 말았다!", 
             "작은 영혼이 나를 바다로 안내했다...\n\n탁 트인 바닷가 풍경에 마음이 괜히 뭉클해진다.",
@@ -303,7 +303,7 @@ const qna = [
     imgsrc: "/assets/Qnaimges/qna8.gif",
     talk: [
       {
-        who: ["바다", "You"],
+        who: ["바다", "YOU"],
         content: ["그렇군.. 당신의 소원은 잘 전달해주도록 하지...", "기적에 감동한 당신은 눈물이 앞을 가린다..."],
         talkimg: ["/assets/Qnaimges/qna8.gif","/assets/Qnaimges/qna8.gif"],
       }

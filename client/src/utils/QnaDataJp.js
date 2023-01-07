@@ -40,7 +40,7 @@ const qna = [
     imgsrc: "/assets/Qnaimges/qna2.gif",
     talk: [
       {
-        who: ["You", "You"],
+        who: ["YOU", "YOU"],
         content: [
           "線香に火をつけると果物のような甘い香りがする",
           "香りに酔って目を閉じて開けたら、いつの間にか黒山だ。ここが黒山かな? \n\nところが、どこかで声が聞こえるみたいだけど...",
@@ -48,7 +48,7 @@ const qna = [
         talkimg: ["/assets/Qnaimges/qna2-a.gif", "/assets/Qnaimges/qna2-2.gif"],
       },
       {
-        who: ["You", "You"],
+        who: ["YOU", "YOU"],
         content: [
           "線香に火をつけると、どこかで嗅いだような懐かしい香りがする。",
           "香りに酔って目を閉じて開けたら、いつの間にか黒山だ。ここが黒山かな? \n\nところが、どこかで声が聞こえるみたいだけど...",
@@ -56,7 +56,7 @@ const qna = [
         talkimg: ["/assets/Qnaimges/qna2-b.gif", "/assets/Qnaimges/qna2-2.gif"],
       },
       {
-        who: ["You", "You"],
+        who: ["YOU", "YOU"],
         content: [
           "線香に火をつけると、温かいにんじんスープの香りがする。 \nよだれが出る...!",
           "香りに酔って目を閉じて開けたら、いつの間にか黒山だ。ここが黒山かな? \n\nところが、どこかで声が聞こえるみたいだけど...",
@@ -75,17 +75,17 @@ const qna = [
     imgsrc: "/assets/Qnaimges/qna2-2.gif",
     talk: [
       {
-        who: ["You"],
+        who: ["YOU"],
         content: ["ワイルドなのに繊細な面があるね..\n\n特別にあなたの可愛かった過去を旅行する機会を与える。どう?"],
         talkimg: ["/assets/Qnaimges/qna2-2.gif"],
       },
       {
-        who: ["You"],
+        who: ["YOU"],
         content: ["心の中でよく寂しがるね...\n\n特別にあなたの可愛かった過去を旅行する機会を与える。どう?"],
         talkimg: ["/assets/Qnaimges/qna2-2.gif"],
       },
       {
-        who: ["You"],
+        who: ["YOU"],
         content: ["穏やかに見えるけど、負けず嫌いのタイプかな...?\n\n特別にあなたの可愛かった過去を旅行する機会を与える。どう?"],
         talkimg: ["/assets/Qnaimges/qna2-2.gif"],
       }
@@ -101,17 +101,17 @@ const qna = [
     imgsrc: "/assets/Qnaimges/qna4.gif",
     talk: [
       {
-        who: ["","You"],
+        who: ["","YOU"],
         content: ["","痛っ！\n\nしばらく思い出を思い浮かべながら歩いていたら、どこからか飛んできた石にあたった...!"],
         talkimg: ["","/assets/Qnaimges/qna4-1.gif"],
       },
       {
-        who: ["","You"],
+        who: ["","YOU"],
         content: ["","痛っ！\n\nしばらく思い出を思い浮かべながら歩いていたら、どこからか飛んできた石にあたった...!"],
         talkimg: ["","/assets/Qnaimges/qna4-1.gif"],
       },
       {
-        who: ["","You"],
+        who: ["","YOU"],
         content: ["","痛っ！\n\nしばらく思い出を思い浮かべながら歩いていたら、どこからか飛んできた石にあたった...!"],
         talkimg: ["","/assets/Qnaimges/qna4-1.gif"],
       }
@@ -127,17 +127,17 @@ const qna = [
     imgsrc: "/assets/Qnaimges/qna4-1.gif",
     talk: [
       {
-        who: ["You", "You"],
+        who: ["YOU", "YOU"],
         content: ["茂みに隠れていた生意気なハムッチを捕まえた。","あれ..."],
         talkimg: ["/assets/Qnaimges/qna5-1.gif","/assets/Qnaimges/qna5-1.gif"],
       },
       {
-        who: ["You", "You"],
+        who: ["YOU", "YOU"],
         content: ["どこからか現れたハムッチが私の足を ツンツンつつきながら謝る。","あれ..."],
         talkimg: ["/assets/Qnaimges/qna5-1.gif","/assets/Qnaimges/qna5-1.gif"],
       },
       {
-        who: ["You", "You"],
+        who: ["YOU", "YOU"],
         content: ["石ころが落ちたところでハムッチがぶるぶる震えている。","あれ..."],
         talkimg: ["/assets/Qnaimges/qna5-1.gif","/assets/Qnaimges/qna5-1.gif"],
       }
@@ -153,17 +153,17 @@ const qna = [
     imgsrc: "/assets/Qnaimges/qna5-1.gif",
     talk: [
       {
-        who: ["You", "You"],
+        who: ["YOU", "YOU"],
         content: ["あっ…!","可愛い...! やっぱり可愛いのが最高だ...\n\nん? ハムッチが何か言っているようだ。"],
         talkimg: ["/assets/Qnaimges/qna6-a.gif","/assets/Qnaimges/qna6-a.gif"],
       },
       {
-        who: ["You", "You"],
+        who: ["YOU", "YOU"],
         content: ["あっ…!","可愛い...! やっぱり可愛いのが最高だ...\n\nん? ハムッチが何か言っているようだ。"],
         talkimg: ["/assets/Qnaimges/qna6-b.gif","/assets/Qnaimges/qna6-b.gif"],
       },
       {
-        who: ["You", "You"],
+        who: ["YOU", "YOU"],
         content: ["あっ…!","可愛い...! やっぱり可愛いのが最高だ...\n\nん? ハムッチが何か言っているようだ。"],
         talkimg: ["/assets/Qnaimges/qna6-c.gif","/assets/Qnaimges/qna6-c.gif"],
       }
@@ -179,7 +179,7 @@ const qna = [
     imgsrc: "/assets/Qnaimges/qna7.gif",
     talk: [
       {
-        who: ["ハムッチ", "You", "You", "ハムッチ", "You", "ハムッチ", "ハムッチ", "You","ハムッチ","ハムッチ","ハムッチ","ハムッチ", "You", "", "", "", "", "", ""],
+        who: ["ハムッチ", "YOU", "YOU", "ハムッチ", "YOU", "ハムッチ", "ハムッチ", "YOU","ハムッチ","ハムッチ","ハムッチ","ハムッチ", "YOU", "", "", "", "", "", ""],
         content: [
           "ふふっ ありがとッチ！\n\n早く行くッチ、行くッチ!", 
           "小さな魂が私を海に案内した...\n\n広々とした海辺の風景に心が熱くなる。",
@@ -218,7 +218,7 @@ const qna = [
         ],
       },
       {
-        who: ["You", "You", "You", "ハムッチ", "You", "ハムッチ", "ハムッチ", "You","ハムッチ","ハムッチ","ハムッチ","ハムッチ", "You", "", "", "", "", "", ""],
+        who: ["YOU", "YOU", "YOU", "ハムッチ", "YOU", "ハムッチ", "ハムッチ", "YOU","ハムッチ","ハムッチ","ハムッチ","ハムッチ", "YOU", "", "", "", "", "", ""],
         content: [
             "しまった.. 泣きそうな表情に結局 武装解除されてしまった。", 
             "小さな魂が私を海に案内した...\n\n広々とした海辺の風景に心が熱くなる。",
@@ -257,7 +257,7 @@ const qna = [
         ],
       },
       {
-        who: ["You", "You", "You", "ハムッチ", "You", "ハムッチ", "ハムッチ", "You","ハムッチ","ハムッチ","ハムッチ","ハムッチ", "You", "", "", "", "", "", ""],
+        who: ["YOU", "YOU", "YOU", "ハムッチ", "YOU", "ハムッチ", "ハムッチ", "YOU","ハムッチ","ハムッチ","ハムッチ","ハムッチ", "YOU", "", "", "", "", "", ""],
         content: [
             "可愛くて思わずうなずいてしまった！", 
             "小さな魂が私を海に案内した...\n\n広々とした海辺の風景に心が熱くなる。",
@@ -303,7 +303,7 @@ const qna = [
     imgsrc: "/assets/Qnaimges/qna8.gif",
     talk: [
       {
-        who: ["海", "You"],
+        who: ["海", "YOU"],
         content: ["そうなのかい...あなたの願いをかなえてあげようよう...", "奇跡に感動したあなた涙で前が見えなくなる..."],
         talkimg: ["/assets/Qnaimges/qna8.gif","/assets/Qnaimges/qna8.gif"],
       }

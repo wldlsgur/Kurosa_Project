@@ -5,6 +5,7 @@ function effectSound(src, volume, loopb) {
         src: src,
         volume: volume,
         loop: loopb,
+        html5: true,
     });
 
     return sound;
