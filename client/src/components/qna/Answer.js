@@ -31,7 +31,7 @@ function Answer( {index, item, path, indexAdd, controlView} ) {
     us.play();
   }
   if(index === 6 && tidx === 13){
-    const us = effectSound("/assets/Sound/seasound.mp3", 1, true);
+    const us = effectSound("/assets/Sound/seasound.mp3", 0.3, true);
     us.play();
   }
   if(index === 6 && tidx === 11){
@@ -39,7 +39,7 @@ function Answer( {index, item, path, indexAdd, controlView} ) {
   }
   if(index === 8 && who === ""){
     Howler.stop();
-    const us = effectSound("/assets/Sound/transform.mp3", 1, true);
+    const us = effectSound("/assets/Sound/loading.mp3", 1, true);
     us.play();
     return(
       <LoadingDiv>
@@ -60,7 +60,12 @@ function Answer( {index, item, path, indexAdd, controlView} ) {
   if(index === 6 && who === ""){
     return(
       <FootprintDiv>
-        <FootImg src={imgsrc} onClick={contentClick}></FootImg>
+        <FootImg src={imgsrc} onClick={ ()=>{
+            let us = effectSound("/assets/Sound/footprint.mp3", 1);
+            us.play();
+            contentClick();
+          }
+          }></FootImg>
       </FootprintDiv>
   );
   }
