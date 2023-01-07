@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { CopyToClipboard } from "react-copy-to-clipboard/src";
 import { useEffect } from "react";
-import { Helmet } from "react-helmet-async";
 import shareToKatalk from "../../Api/shareKakao";
 import shareToTwitter from "../../Api/shareTwitter";
 import { TwitterShareButton, LineShareButton } from "react-share";
@@ -41,20 +40,7 @@ const ShareModal = ({ closeShareModal }) => {
     </ShareModalDiv>
   );
 };
-// const MetaTag = () => {
-//   return (
-//     <Helmet>
-//       <meta name="twitter:title" content="사이버 점집 KUROSA_2023" />
-//       <meta name="twitter:description" content="cyber fortune teller" />
-//       <meta name="twitter:card" content="https://ifh.cc/g/cvd79x.jpg" />
-//       <meta
-//         name="twitter:url"
-//         content={process.env.REACT_APP_SERVER_IP_ADRESS}
-//       />
-//       <meta name="twitter:image" content="https://ifh.cc/g/cvd79x.jpg" />
-//     </Helmet>
-//   );
-// };
+
 const ShareModalDiv = styled.div`
   width: 366px;
   height: 530px;
