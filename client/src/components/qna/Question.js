@@ -181,14 +181,14 @@ const QDiv = styled.div`
 const QTitle = styled.p`
   font-family: ${(props) => props.font || "Ycomputer"};
   color: #00ff00;
-  font-size: 21px;
+  font-size: ${(props) => props.font==="Ycomputer" ? 21 : 18}px;
   line-height: 24px;
 `;
 
 const QMark = styled.p`
   font-family: "Ycomputer";
   color: #00ff00;
-  font-size: 21px;
+  font-size: ${(props) => props.font==="Ycomputer" ? 21 : 18}px;
   line-height: 24px;
   padding: 0 1.4% 0 1.4%;
 `;
@@ -196,7 +196,7 @@ const QMark = styled.p`
 const QContentP = styled.p`
   font-family: ${(props) => props.font || "Ycomputer"};
   color: #00ff00;
-  font-size: 17px;
+  font-size: ${(props) => props.font==="Ycomputer" ? 17 : 15}px;
   line-height: 22px;
   white-space: pre-wrap;
   padding: 0 1.4% 0 1.4%;

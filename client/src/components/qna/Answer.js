@@ -33,8 +33,9 @@ function Answer( {index, item, path, indexAdd, controlView} ) {
   if(index === 6 && tidx === 13){
     const us = effectSound("/assets/Sound/seasound.mp3", 0.1, true);
     us.play();
+    
   }
-  if(index === 6 && tidx === 11){
+  if(index === 6 && tidx === 12){
     Howler.stop();
   }
   if(index === 8 && who === ""){
@@ -162,7 +163,7 @@ const AContentDiv = styled.div`
 const AContentP = styled.p`
   font-family: ${(props) => props.font || "Ycomputer"};
   color: #00ff00;
-  font-size: 17px;
+  font-size: ${(props) => props.font==="Ycomputer" ? 17 : 15}px;
   white-space: pre-wrap;
 `;
 
