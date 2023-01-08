@@ -12,8 +12,12 @@ function QnaImg({ url, ck }) {
         return(
             <ImgDiv>
                 <FrameDiv url="/assets/Qnaimges/qna-frame.png">
-                    <Img src="/assets/Qnaimges/sealight.gif"></Img>
-                    <Img src={url}></Img>
+                    <LightDiv url="/assets/Qnaimges/sealight.gif">
+                        <SeaImg src={url}></SeaImg>
+                    </LightDiv>
+                    
+                    {/* <Img src="/assets/Qnaimges/sealight.gif"></Img> */}
+                    
                 </FrameDiv>
             </ImgDiv>
         )
@@ -56,6 +60,10 @@ const Img = styled.img`
   object-fit: cover;
 `;
 
+const SeaImg = styled(Img)`
+  opacity: 0.7;
+`;
+
 const FrameDiv = styled.div`
   width: 320px;
   height: 225px;
@@ -64,6 +72,12 @@ const FrameDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+
+const LightDiv = styled(FrameDiv)`
+  width: 310px;
+  height: 215px;
+  background-position: center;
 `;
 
 export default QnaImg;
