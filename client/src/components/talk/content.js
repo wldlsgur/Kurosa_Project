@@ -35,9 +35,6 @@ const Content = ({
         </TitleDiv>
         <ContentListDiv>
           <ContentP>{talkData[index].content[0]}</ContentP>
-          {content.map((value, index) => {
-            return <ContentP key={index}>{value}</ContentP>;
-          })}
         </ContentListDiv>
       </ContentDiv2>
     );
@@ -77,7 +74,7 @@ const TitleP = styled.p`
 const ContentP = styled.p`
   color: #00ff00;
   font-size: 17px;
-  line-height: 26px;
+  line-height: 18px;
   white-space: pre-wrap;
 `;
 const ContentListDiv = styled.div`

@@ -16,8 +16,7 @@ const talkDataJp = [
     contentImg: "/assets/Images/talk.png",
     title: "KUROSA",
     content: [
-      "久しぶりに会う客じゃな…",
-      "そこのもん話さなくても 全部 わかっておる",
+      "久しぶりに会う客じゃな…\n\nそこのもん話さなくても 全部 わかっておる",
     ],
   },
   {
@@ -25,8 +24,7 @@ const talkDataJp = [
     contentImg: "/assets/Images/talk.png",
     title: "KUROSA",
     content: [
-      "何千年もの占いを見てきたわしKUROSA! 見ればすぐわかる!!",
-      "日本に住んで…1602年 9月37日 生まれだろ？",
+      "何千年もの占いを見てきたわしKUROSA! 見ればすぐわかる!!\n\n日本に住んで…1602年 9月37日 生まれだろ？",
     ],
   },
   {
@@ -34,8 +32,7 @@ const talkDataJp = [
     contentImg: "/assets/Images/talk.png",
     title: "YOU",
     content: [
-      "(…時間の無駄使いする前に でようっと)",
-      "すみません 出ようかな…と",
+      "(…時間の無駄使いする前に でようっと)\n\nすみません 出ようかな…と",
     ],
   },
   {
@@ -43,8 +40,7 @@ const talkDataJp = [
     contentImg: "/assets/Images/talk.png",
     title: "KUROSA",
     content: [
-      "ほほう! 若いもん 何を そんなに 急いでおる こういう 言葉もあるじゃろ サル…違う ウサギも木から落ちる時があるってな！",
-      "いったん お入り..!",
+      "ほほう! 若いもん 何を そんなに 急いでおる こういう 言葉もあるじゃろ サル…違う ウサギも木から落ちる時があるってな！\n\nいったん お入り..!",
     ],
   },
   {
@@ -58,9 +54,7 @@ const talkDataJp = [
     contentImg: "/assets/Images/talk.png",
     title: "KUROSA",
     content: [
-      "フムフム…とにかく..! ",
-      "それが重要じゃなくて",
-      "私の能力でラッキーアイテムを占うことができるが、どうじゃ？",
+      "フムフム…\nとにかく..!\n\nそれが重要じゃなくて\n\n私の能力でラッキーアイテムを占うことができるが、どうじゃ？",
     ],
   },
   {
@@ -68,16 +62,14 @@ const talkDataJp = [
     contentImg: "/assets/Images/talk.png",
     title: "YOU",
     content: [
-      "ラッキーアイテム?",
-      "うーん.............楽しんで一度見てみようかな？",
-      "いいですよ!",
+      "ラッキーアイテム?\n\nうーん.............楽しんで一度見てみようかな？\n\nいいですよ!",
     ],
   },
   {
     logoImg: "/assets/Images/talk2NoBackground.gif",
     contentImg: "/assets/Images/talk.png",
     title: "KUROSA",
-    content: ["よい〜よい〜", "それでは行こうかの〜！"],
+    content: ["よい〜よい〜\n\nそれでは行こうかの〜！"],
   },
 ];
 
