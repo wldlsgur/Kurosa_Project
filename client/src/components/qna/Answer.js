@@ -33,6 +33,7 @@ function Answer( {index, item, path, indexAdd, controlView} ) {
   if(index === 6 && tidx === 13){
     const us = effectSound("/assets/Sound/seasound.mp3", 0.1, true);
     us.play();
+    
   }
   if(index === 6 && tidx === 12){
     Howler.stop();
