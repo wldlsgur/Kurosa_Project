@@ -73,7 +73,6 @@ const TitleDiv = styled.div`
 const TitleP = styled.p`
   color: #00ff00;
   font-size: 25px;
-  line-height: 46px;
 `;
 const ContentP = styled.p`
   color: #00ff00;
@@ -86,7 +85,7 @@ const ContentListDiv = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 1% 12% 0 12%;
+  padding: 3% 12% 0 12%;
 `;
 const ContentDiv2 = styled(ContentDiv)`
   flex: 1 1 32.9%;
