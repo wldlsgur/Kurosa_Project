@@ -4,6 +4,8 @@ import { useEffect } from "react";
 import shareToKatalk from "../../Api/shareKakao";
 import shareToTwitter from "../../Api/shareTwitter";
 import { TwitterShareButton, LineShareButton } from "react-share";
+import env from "../../utils/env";
+
 const ShareModal = ({ closeShareModal }) => {
   useEffect(() => {
     const script = document.createElement("script");
@@ -26,13 +28,13 @@ const ShareModal = ({ closeShareModal }) => {
           src="assets/Images/twitter.png"
           onClick={shareToTwitter}
         ></SnsImg>
-        <LineShareButton url={process.env.REACT_APP_SERVER_IP_ADRESS}>
+        <LineShareButton url={env.serverAddress}>
           <SnsImg src="assets/Images/line.png"></SnsImg>
         </LineShareButton>
       </ShareSnsDiv>
       <CopyToClipboard
         className="Toram"
-        text={process.env.REACT_APP_SERVER_IP_ADRESS}
+        text={env.serverAddress}
         onCopy={() => alert("클립보드에 복사되었습니다.")}
       >
         <CopyImg src="assets/Images/copy.png"></CopyImg>
