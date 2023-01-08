@@ -93,7 +93,7 @@ function Qusetion( {item, pathSet, index} ) {
             <div><QMark font={fontStyle}>랝</QMark></div>
             <div><QContentP font={fontStyle}>a.</QContentP></div>
             <div><QContentP font={fontStyle}>b.</QContentP></div>
-            <div><QContentP font={fontStyle}>C.</QContentP></div>
+            <div><QContentP font={fontStyle}>c.</QContentP></div>
             <div>
                 <QTitle font={fontStyle}>{question}</QTitle>    
             </div>
@@ -157,7 +157,7 @@ const QDiv = styled.div`
   background-image: url("/assets/Qnaimges/question.png");
   background-size: 100% 100%;
   overflow: hidden;
-  padding : 7% 6% 0 6%;
+  padding : 7% 4.6% 0 4.6%;
   padding-top: ${(props) => props.jppadding}%;
   display: grid;
   grid-template-columns: 7% 90%;
@@ -190,6 +190,7 @@ const QMark = styled.p`
   color: #00ff00;
   font-size: 21px;
   line-height: 24px;
+  padding: 0 1.4% 0 1.4%;
 `;
 
 const QContentP = styled.p`
@@ -197,5 +198,7 @@ const QContentP = styled.p`
   color: #00ff00;
   font-size: 17px;
   line-height: 22px;
+  white-space: pre-wrap;
+  padding: 0 1.4% 0 1.4%;
 `;
 export default Qusetion;

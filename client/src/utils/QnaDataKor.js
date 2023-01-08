@@ -1,17 +1,17 @@
 const qna = [
   {
-    question: "지금부터 흑산으로 출발할 것 이야! 무엇을 챙겨가겠는가?",
+    question: "지금부터 흑산으로 출발할 것이야! 무엇을 챙겨가겠는가?",
     answer: [
       "산이라면 당연지사 지팡이지!",
-      "벌써부터 허기지는 느낌이다.. 주먹밥으로 챙겨가야겠다.",
-      "산이면 벌레가 많을거 같은데? 모기향을 가져가자!",
+      "벌써부터 허기지는 느낌이다..\n주먹밥으로 챙겨가야겠다.",
+      "산이면 벌레가 많을거 같은데?\n모기향을 가져가자!",
     ],
     imgsrc: "/assets/Qnaimges/qna1.gif",
     talk: [
       {
         who: ["YOU", "KUROSA"],
         content: [
-          "자 이제 준비 됐어요",
+          "자 이제 준비 됐어요!",
           "그래 그래.. 결정이 빠른걸? \n\n이어서 한가지 중요한 의식만 치르면 된다구!",
         ],
         talkimg: ["/assets/Qnaimges/qna1.gif", "/assets/Qnaimges/NoBackgroundS.gif",],
@@ -19,7 +19,7 @@ const qna = [
       {
         who: ["YOU", "KUROSA"],
         content: [
-          "자 이제 준비 됐어요",
+          "자 이제 준비 됐어요!",
           "그래 그래.. 결정이 빠른걸? \n\n이어서 한가지 중요한 의식만 치르면 된다구!",
         ],
         talkimg: ["/assets/Qnaimges/qna1.gif", "/assets/Qnaimges/NoBackgroundS.gif",],
@@ -27,7 +27,7 @@ const qna = [
       {
         who: ["YOU", "KUROSA"],
         content: [
-          "자 이제 준비 됐어요",
+          "자 이제 준비 됐어요!",
           "그래 그래.. 결정이 빠른걸? \n\n이어서 한가지 중요한 의식만 치르면 된다구!",
         ],
         talkimg: ["/assets/Qnaimges/qna1.gif", "/assets/Qnaimges/NoBackgroundS.gif",],
@@ -139,7 +139,7 @@ const qna = [
       {
         who: ["YOU", "YOU"],
         content: ["돌멩이가 떨어진 곳에 햄찌가 바들바들 떨고 있다....","어라..\n\n근데..."],
-        talkimg: ["/assets/Qnaimges/qna5-1.gif","/assets/Qnaimges/qna5-1.gif"],
+        talkimg: ["/assets/Qnaimges/qna5-1c.gif","/assets/Qnaimges/qna5-1.gif"],
       }
     ],
   },

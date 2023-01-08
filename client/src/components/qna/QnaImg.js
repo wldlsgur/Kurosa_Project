@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-function QnaImg({ url }) {
+function QnaImg({ url, ck }) {
     if(url === "/assets/Qnaimges/footprint-0.gif"){
         return (
             <ImgDiv>
@@ -8,7 +8,16 @@ function QnaImg({ url }) {
             </ImgDiv>
         )
     }
-    
+    if(ck === "true"){
+        return(
+            <ImgDiv>
+                <FrameDiv url="/assets/Qnaimges/qna-frame.png">
+                    <Img src="/assets/Qnaimges/sealight.gif"></Img>
+                    <Img src={url}></Img>
+                </FrameDiv>
+            </ImgDiv>
+        )
+    }
     if(url === "/assets/Qnaimges/NoBackgroundS.gif" || url === "/assets/Qnaimges/NoBackground.gif" || url === "/assets/Qnaimges/qna8-1.gif" || url === "/assets/Qnaimges/qna8-2.gif"){
         return (
             <ImgDiv>

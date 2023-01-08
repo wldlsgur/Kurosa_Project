@@ -139,7 +139,7 @@ const qna = [
       {
         who: ["YOU", "YOU"],
         content: ["石ころが落ちたところでハムッチがぶるぶる震えている。","あれ..."],
-        talkimg: ["/assets/Qnaimges/qna5-1.gif","/assets/Qnaimges/qna5-1.gif"],
+        talkimg: ["/assets/Qnaimges/qna5-1c.gif","/assets/Qnaimges/qna5-1.gif"],
       }
     ],
   },

@@ -26,12 +26,12 @@ function Answer( {index, item, path, indexAdd, controlView} ) {
           setTidx(tidx+1);
       }
   }
-  if(index === 6 && tidx === 4){
+  if(index === 6 && tidx === 3){
     const us = effectSound("/assets/Sound/transform.mp3", 1);
     us.play();
   }
   if(index === 6 && tidx === 13){
-    const us = effectSound("/assets/Sound/seasound.mp3", 0.3, true);
+    const us = effectSound("/assets/Sound/seasound.mp3", 0.1, true);
     us.play();
   }
   if(index === 6 && tidx === 11){
@@ -47,6 +47,23 @@ function Answer( {index, item, path, indexAdd, controlView} ) {
           return navigate("/result", { replace: true });}}> 
         </LoadingImg>
       </LoadingDiv>
+    );
+  }
+  if(index === 7 && tidx === 1){
+    return(
+      <>
+        <QnaImg url={imgsrc} ck="true"></QnaImg>
+        <ADiv>
+          <AWhoDiv>
+            <AWho font={fontStyle}>{who}</AWho>
+          </AWhoDiv>
+          <AContentDiv onClick={contentClick}>
+            <AContentP font={fontStyle}>{content}
+            </AContentP>
+          </AContentDiv>
+        </ADiv>
+        <Footer></Footer>
+      </>
     );
   }
   if(index === 3 && tidx === 0){
@@ -143,7 +160,7 @@ const AContentDiv = styled.div`
 `
 
 const AContentP = styled.p`
-font-family: ${(props) => props.font || "Ycomputer"};
+  font-family: ${(props) => props.font || "Ycomputer"};
   color: #00ff00;
   font-size: 17px;
   white-space: pre-wrap;

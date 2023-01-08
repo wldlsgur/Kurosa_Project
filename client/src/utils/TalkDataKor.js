@@ -22,7 +22,7 @@ const talkDataKr = [
     contentImg: "/assets/Images/talk.png",
     title: "KUROSA",
     content: [
-      "수천년간 점을 봐온 나 쿠로사! 딱 보면 알지..!",
+      "수천년간 점을 봐온 나 쿠로사!\n딱 보면 알지..!",
       "후후..너.. 한국에 살고... 1603년 9월 27일 생이지?",
     ],
   },

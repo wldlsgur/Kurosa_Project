@@ -79,13 +79,14 @@ const ContentP = styled.p`
   color: #00ff00;
   font-size: 17px;
   line-height: 26px;
+  white-space: pre-wrap;
 `;
 const ContentListDiv = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 1% 6% 0 6%;
+  padding: 1% 12% 0 12%;
 `;
 const ContentDiv2 = styled(ContentDiv)`
   flex: 1 1 32.9%;
