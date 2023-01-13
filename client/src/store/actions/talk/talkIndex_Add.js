@@ -1,7 +1,7 @@
 const TalkIndex_Add = "TalkIndex_Add";
+const TalkIndex_Init = "TalkIndex_Init";
 const TalkContent_Push = "TalkContent_Push";
 const TalkContent_Init = "TalkContent_Init";
-const FirstTalk_Push = "FirstTalk_Push";
 
 const talkIndexAdd = (data) => {
   return {
@@ -9,9 +9,9 @@ const talkIndexAdd = (data) => {
     payload: data,
   };
 };
-const firstTalkPush = (data) => {
+const talkIndexInit = (data) => {
   return {
-    type: FirstTalk_Push,
+    type: TalkIndex_Init,
     payload: data,
   };
 };
@@ -29,4 +29,4 @@ const ContenInit = (data) => {
   };
 };
 
-export { talkIndexAdd, firstTalkPush, ContentPush, ContenInit };
+export { talkIndexAdd, talkIndexInit, ContentPush, ContenInit };

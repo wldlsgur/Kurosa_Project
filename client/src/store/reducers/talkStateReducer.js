@@ -1,4 +1,4 @@
-const initState = { index: 0, content: [], firstTalk: "" };
+const initState = { index: 0, content: [] };
 
 export default function talkStateReducer(state = initState, action) {
   let copy = { ...state };
@@ -6,8 +6,8 @@ export default function talkStateReducer(state = initState, action) {
     case "TalkIndex_Add":
       copy.index++;
       break;
-    case "FirstTalk_Push":
-      copy.firstTalk = action.payload;
+    case "TalkIndex_Init":
+      copy.index = 0;
       break;
     case "TalkContent_Push":
       copy.content.push(action.payload);

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { useSelector, useDispatch } from "react-redux";
 import { useTranslation } from "react-i18next";
-
 // Component
 import Warring from "../components/main/Warring";
 import Start from "../components/main/Start";
@@ -11,8 +10,10 @@ import StartLogo from "../components/main/StartLogo";
 import Language from "../components/main/Language";
 import WrapDiv from "../components/common/Wrapper";
 import Header from "../components/common/header";
+import Loding from "../components/common/Loding";
 // redux
 import updateMainLogo from "../store/actions/main/mainLogo_Update";
+import { useEffect } from "react";
 
 const StartWrap = styled(WrapDiv)`
   display: flex;
@@ -30,6 +31,12 @@ const Main = () => {
     dispatch(updateMainLogo(show));
   };
 
+  useEffect(() => {
+    dispatch(updateMainLogo("language"));
+  }, []);
+  if (!mainLogoRedux.show) {
+    return <Loding></Loding>;
+  }
   switch (mainLogoRedux.show) {
     case "language":
       return (

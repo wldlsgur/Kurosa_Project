@@ -10,22 +10,25 @@ import Footer from "../components/common/footer.js";
 // redux
 import {
   talkIndexAdd,
+  talkIndexInit,
   ContentPush,
   ContenInit,
 } from "../store/actions/talk/talkIndex_Add";
-import effectSound from "../hooks/effectSound"
-import { Howler } from 'howler';
+import effectSound from "../hooks/effectSound";
+import { Howler } from "howler";
 
 const Talk = () => {
   const { t, i18n } = useTranslation();
   const talkStateReducer = useSelector((state) => state.talkStateReducer);
   const dispatch = useDispatch();
 
-  useEffect(() =>{
+  useEffect(() => {
     Howler.stop();
     const us = effectSound("/assets/Sound/mainbackgroundsound.mp3", 1, true);
     us.play();
-  }, [])
+    if (talkStateReducer.index !== 0) dispatch(talkIndexInit());
+    if (!talkStateReducer.content[0]) dispatch(ContenInit());
+  }, []);
 
   const contentIndex = useRef(1); //대화 현재 인덱스
   const { index, content } = talkStateReducer; //전체 현재 인덱스와 대화배열
