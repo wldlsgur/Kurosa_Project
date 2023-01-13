@@ -9,7 +9,7 @@ import effectSound from "../../hooks/effectSound";
 import { Howler } from 'howler';
 import { useSelector, useDispatch } from "react-redux";
 import { tidxadd, qnainit } from "../../store/actions/qna/qnaindex";
-import changeView from "../../store/actions/qna/changeView";
+import { changeView } from "../../store/actions/qna/changeView";
 
 function Answer( ) {
   const navigate = useNavigate();

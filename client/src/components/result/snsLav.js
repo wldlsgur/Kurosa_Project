@@ -29,7 +29,7 @@ const SnsNavNav = styled.nav`
   width: 293px;
   height: 50px;
   margin: 0 auto;
-  margin-top: 120px;
+  margin-top: 70px;
   display: flex;
   justify-content: space-around;
   align-item: center;

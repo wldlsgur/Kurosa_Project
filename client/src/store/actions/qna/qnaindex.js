@@ -1,6 +1,7 @@
 const Path_Set = "Path_Set";
 const Tidx_Add = "Tidx_Add";
 const Qna_Init = "Qna_Init";
+const Replay_Init = "Replay_Init";
 
 const pathset = (data) => {
     return {
@@ -22,4 +23,11 @@ const qnainit = (data) => {
         payload: data,
     };
 };  
-export {pathset, tidxadd, qnainit};
+const replayInit = (data) => {
+    return {
+        type: Replay_Init,
+        payload: data,
+    };
+};  
+
+export {pathset, tidxadd, qnainit, replayInit};

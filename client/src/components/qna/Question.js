@@ -7,7 +7,7 @@ import effectSound from "../../hooks/effectSound";
 import { Howler } from 'howler';
 import { useSelector, useDispatch } from "react-redux";
 import { pathset } from "../../store/actions/qna/qnaindex";
-import changeView from "../../store/actions/qna/changeView";
+import { changeView } from "../../store/actions/qna/changeView";
 
 function Qusetion() {
     const { t, i18n } = useTranslation();

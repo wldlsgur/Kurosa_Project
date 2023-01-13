@@ -14,7 +14,7 @@ import Loding from "../components/common/Loding";
 // redux
 import updateMainLogo from "../store/actions/main/mainLogo_Update";
 import { useEffect } from "react";
-
+import { Howler } from "howler";
 const StartWrap = styled(WrapDiv)`
   display: flex;
   flex-direction: column;
@@ -26,6 +26,8 @@ const Main = () => {
   const dispatch = useDispatch();
   const { t, i18n } = useTranslation();
 
+  Howler.stop();
+  
   const fontStyle = i18n.language === "kr" ? "Ycomputer" : "JFDotKappa200213";
   const changeLogo = (show) => {
     dispatch(updateMainLogo(show));

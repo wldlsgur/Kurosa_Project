@@ -17,12 +17,13 @@ import { useTranslation } from "react-i18next";
 import { Howler } from "howler";
 import effectSound from "../hooks/effectSound";
 import { useEffect } from "react";
+import ReplayImg from "../components/result/replayImg";
 
 const ResultPage = () => {
   const shareController = useSelector((state) => state.shareController);
   const dispatch = useDispatch();
   const { t, i18n } = useTranslation();
-
+  
   useEffect(() => {
     Howler.stop();
     const us = effectSound("/assets/Sound/luckyitem.mp3", 1, true);
@@ -49,11 +50,13 @@ const ResultPage = () => {
       {!shareController.isShare ? (
         <React.Fragment>
           <ResultMsg msgUrl={resultMsgImageLanguageCheck()}></ResultMsg>
+          <ReplayImg></ReplayImg>
           <SnsNav></SnsNav>
         </React.Fragment>
       ) : (
         <ShareModal closeShareModal={closeShareModal}></ShareModal>
       )}
+      
       <LogoImg></LogoImg>
       <Footer></Footer>
     </WrapDiv>

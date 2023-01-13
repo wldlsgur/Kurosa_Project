@@ -15,6 +15,11 @@ export default function qnaIndexReducer(state = initState, action) {
         copy.path = 0;
         copy.tidx = 0;
         break;
+    case "Replay_Init":
+        copy.index = 0;
+        copy.path = 0;
+        copy.tidx = 0;
+        break;
     default:
         break;
   }
