@@ -15,8 +15,8 @@ const shareToKatalk = () => {
         description: "cyber fortune teller",
         imageUrl: "https://ifh.cc/g/88Vrc1.jpg", // 메인으로 보여질 이미지 주소
         link: {
-          webUrl: process.env.REACT_APP_SERVER_IP_ADRESS,
-          mobileWebUrl: process.env.REACT_APP_SERVER_IP_ADRESS,
+          webUrl: env.serverAddress,
+          mobileWebUrl: env.serverAddress,
         },
       },
     });

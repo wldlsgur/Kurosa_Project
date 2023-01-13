@@ -21,7 +21,7 @@ const ShareModal = ({ closeShareModal }) => {
       <ModalSignImg src="assets/Images/sign.gif"></ModalSignImg>
       <ShareSnsDiv>
         <SnsImg src="assets/Images/kakao.png" onClick={shareToKatalk}></SnsImg>
-        {/* <TwitterShareButton url={process.env.REACT_APP_SERVER_IP_ADRESS}>
+        {/* <TwitterShareButton url={env.serverAddress}>
           <SnsImg src="assets/Images/twitter.png"></SnsImg>
         </TwitterShareButton> */}
         <SnsImg
