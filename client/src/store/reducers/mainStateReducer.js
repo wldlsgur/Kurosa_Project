@@ -1,4 +1,4 @@
-const initState = { show: "language" };
+const initState = { show: "" };
 
 export default function mainLogoRedux(state = initState, action) {
   let copy = { ...state };
