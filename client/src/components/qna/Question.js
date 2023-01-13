@@ -1,15 +1,25 @@
 import { useEffect, useRef } from "react";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 import useFontStyle from "../../utils/useFontStyle";
 import effectSound from "../../hooks/effectSound";
 import { Howler } from 'howler';
+import { useSelector, useDispatch } from "react-redux";
+import { pathset } from "../../store/actions/qna/qnaindex";
+import changeView from "../../store/actions/qna/changeView";
 
-function Qusetion( {item, pathSet, index} ) {
-    const question = item.question;
-    const answerA = item.answer[0];
-    const answerB = item.answer[1];
-    const answerC = item.answer[2];
+function Qusetion() {
+    const { t, i18n } = useTranslation();
+    const T = t("qna", { returnObjects: true });
+    const dispatch = useDispatch();
+    const qnaState = useSelector((state) => state.qnaIndexReducer);
+    const index = qnaState.index;
+
+    const question = T[index].question;
+    const answerA = T[index].answer[0];
+    const answerB = T[index].answer[1];
+    const answerC = T[index].answer[2];
 
     const fontStyle = useFontStyle();
     const jppadding = (index === 5 ? 10 : 7);
@@ -66,7 +76,8 @@ function Qusetion( {item, pathSet, index} ) {
     }, [ccount, cAnswer]);
 
     const questionClick = (idx)=>{
-        pathSet(idx)
+      dispatch(pathset(idx));
+      dispatch(changeView());
     }
 
     if(answerB === "" || answerC === ""){

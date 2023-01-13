@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 function QnaImg({ url, ck }) {
     if(url === "/assets/Qnaimges/footprint-0.gif"){
         return (

@@ -1,29 +1,40 @@
 import styled, { css } from "styled-components";
 import QnaImg from "./QnaImg";
 import Footer from "../common/footer";
+import { useTranslation } from "react-i18next";
 import { useEffect, useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import useFontStyle from "../../utils/useFontStyle";
 import effectSound from "../../hooks/effectSound";
 import { Howler } from 'howler';
+import { useSelector, useDispatch } from "react-redux";
+import { tidxadd, qnainit } from "../../store/actions/qna/qnaindex";
+import changeView from "../../store/actions/qna/changeView";
 
-function Answer( {index, item, path, indexAdd, controlView} ) {
+function Answer( ) {
   const navigate = useNavigate();
   const fontStyle = useFontStyle();
+  const { t, i18n } = useTranslation();
+  const T = t("qna", { returnObjects: true });
+  const dispatch = useDispatch();
 
-  const [tidx, setTidx] = useState(0);
+  const qnaState = useSelector((state) => state.qnaIndexReducer);
+  console.log(qnaState);
+  const index = qnaState.index;
+  const path = qnaState.path;
+  const tidx = qnaState.tidx;
 
-  const who = item[path].who[tidx];
-  const content =  item[path].content[tidx];
-  const imgsrc =  item[path].talkimg[tidx];
+  const who = T[index].talk[path].who[tidx];
+  const content =  T[index].talk[path].content[tidx];
+  const imgsrc =  T[index].talk[path].talkimg[tidx];
   
   const contentClick = () =>{
-      if(item[path].who.length === tidx+1){
-          indexAdd();
-          controlView();
+      if(T[index].talk[path].who.length === tidx+1){
+        dispatch(qnainit());
+        dispatch(changeView());
       }
       else{
-          setTidx(tidx+1);
+        dispatch(tidxadd());
       }
   }
   if(index === 6 && tidx === 3){
