@@ -9,19 +9,24 @@ const navigate = useNavigate();
 const dispatch = useDispatch();
 
 
-  return <LogoImgDiv onClick={() => {
-      dispatch(replayInit());
-      dispatch(initView());
-      navigate("/", { replace: true });}}>
-      </LogoImgDiv>;
+  return (<LogoImgDiv>
+        <RImg src="/assets/QnaImges/replay.png"
+          onClick={() => {
+            dispatch(replayInit());
+            dispatch(initView());
+            navigate("/", { replace: true });}}
+        ></RImg>
+      </LogoImgDiv>);
 };
 
-const LogoImgDiv = styled.div`
+const RImg = styled.img`
   width: 23px;
   height: 23px;
-  background-image: url("/assets/QnaImges/replay.png");
-  background-size: 100% 100%;
-  margin: 0 auto;
+`;
+const LogoImgDiv = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-item: center;
   margin-top: 50px;
 `;
 export default ReplayImg;
