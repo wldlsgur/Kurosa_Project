@@ -10,7 +10,7 @@ const dispatch = useDispatch();
 
 
   return (<LogoImgDiv>
-        <RImg src="/assets/QnaImges/replay.png"
+        <RImg src="/assets/QnaImges/replaybtn.png"
           onClick={() => {
             dispatch(replayInit());
             dispatch(initView());
