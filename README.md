@@ -6,13 +6,14 @@
 - npm start
     
 ### 실행
-cd client -> npm build
-cd server -> pm2 start
+- cd client -> npm build
+- cd server -> pm2 start
 
 ## 라이선스
 디자인과 학우들의 요구사항을 받아 계묘년 맞이 운세 측정 프로젝트
 
 사용된 기술
+<br>
 Client
 - React
 - Redux
@@ -20,7 +21,7 @@ Client
 - i18n
 - react-helmet
 - react-icons
-
+<br>
 Server
   - cookie-parser
   - express
