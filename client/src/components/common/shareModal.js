@@ -37,7 +37,7 @@ const ShareModal = ({ closeShareModal }) => {
       </ShareSnsDiv>
       <CopyToClipboard
         className="Toram"
-        text={env.serverAddress}
+        text={'https://kurosa-project.vercel.app'}
         onCopy={() => alert('클립보드에 복사되었습니다.')}
       >
         <CopyImg src="assets/Images/copy.png"></CopyImg>
